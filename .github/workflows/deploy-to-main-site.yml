@@ -20,10 +20,10 @@ jobs:
         with:
           use-public-rspm: true
         
-      - name: Install R packages
-        run: |
-          install.packages(c("rmarkdown", "knitr"))
-        shell: Rscript {0}
+      - name: Setup renv
+        uses: r-lib/actions/setup-renv@v2
+        with:
+          working-directory: syllabus
         
       - name: Render Quarto site
         run: |
