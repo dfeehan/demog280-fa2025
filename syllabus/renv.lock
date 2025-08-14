@@ -2482,7 +2482,7 @@
     "syllabusr": {
       "Package": "syllabusr",
       "Version": "0.1.0",
-      "Source": "unknown",
+      "Source": "GitHub",
       "Type": "Package",
       "Title": "Tools for creating a syllabus",
       "Author": "Dennis M. Feehan",
@@ -2496,6 +2496,12 @@
         "glue"
       ],
       "RoxygenNote": "7.1.0",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteRepo": "syllabusr",
+      "RemoteUsername": "dfeehan",
+      "RemoteRef": "HEAD",
+      "RemoteSha": "cfb4365eea28348e6f477736581667e051599dd6",
       "NeedsCompilation": "no"
     },
     "sys": {
