@@ -1,14 +1,12 @@
 project:
   type: website
   output-dir: ../docs 
+  render:
+    - "*"
+    - "!*.md"
 
 website:
   title: "Social Networks "
-#  navbar:
-#    left:
-#      - href: index.qmd
-#        text: Home
-#      - about.qmd
 
 format:
   html:
