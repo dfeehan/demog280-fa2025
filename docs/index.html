@@ -1,0 +1,2058 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.46">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Social Networks (Demog 280/Soc C273N) – Social Networks </title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="syllabus.css">
+</head>
+
+<body>
+
+<div id="quarto-search-results"></div>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#requirements-and-assignments" id="toc-requirements-and-assignments" class="nav-link" data-scroll-target="#requirements-and-assignments">Requirements and assignments</a></li>
+  <li><a href="#detailed-schedule" id="toc-detailed-schedule" class="nav-link" data-scroll-target="#detailed-schedule">Detailed schedule</a>
+  <ul class="collapse">
+  <li><a href="#sec:intro" id="toc-sec:intro" class="nav-link" data-scroll-target="#sec\:intro">Wed, Aug 27 - Fundamentals and background</a></li>
+  <li><a href="#sec:stats" id="toc-sec:stats" class="nav-link" data-scroll-target="#sec\:stats">Wed, Sep 3 - Sampling, data collection, statistics</a></li>
+  <li><a href="#sec:sowt-classics" id="toc-sec:sowt-classics" class="nav-link" data-scroll-target="#sec\:sowt-classics">Wed, Sep 10 - Social capital and SOWT: Classics</a></li>
+  <li><a href="#sec:netform-homophily" id="toc-sec:netform-homophily" class="nav-link" data-scroll-target="#sec\:netform-homophily">Wed, Sep 17 - Homophily - network formation based on similarity</a></li>
+  <li><a href="#sec:small-worlds" id="toc-sec:small-worlds" class="nav-link" data-scroll-target="#sec\:small-worlds">Wed, Sep 24 - Network models, connectivity, and small worlds</a></li>
+  <li><a href="#sec:communities" id="toc-sec:communities" class="nav-link" data-scroll-target="#sec\:communities">Wed, Oct 1 - Structure and segregation</a></li>
+  <li><a href="#sec:sowt-contemporary" id="toc-sec:sowt-contemporary" class="nav-link" data-scroll-target="#sec\:sowt-contemporary">Wed, Oct 8 - Social capital and SOWT: Contemporary</a></li>
+  <li><a href="#sec:netform-time" id="toc-sec:netform-time" class="nav-link" data-scroll-target="#sec\:netform-time">Wed, Oct 15 - Network formation over time and scale-free networks</a></li>
+  <li><a href="#sec:simple-contagion" id="toc-sec:simple-contagion" class="nav-link" data-scroll-target="#sec\:simple-contagion">Wed, Oct 22 - Simple contagion</a></li>
+  <li><a href="#sec:complex-contagion" id="toc-sec:complex-contagion" class="nav-link" data-scroll-target="#sec\:complex-contagion">Wed, Oct 29 - Complex contagion and social influence</a></li>
+  <li><a href="#sec:projectpitch" id="toc-sec:projectpitch" class="nav-link" data-scroll-target="#sec\:projectpitch">Wed, Nov 5 - Project pitches</a></li>
+  <li><a href="#sec:peer-effects" id="toc-sec:peer-effects" class="nav-link" data-scroll-target="#sec\:peer-effects">Wed, Nov 12 - Peer effects</a></li>
+  <li><a href="#sec:spread" id="toc-sec:spread" class="nav-link" data-scroll-target="#sec\:spread">Wed, Nov 19 - Challenges in understanding spread on a network</a></li>
+  <li><a href="#sec:mini-conf" id="toc-sec:mini-conf" class="nav-link" data-scroll-target="#sec\:mini-conf">Wed, Nov 26 - Mini-conference</a></li>
+  <li><a href="#sec:wrap-up" id="toc-sec:wrap-up" class="nav-link" data-scroll-target="#sec\:wrap-up">Wrap-up</a></li>
+  </ul></li>
+  <li><a href="#additional-topics" id="toc-additional-topics" class="nav-link" data-scroll-target="#additional-topics">Additional topics</a>
+  <ul class="collapse">
+  <li><a href="#sec:politics" id="toc-sec:politics" class="nav-link" data-scroll-target="#sec\:politics">Political networks</a></li>
+  <li><a href="#sec:cooperation" id="toc-sec:cooperation" class="nav-link" data-scroll-target="#sec\:cooperation">Collaboration and cooperation</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Social Networks (Demography 280/Sociology C273N)</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<!--
+NOTES:
+- the chicago-syllabus.csl is from Kieran Healy: https://github.com/kjhealy/pandoc-templates/blob/master/csl/chicago-syllabus.csl
+- if changing this in the future, you may have to tweak the 'range' values in the part that loads the excel sheet
+
+WISHLIST:
+- be able to generate pdf version (right now, the table looks wonky - links don't render, NAs, etc)
+-->
+<p>(Syllabus last updated: 2025-August-13)</p>
+<p><strong>Class meetings: Wednesdays, 2pm-4:30pm, 310 Social Sciences Building</strong><br>
+<strong>Office hours</strong>: see Ed post (or send me an email and we can find a time)<br>
+<strong>Email</strong>: feehan [at] berkeley.edu<br>
+<strong>Web</strong>: <a href="https://www.dennisfeehan.org/teaching/2023fa_demog280.html">https://www.dennisfeehan.org/teaching/2023fa_demog280.html</a><br>
+<strong>Ed</strong>: <a href="https://edstem.org/us/courses/43232/discussion/" class="uri">https://edstem.org/us/courses/43232/discussion/</a></p>
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p>This course provides a broad introduction to the empirical and theoretical study of social networks. We will cover classic and contemporary studies, beginning with fundamental definitions and models, and then moving through a range of topics, including models of network formation and structure (homophily, foci, communities); dynamic processes on networks (contagion, influence, and disease models); collaborative networks; personal networks; online networks; and network sampling and data collection. The course material is intended to be of interest to students from a wide range of disciplinary backgrounds, including demography, sociology, statistics, computer science, and related fields.</p>
+<p><strong><em>This syllabus is not yet final - I’m posting it to give you a sense for what we will cover this semester. Please re-check the syllabus before you start each week’s reading; it will be updated as the semester progresses</em></strong></p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="zsukpufmpz" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#zsukpufmpz table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#zsukpufmpz thead, #zsukpufmpz tbody, #zsukpufmpz tfoot, #zsukpufmpz tr, #zsukpufmpz td, #zsukpufmpz th {
+  border-style: none;
+}
+
+#zsukpufmpz p {
+  margin: 0;
+  padding: 0;
+}
+
+#zsukpufmpz .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#zsukpufmpz .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#zsukpufmpz .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#zsukpufmpz .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#zsukpufmpz .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#zsukpufmpz .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#zsukpufmpz .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#zsukpufmpz .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#zsukpufmpz .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#zsukpufmpz .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#zsukpufmpz .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#zsukpufmpz .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#zsukpufmpz .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#zsukpufmpz .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#zsukpufmpz .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#zsukpufmpz .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#zsukpufmpz .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#zsukpufmpz .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#zsukpufmpz .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#zsukpufmpz .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#zsukpufmpz .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#zsukpufmpz .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#zsukpufmpz .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#zsukpufmpz .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#zsukpufmpz .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#zsukpufmpz .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#zsukpufmpz .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#zsukpufmpz .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#zsukpufmpz .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#zsukpufmpz .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#zsukpufmpz .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#zsukpufmpz .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#zsukpufmpz .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#zsukpufmpz .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#zsukpufmpz .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#zsukpufmpz .gt_left {
+  text-align: left;
+}
+
+#zsukpufmpz .gt_center {
+  text-align: center;
+}
+
+#zsukpufmpz .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#zsukpufmpz .gt_font_normal {
+  font-weight: normal;
+}
+
+#zsukpufmpz .gt_font_bold {
+  font-weight: bold;
+}
+
+#zsukpufmpz .gt_font_italic {
+  font-style: italic;
+}
+
+#zsukpufmpz .gt_super {
+  font-size: 65%;
+}
+
+#zsukpufmpz .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#zsukpufmpz .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#zsukpufmpz .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#zsukpufmpz .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#zsukpufmpz .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#zsukpufmpz .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#zsukpufmpz .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#zsukpufmpz .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#zsukpufmpz div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+</style>
+
+<table class="gt_table caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<colgroup>
+<col style="width: 5%">
+<col style="width: 15%">
+<col style="width: 80%">
+</colgroup>
+<thead>
+<tr class="header gt_col_headings">
+<th id="Week" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">Week</th>
+<th id="Date" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">Date</th>
+<th id="Topic" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">Topic</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd">
+<td class="gt_row gt_right" headers="Week">1</td>
+<td class="gt_row gt_left" headers="Date">Wed, Aug 27</td>
+<td class="gt_row gt_left" headers="Topic"><a href="#sec:intro">Fundamentals and background</a></td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_right" headers="Week">2</td>
+<td class="gt_row gt_left" headers="Date">Wed, Sep 3</td>
+<td class="gt_row gt_left" headers="Topic"><a href="#sec:stats">Challenges in data collection and statistical models</a></td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_right" headers="Week">3</td>
+<td class="gt_row gt_left" headers="Date">Wed, Sep 10</td>
+<td class="gt_row gt_left" headers="Topic"><a href="#sec:sowt-classics">Social Capital and SOWT: Classics</a></td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_right" headers="Week">4</td>
+<td class="gt_row gt_left" headers="Date">Wed, Sep 17</td>
+<td class="gt_row gt_left" headers="Topic"><a href="#sec:netform-homophily">Homophily and network formation</a></td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_right" headers="Week">5</td>
+<td class="gt_row gt_left" headers="Date">Wed, Sep 24</td>
+<td class="gt_row gt_left" headers="Topic"><a href="#sec:small-worlds">Small worlds</a></td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_right" headers="Week">6</td>
+<td class="gt_row gt_left" headers="Date">Wed, Oct 1</td>
+<td class="gt_row gt_left" headers="Topic"><a href="#sec:communities">Structure and segregation</a></td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_right" headers="Week">7</td>
+<td class="gt_row gt_left" headers="Date">Wed, Oct 8</td>
+<td class="gt_row gt_left" headers="Topic"><a href="#sec:sowt-contemporary">Social Capital and SOWT: Contemporary</a></td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_right" headers="Week">8</td>
+<td class="gt_row gt_left" headers="Date">Wed, Oct 15</td>
+<td class="gt_row gt_left" headers="Topic"><a href="#sec:netform-time">Scale-free networks and other models of time</a></td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_right" headers="Week">9</td>
+<td class="gt_row gt_left" headers="Date">Wed, Oct 22</td>
+<td class="gt_row gt_left" headers="Topic"><a href="#sec:simple-contagion">Simple contagion</a></td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_right" headers="Week">10</td>
+<td class="gt_row gt_left" headers="Date">Wed, Oct 29</td>
+<td class="gt_row gt_left" headers="Topic"><a href="#sec:complex-contagion">Complex contagion</a></td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_right" headers="Week">11</td>
+<td class="gt_row gt_left" headers="Date">Wed, Nov 5</td>
+<td class="gt_row gt_left" headers="Topic"><a href="#sec:projectpitch">Project check-in</a></td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_right" headers="Week">12</td>
+<td class="gt_row gt_left" headers="Date">Wed, Nov 12</td>
+<td class="gt_row gt_left" headers="Topic"><a href="#sec:peer-effects">Peer effects</a></td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_right" headers="Week">13</td>
+<td class="gt_row gt_left" headers="Date">Wed, Nov 19</td>
+<td class="gt_row gt_left" headers="Topic"><a href="#sec:spread">Challenges in detecting spread on a network</a></td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_right" headers="Week">14</td>
+<td class="gt_row gt_left" headers="Date">Wed, Nov 26</td>
+<td class="gt_row gt_left" headers="Topic">THANKSGIVING (no class)</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_right" headers="Week">15</td>
+<td class="gt_row gt_left" headers="Date">Wed, Dec 3</td>
+<td class="gt_row gt_left" headers="Topic"><a href="#sec:mini-conf">Mini-conference</a></td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</section>
+<section id="requirements-and-assignments" class="level2">
+<h2 class="anchored" data-anchor-id="requirements-and-assignments">Requirements and assignments</h2>
+<p>The requirements of the class are designed to achieve two goals: the first goal is to become familiar with some classic and contemporary research about social networks through reading papers and discussing them; and the second goal is to write a research paper. You should think of the research paper as the first draft of a project that you might be able to continue working on beyond this class.</p>
+<ul>
+<li><p>Reading and class participation</p>
+<p>Each week, you should read the assigned materials and show up to class prepared to discuss them. <strong>One of the weeks you will also be in charge of organizing the discussion.</strong> (Depending on enrollment, you may be in charge of part of the readings in an additional week.) To lead the discussion, I suggest that you make a short slide deck summarizing each of the readings (similar to the papers to present, below), and you think of a few questions to prompt discussions for each reading.</p></li>
+<li><p>Response memos</p>
+<p>For 5 of the class meetings, please write a short response memo (1 to 2 pages) and post it on the Ed thread for that week. (There is an Ed tag for each week of the semester). You can pick which of the weeks you write the memos, starting with week 3. These memos should not take an enormous amount of time to write. The main goal of these memos is to help you focus your thoughts about the reading prior to our group discussion; to help us get an understanding of what parts of the reading our discussion should focus on; and to serve as a reference for you in the future. The format of the memos is open, but at a minimum I would like you to be sure to (1) quickly summarize how the readings relate to one another (if you think they do); and (2) briefly describe at least one research idea that the readings generated for you (this could be a single sentence, or the entire memo; it’s up to you). <strong><em>The response memos are due by noon on the day before each class</em></strong>.</p></li>
+<li><p>Papers to present</p>
+<p>Each week, there will be a list of readings that we will not have time to discuss as a group. For 4 of the class meetings, please choose one of these papers, read it, and briefly present it to the class. You should ‘claim’ the paper you want to present by posting to a Ed thread for the given week, to ensure that two people don’t end up preparing a presentation for the same paper. (Also, if you have a paper that is on-topic, but not on the syllabus, you can ask me to present that one instead. I will typically say yes, as long as it is relevant to the discussion that week.) These presentations should be around 5-8 minutes each. Please plan to make slides or find some other way to help the class understand the paper’s main findings. The goals of these presentations are (1) to give you some practice taking a deep dive into a networks research paper; (2) to give you some practice distilling technical results for a broader audience; (3) to give you and the class some exposure to cutting edge ideas in social networks; (4) to give you an opportunity to spend time on papers that are particularly useful for your research.</p></li>
+<li><p>Final paper</p>
+<p>You will write a short (10-20 pages) research paper or proposal for a research project to conclude the class. Leading up to the end of the class, you will submit a brief proposal (1 paragraph to 1 page) that describes the paper you plan to work on. I will also ask you to briefly pitch your idea to get some fast feedback early on. The purpose of the proposal is to give you some feedback on the initial idea / data source / etc before you invest a lot of time writing an actual paper. Your final paper should identify an important problem to be studied, briefly review the related literature, describe your proposed research design, and present some (possibly preliminary) empirical findings.<br>
+The purpose of this paper is to connect the topics of this class to your actual research, so my hope is that this will be an opportunity to get some feedback on an idea you care about, and that you might continue to pursue beyond class. We will have a mini-conference with short presentations for each project at the end of the semester.<br>
+<strong>The final paper is due at 5pm on Monday, December 11th.</strong></p></li>
+</ul>
+<p><strong><em>NB: Please read each week’s articles in the order they are listed on the syllabus</em></strong></p>
+</section>
+<section id="detailed-schedule" class="level2">
+<h2 class="anchored" data-anchor-id="detailed-schedule">Detailed schedule</h2>
+<section id="sec:intro" class="level3">
+<h3 class="anchored" data-anchor-id="sec:intro">Wed, Aug 27 - Fundamentals and background</h3>
+<p>This is an unusual week, since it’s our first class meeting. The first three readings are overviews of social networks from different perspectives; then, there are three studies that exemplify the diversity of social networks research.</p>
+<p>Background readings:</p>
+<ul>
+<li><span class="citation" data-cites="borgatti_network_2009"><a href="#ref-borgatti_network_2009" role="doc-biblioref">Stephen P. Borgatti et al., <span>“Network Analysis in the Social Sciences,”</span> <em>Science</em> 323, no. 5916 (2009): 892–895</a>.</span></li>
+<li><span class="citation" data-cites="butts_revisiting_2009"><a href="#ref-butts_revisiting_2009" role="doc-biblioref">C. T Butts, <span>“Revisiting the Foundations of Network Analysis,”</span> <em>Science</em> 325, no. 5939 (2009): 414—416</a>.</span></li>
+<li><span class="citation" data-cites="lazer_networks_2011"><a href="#ref-lazer_networks_2011" role="doc-biblioref">David Lazer, <span>“Networks in <span>Political Science</span>: <span>Back</span> to the <span>Future</span>,”</span> <em>PS: Political Science and Politics</em> 44, no. 1 (2011): 61–68, <span role="doc-biblioref">https://www.jstor.org/stable/40984485</span></a>.</span></li>
+</ul>
+<p>Readings to discuss:</p>
+<ul>
+<li><span class="citation" data-cites="feld_why_1991"><a href="#ref-feld_why_1991" role="doc-biblioref">Scott L. Feld, <span>“Why <span>Your Friends Have More Friends Than You Do</span>,”</span> <em>American Journal of Sociology</em> 96, no. 6 (May 1991): 1464–1477, <span role="doc-biblioref">https://www.jstor.org/stable/2781907</span></a>.</span></li>
+<li><span class="citation" data-cites="mcpherson_social_2006"><a href="#ref-mcpherson_social_2006" role="doc-biblioref">Miller McPherson, Lynn Smith-Lovin, and Matthew E. Brashears, <span>“Social Isolation in <span>America</span>: <span>Changes</span> in Core Discussion Networks over Two Decades,”</span> <em>American Sociological Review</em> 71, no. 3 (2006): 353–375</a>.</span></li>
+<li><span class="citation" data-cites="grinberg_fake_2019"><a href="#ref-grinberg_fake_2019" role="doc-biblioref">Nir Grinberg et al., <span>“Fake News on <span>Twitter</span> During the 2016 <span>U</span>.<span>S</span>. Presidential Election,”</span> <em>Science</em> 363, no. 6425 (January 2019): 374–378, doi:<span role="doc-biblioref">10.1126/science.aau2706</span></a>.</span></li>
+</ul>
+<p>More background to read at some point in the first couple of weeks:</p>
+<ul>
+<li><span class="citation" data-cites="newman_networks:_2018"><a href="#ref-newman_networks:_2018" role="doc-biblioref">Mark Newman, <em>Networks: An Introduction</em>, 2nd ed. (Oxford university press, 2018)</a>, ch.&nbsp;6 and 7.</span> - some mathematical background</li>
+</ul>
+<p>We won’t explicitly discuss the Newman book chapters in class, but they also worth reading at some point; they describe several different network measures that are often mentioned in the literature.</p>
+<p>OPTIONAL: The <a href="#sec:wrap-up">wrap-up papers at the end of the syllabus</a> give a good overview of the study of social networks. We won’t explicitly discuss them in class, but they would be helpful to read at some point during the semester.</p>
+<p>Related, but we won’t have time to discuss in class:</p>
+<ul>
+<li><span class="citation" data-cites="bachrach_culture_2014"><a href="#ref-bachrach_culture_2014" role="doc-biblioref">Christine A. Bachrach, <span>“Culture and Demography: <span>From</span> Reluctant Bedfellows to Committed Partners,”</span> <em>Demography</em> 51, no. 1 (2014): 3–25</a>.</span></li>
+<li><span class="citation" data-cites="kohler_social_2013"><a href="#ref-kohler_social_2013" role="doc-biblioref">Hans-Peter Kohler et al., <span>“The <span>Social</span> and the <span>Sexual</span>: <span>Networks</span> in <span>Contemporary Demographic Research</span>”</span> (2013)</a>.</span></li>
+<li><span class="citation" data-cites="emirbayer_manifesto_1997"><a href="#ref-emirbayer_manifesto_1997" role="doc-biblioref">Mustafa Emirbayer, <span>“Manifesto for a Relational Sociology,”</span> <em>American Journal of Sociology</em> 103, no. 2 (1997): 281–317, <span role="doc-biblioref">https://www.jstor.org/stable/10.1086/231209</span></a>.</span></li>
+<li><span class="citation" data-cites="lazer_computational_2009"><a href="#ref-lazer_computational_2009" role="doc-biblioref">David Lazer et al., <span>“Computational <span>Social Science</span>,”</span> <em>Science</em> 323, no. 5915 (February 2009): 721–723, doi:<span role="doc-biblioref">10.1126/science.1167742</span></a>.</span></li>
+<li><span class="citation" data-cites="dunbar_evolution_2007"><a href="#ref-dunbar_evolution_2007" role="doc-biblioref">Robin IM Dunbar and Susanne Shultz, <span>“Evolution in the Social Brain,”</span> <em>Science</em> 317, no. 5843 (2007): 1344–1347</a>.</span></li>
+<li><span class="citation" data-cites="sutcliffe_relationships_2012"><a href="#ref-sutcliffe_relationships_2012" role="doc-biblioref">Alistair Sutcliffe et al., <span>“Relationships and the Social Brain: <span>Integrating</span> Psychological and Evolutionary Perspectives,”</span> <em>British Journal of Psychology</em> 103, no. 2 (2012): 149–168</a>.</span></li>
+<li><span class="citation" data-cites="eagle_eigenbehaviors:_2009"><a href="#ref-eagle_eigenbehaviors:_2009" role="doc-biblioref">Nathan Eagle and Alex Sandy Pentland, <span>“Eigenbehaviors: <span>Identifying</span> Structure in Routine,”</span> <em>Behavioral Ecology and Sociobiology</em> 63, no. 7 (2009): 1057–1066</a>.</span></li>
+<li><span class="citation" data-cites="jackson_friendship_2018"><a href="#ref-jackson_friendship_2018" role="doc-biblioref">Matthew O. Jackson, <span>“The <span>Friendship Paradox</span> and <span>Systematic Biases</span> in <span>Perceptions</span> and <span>Social Norms</span>,”</span> <em>Journal of Political Economy</em> 127, no. 2 (October 2018): 777–818, doi:<span role="doc-biblioref">10.1086/701031</span></a>.</span></li>
+</ul>
+</section>
+<section id="sec:stats" class="level3">
+<h3 class="anchored" data-anchor-id="sec:stats">Wed, Sep 3 - Sampling, data collection, statistics</h3>
+<p>Readings to discuss:</p>
+<ul>
+<li>Related to McPherson et al (2006) [from last week]
+<ul>
+<li><span class="citation" data-cites="fischer_2004_2009"><a href="#ref-fischer_2004_2009" role="doc-biblioref">Claude S. Fischer, <span>“The 2004 <span>GSS Finding</span> of <span>Shrunken Social Networks</span>: <span>An Artifact</span>?”</span> <em>American Sociological Review</em> 74, no. 4 (August 2009): 657–669, doi:<span role="doc-biblioref">10.1177/000312240907400408</span></a>.</span></li>
+<li>[SKIM] <span class="citation" data-cites="mcpherson_models_2009"><a href="#ref-mcpherson_models_2009" role="doc-biblioref">M. McPherson, L. Smith-Lovin, and M. E Brashears, <span>“Models and Marginals: Using Survey Evidence to Study Social Networks,”</span> <em>American Sociological Review</em> 74, no. 4 (2009): 670—681</a>.</span></li>
+<li>[READ ABSTRACT] <span class="citation" data-cites="paik_social_2013"><a href="#ref-paik_social_2013" role="doc-biblioref">Anthony Paik and Kenneth Sanchagrin, <span>“Social <span>Isolation</span> in <span>America An Artifact</span>,”</span> <em>American Sociological Review</em> (2013): 0003122413482919</a>.</span></li>
+</ul></li>
+<li><span class="citation" data-cites="eagle_inferring_2009"><a href="#ref-eagle_inferring_2009" role="doc-biblioref">N. Eagle, A. S. Pentland, and D. Lazer, <span>“Inferring Friendship Network Structure by Using Mobile Phone Data,”</span> <em>Proceedings of the National Academy of Sciences</em> 106, no. 36 (2009): 15274—15278</a>.</span></li>
+<li><span class="citation" data-cites="goel_assessing_2010"><a href="#ref-goel_assessing_2010" role="doc-biblioref">Sharad Goel and Matthew J. Salganik, <span>“Assessing Respondent-Driven Sampling,”</span> <em>Proceedings of the National Academy of Sciences</em> 107, no. 15 (2010): 6743–6747</a>.</span></li>
+<li><span class="citation" data-cites="zheng_how_2006"><a href="#ref-zheng_how_2006" role="doc-biblioref">Tian Zheng, Matthew J. Salganik, and Andrew Gelman, <span>“How <span>Many People Do You Know</span> in <span>Prison</span>?: <span>Using Overdispersion</span> in <span>Count Data</span> to <span>Estimate Social Structure</span> in <span>Networks</span>,”</span> <em>Journal of the American Statistical Association</em> 101, no. 474 (June 2006): 409–423, doi:<span role="doc-biblioref">10.2307/27590705</span></a>.</span></li>
+<li>[READ ABSTRACT] <span class="citation" data-cites="mcgrath_effect_1997"><a href="#ref-mcgrath_effect_1997" role="doc-biblioref">Cathleen McGrath, Jim Blythe, and David Krackhardt, <span>“The Effect of Spatial Arrangement on Judgments and Errors in Interpreting Graphs,”</span> <em>Social Networks</em> 19, no. 3 (1997): 223–242</a>.</span></li>
+<li>check out <a href="http://www.hiveplot.com/">hive plots</a></li>
+</ul>
+<p>I’ll talk a little bit about random graph models; if you want extra background, the Newman chapter is a good reference:</p>
+<ul>
+<li><span class="citation" data-cites="newman_networks:_2018"><a href="#ref-newman_networks:_2018" role="doc-biblioref">Newman, <em>Networks</em></a>, ch.&nbsp;11.</span> - Poisson random graph models (NB: this is ch.&nbsp;12 in the first edition)</li>
+</ul>
+<p>Background and related (we won’t discuss):</p>
+<ul>
+<li><span class="citation" data-cites="goel_real_2010"><a href="#ref-goel_real_2010" role="doc-biblioref">S. Goel, W. Mason, and D. J Watts, <span>“Real and Perceived Attitude Agreement in Social Networks.”</span> <em>Journal of Personality and Social Psychology</em> 99, no. 4 (2010): 611</a>.</span></li>
+<li><span class="citation" data-cites="marsden_network_1990"><a href="#ref-marsden_network_1990" role="doc-biblioref">P. V. Marsden, <span>“Network Data and Measurement,”</span> <em>Annual Review of Sociology</em> (1990): 435—463, <span role="doc-biblioref">https://www.jstor.org/stable/10.2307/2083277</span></a>.</span></li>
+<li><span class="citation" data-cites="brashears_small_2011"><a href="#ref-brashears_small_2011" role="doc-biblioref">Matthew E. Brashears, <span>“Small Networks and High Isolation? <span>A</span> Reexamination of <span>American</span> Discussion Networks,”</span> <em>Social Networks</em> 33, no. 4 (October 2011): 331–341, doi:<span role="doc-biblioref">10.1016/j.socnet.2011.10.003</span></a>.</span></li>
+<li><span class="citation" data-cites="marsden_recent_2005"><a href="#ref-marsden_recent_2005" role="doc-biblioref">Peter V. Marsden, <span>“Recent Developments in Network Measurement,”</span> in <em>Models and <span>Methods</span> in <span>Social Network Analysis</span></em>, ed. Peter J. Carrington, John Scott, and Stanley Wasserman (Cambridge University Press, 2005), 8–30</a>.</span></li>
+<li><span class="citation" data-cites="brashears_trivial_2014"><a href="#ref-brashears_trivial_2014" role="doc-biblioref">Matthew E. Brashears, <span>“’<span>Trivial</span>’ Topics and Rich Ties: <span>The</span> Relationship Between Discussion Topic, Alter Role, and Resource Availability Using the <span>‘<span>Important Matters</span>’</span> Name Generator,”</span> <em>Sociological Science</em> 1 (November 2014): 493–511, doi:<span role="doc-biblioref">10.15195/v1.a27</span></a>.</span></li>
+<li><span class="citation" data-cites="bearman_cloning_2004"><a href="#ref-bearman_cloning_2004" role="doc-biblioref">Peter Bearman and Paolo Parigi, <span>“Cloning <span>Headless Frogs</span> and <span>Other Important Matters</span>: <span>Conversation Topics</span> and <span>Network Structure</span>,”</span> <em>Social Forces</em> 83, no. 2 (December 2004): 535–557, doi:<span role="doc-biblioref">10.1353/sof.2005.0001</span></a>.</span></li>
+<li><span class="citation" data-cites="lee_important_2017"><a href="#ref-lee_important_2017" role="doc-biblioref">Byungkyu Lee and Peter Bearman, <span>“Important Matters in Political Context,”</span> <em>Sociological Science</em> 4 (2017): 1–30</a>.</span></li>
+<li><span class="citation" data-cites="cowan_it_2017"><a href="#ref-cowan_it_2017" role="doc-biblioref">Sarah K. Cowan and Delia Baldassarri, <span>“<span>‘<span>It</span> Could Turn Ugly’</span>: <span>Selective</span> Disclosure of Attitudes in Political Discussion Networks,”</span> <em>Social Networks</em> (2017)</a>.</span></li>
+<li><span class="citation" data-cites="small_someone_2017"><a href="#ref-small_someone_2017" role="doc-biblioref">Mario Luis Small, <em>Someone <span>To Talk To</span></em> (Oxford University Press, 2017)</a>.</span></li>
+<li><span class="citation" data-cites="feehan_network_2017"><a href="#ref-feehan_network_2017" role="doc-biblioref">Dennis M. Feehan, Mary Mahy, and Matthew J. Salganik, <span>“The Network Survival Method for Estimating Adult Mortality: <span>Evidence</span> from a Survey Experiment in <span>Rwanda</span>,”</span> <em>Demography</em> 54, no. 4 (2017): 1503–1528</a>.</span> (appendix is optional)</li>
+<li><span class="citation" data-cites="mccormick_how_2010"><a href="#ref-mccormick_how_2010" role="doc-biblioref">Tyler H. McCormick, Matthew J. Salganik, and Tian Zheng, <span>“How <span>Many People Do You Know</span>?: <span>Efficiently Estimating Personal Network Size</span>,”</span> <em>Journal of the American Statistical Association</em> 105, no. 489 (2010): 59–70, doi:<span role="doc-biblioref">10.1198/jasa.2009.ap08518</span></a>.</span></li>
+<li><span class="citation" data-cites="mccormick_latent_2012"><a href="#ref-mccormick_latent_2012" role="doc-biblioref">Tyler H. McCormick and Tian Zheng, <span>“Latent Demographic Profile Estimation in Hard-to-Reach Groups,”</span> <em>The Annals of Applied Statistics</em> 6, no. 4 (December 2012): 1795–1813, doi:<span role="doc-biblioref">10.1214/12-AOAS569</span></a>.</span></li>
+<li><span class="citation" data-cites="handcock_modeling_2010"><a href="#ref-handcock_modeling_2010" role="doc-biblioref">M. S. Handcock and K. J. Gile, <span>“Modeling Social Networks from Sampled Data,”</span> <em>The Annals of Applied Statistics</em> 4, no. 1 (2010): 5—25</a>.</span></li>
+<li><span class="citation" data-cites="hoff_bilinear_2005"><a href="#ref-hoff_bilinear_2005" role="doc-biblioref">P. D. Hoff, <span>“Bilinear Mixed-Effects Models for Dyadic Data,”</span> <em>Journal of the American Statistical Association</em> 100, no. 469 (2005): 286–295</a>.</span></li>
+<li><span class="citation" data-cites="crawford_hidden_2018"><a href="#ref-crawford_hidden_2018" role="doc-biblioref">Forrest W. Crawford, Jiacheng Wu, and Robert Heimer, <span>“Hidden Population Size Estimation from Respondent-Driven Sampling: A Network Approach,”</span> <em>Journal of the American Statistical Association</em> (2018): 1–12</a>.</span></li>
+<li><span class="citation" data-cites="zhang_changes_2020"><a href="#ref-zhang_changes_2020" role="doc-biblioref">Juanjuan Zhang et al., <span>“Changes in Contact Patterns Shape the Dynamics of the <span>COVID-19</span> Outbreak in <span>China</span>,”</span> <em>Science</em> 368, no. 6498 (June 2020): 1481–1486, doi:<span role="doc-biblioref">10.1126/science.abb8001</span></a>.</span></li>
+<li><span class="citation" data-cites="wallinga_using_2006"><a href="#ref-wallinga_using_2006" role="doc-biblioref">Jacco Wallinga, Peter Teunis, and Mirjam Kretzschmar, <span>“Using <span>Data</span> on <span>Social Contacts</span> to <span class="nocase">Estimate Age-specific Transmission Parameters</span> for <span class="nocase">Respiratory-spread Infectious Agents</span>,”</span> <em>American Journal of Epidemiology</em> 164, no. 10 (November 2006): 936–944, doi:<span role="doc-biblioref">10.1093/aje/kwj317</span></a>.</span></li>
+</ul>
+</section>
+<section id="sec:sowt-classics" class="level3">
+<h3 class="anchored" data-anchor-id="sec:sowt-classics">Wed, Sep 10 - Social capital and SOWT: Classics</h3>
+<p>Readings we will discuss:</p>
+<ul>
+<li><span class="citation" data-cites="granovetter_strength_1973"><a href="#ref-granovetter_strength_1973" role="doc-biblioref">Mark S. Granovetter, <span>“The Strength of Weak Ties,”</span> <em>American Journal of Sociology</em> (1973): 1360–1380, <span role="doc-biblioref">https://www.jstor.org/stable/10.2307/2776392</span></a>.</span></li>
+<li><span class="citation" data-cites="feld_focused_1981"><a href="#ref-feld_focused_1981" role="doc-biblioref">S. L. Feld, <span>“The Focused Organization of Social Ties,”</span> <em>American Journal of Sociology</em> (1981): 1015—1035, <span role="doc-biblioref">https://www.jstor.org/stable/10.2307/2778746</span></a>.</span></li>
+<li><span class="citation" data-cites="coleman_social_1988"><a href="#ref-coleman_social_1988" role="doc-biblioref">J. S. Coleman, <span>“Social Capital in the Creation of Human Capital,”</span> <em>American Journal of Sociology</em> (1988): 95—120, <span role="doc-biblioref">https://www.jstor.org/stable/10.2307/2780243</span></a>.</span></li>
+</ul>
+<p>Also interesting (but we won’t have time to discuss in class):</p>
+<ul>
+<li><span class="citation" data-cites="white_social_1976"><a href="#ref-white_social_1976" role="doc-biblioref">H. C. White, S. A. Boorman, and R. L. Breiger, <span>“Social Structure from Multiple Networks. <span>I</span>. <span>Blockmodels</span> of Roles and Positions,”</span> <em>American Journal of Sociology</em> (1976): 730—780, <span role="doc-biblioref">https://www.jstor.org/stable/10.2307/2777596</span></a>.</span></li>
+<li><span class="citation" data-cites="portes_social_2000"><a href="#ref-portes_social_2000" role="doc-biblioref">A. Portes, <span>“Social Capital: <span>Its</span> Origins and Applications in Modern Sociology,”</span> in <em>Knowledge and Social Capital: Foundations and Applications</em>, 2000, 43—67</a>.</span></li>
+<li><span class="citation" data-cites="granovetter_strength_1981"><a href="#ref-granovetter_strength_1981" role="doc-biblioref">Mark Granovetter, <em>The Strength of Weak Ties: <span>A</span> Network Theory Revisited</em> (JSTOR, 1981), <span role="doc-biblioref">https://www.jstor.org/stable/pdf/202051.pdf</span></a>.</span></li>
+<li><span class="citation" data-cites="portes_embeddedness_1993"><a href="#ref-portes_embeddedness_1993" role="doc-biblioref">A. Portes and J. Sensenbrenner, <span>“Embeddedness and Immigration: <span>Notes</span> on the Social Determinants of Economic Action,”</span> <em>American Journal of Sociology</em> (1993): 1320—1350, <span role="doc-biblioref">https://www.jstor.org/stable/10.2307/2781823</span></a>.</span></li>
+<li><span class="citation" data-cites="burt_structural_2004"><a href="#ref-burt_structural_2004" role="doc-biblioref">R. S. Burt, <span>“Structural Holes and Good Ideas,”</span> <em>American Journal of Sociology</em> 110, no. 2 (2004): 349—399, <span role="doc-biblioref">https://www.jstor.org/stable/10.1086/421787</span></a>.</span></li>
+<li><span class="citation" data-cites="eagle_network_2010"><a href="#ref-eagle_network_2010" role="doc-biblioref">Nathan Eagle, Michael Macy, and Rob Claxton, <span>“Network Diversity and Economic Development,”</span> <em>Science</em> 328, no. 5981 (2010): 1029–1031</a>.</span></li>
+<li><span class="citation" data-cites="kauppi_characteristics_2018"><a href="#ref-kauppi_characteristics_2018" role="doc-biblioref">Maarit Kauppi et al., <span>“Characteristics of <span>Social Networks</span> and <span>Mortality Risk</span>: <span>Evidence From</span> 2 <span>Prospective Cohort Studies</span>,”</span> <em>American Journal of Epidemiology</em> 187, no. 4 (April 2018): 746–753, doi:<span role="doc-biblioref">10.1093/aje/kwx301</span></a>.</span></li>
+<li><span class="citation" data-cites="eng_social_2002"><a href="#ref-eng_social_2002" role="doc-biblioref">Patricia M. Eng et al., <span>“Social <span>Ties</span> and <span>Change</span> in <span>Social Ties</span> in <span>Relation</span> to <span>Subsequent Total</span> and <span class="nocase">Cause-specific Mortality</span> and <span>Coronary Heart Disease Incidence</span> in <span>Men</span>,”</span> <em>American Journal of Epidemiology</em> 155, no. 8 (April 2002): 700–709, doi:<span role="doc-biblioref">10.1093/aje/155.8.700</span></a>.</span></li>
+</ul>
+<p>Demography-specific:</p>
+<ul>
+<li><span class="citation" data-cites="massey_social_1990"><a href="#ref-massey_social_1990" role="doc-biblioref">Douglas S. Massey, <span>“Social Structure, Household Strategies, and the Cumulative Causation of Migration,”</span> <em>Population Index</em> (1990): 3–26, <span role="doc-biblioref">https://www.jstor.org/stable/3644186</span></a>.</span></li>
+</ul>
+</section>
+<section id="sec:netform-homophily" class="level3">
+<h3 class="anchored" data-anchor-id="sec:netform-homophily">Wed, Sep 17 - Homophily - network formation based on similarity</h3>
+<!--
+* ? [@shwed_temporal_2010]
+* ? [@newman_clustering_2001]
+* ? [@leskovec_graphs_2005]
+-->
+<ul>
+<li><span class="citation" data-cites="kossinets_empirical_2006"><a href="#ref-kossinets_empirical_2006" role="doc-biblioref">Gueorgi Kossinets and Duncan J. Watts, <span>“Empirical <span>Analysis</span> of an <span>Evolving Social Network</span>,”</span> <em>Science</em> 311, no. 5757 (January 2006): 88–90, doi:<span role="doc-biblioref">10.1126/science.1116869</span></a>.</span></li>
+<li><span class="citation" data-cites="kossinets_origins_2009"><a href="#ref-kossinets_origins_2009" role="doc-biblioref">G. Kossinets and D. J. Watts, <span>“Origins of <span>Homophily</span> in an <span>Evolving Social Network</span>,”</span> <em>American Journal of Sociology</em> 115, no. 2 (2009): 405—450, <span role="doc-biblioref">https://www.jstor.org/stable/10.1086/599247</span></a>.</span></li>
+<li><span class="citation" data-cites="currarini_identifying_2010"><a href="#ref-currarini_identifying_2010" role="doc-biblioref">Sergio Currarini, Matthew O. Jackson, and Paolo Pin, <span>“Identifying the Roles of Race-Based Choice and Chance in High School Friendship Network Formation,”</span> <em>Proceedings of the National Academy of Sciences</em> 107, no. 11 (2010): 4857–4861</a>.</span></li>
+<li><span class="citation" data-cites="hoff_latent_2002"><a href="#ref-hoff_latent_2002" role="doc-biblioref">Peter D. Hoff, Adrian E. Raftery, and Mark S. Handcock, <span>“Latent Space Approaches to Social Network Analysis,”</span> <em>Journal of the American Statistical Association</em> 97, no. 460 (2002): 1090–1098</a>.</span></li>
+</ul>
+<p>Also interesting, but we will not have time to discuss:</p>
+<ul>
+<li>the theory/background section of this paper is an excellent review of homophily: <span class="citation" data-cites="wimmer_beyond_2010"><a href="#ref-wimmer_beyond_2010" role="doc-biblioref">A. Wimmer and K. Lewis, <span>“Beyond and <span>Below Racial Homophily</span>: <span>ERG Models</span> of a <span>Friendship Network Documented</span> on <span>Facebook1</span>,”</span> <em>American Journal of Sociology</em> 116, no. 2 (2010): 583–642, <span role="doc-biblioref">https://www.jstor.org/stable/10.1086/653658</span></a>.</span></li>
+<li><span class="citation" data-cites="bruch_aspirational_2018"><a href="#ref-bruch_aspirational_2018" role="doc-biblioref">Elizabeth E. Bruch and M. E. J. Newman, <span>“Aspirational Pursuit of Mates in Online Dating Markets,”</span> <em>Science Advances</em> 4, no. 8 (August 2018): eaap9815, doi:<span role="doc-biblioref">10.1126/sciadv.aap9815</span></a>.</span></li>
+<li><span class="citation" data-cites="jackson_meeting_2007"><a href="#ref-jackson_meeting_2007" role="doc-biblioref">Matthew O. Jackson and Brian W. Rogers, <span>“Meeting Strangers and Friends of Friends: <span>How</span> Random Are Social Networks?”</span> <em>The American Economic Review</em> 97, no. 3 (2007): 890–915</a>.</span></li>
+<li><span class="citation" data-cites="onnela_geographic_2011"><a href="#ref-onnela_geographic_2011" role="doc-biblioref">Jukka-Pekka Onnela et al., <span>“Geographic Constraints on Social Network Groups,”</span> <em>PLoS One</em> 6, no. 4 (2011): e16939</a>.</span></li>
+<li><span class="citation" data-cites="halberstam_homophily_2016"><a href="#ref-halberstam_homophily_2016" role="doc-biblioref">Yosh Halberstam and Brian Knight, <span>“Homophily, Group Size, and the Diffusion of Political Information in Social Networks: <span>Evidence</span> from <span>Twitter</span>,”</span> <em>Journal of Public Economics</em> 143 (November 2016): 73–88, doi:<span role="doc-biblioref">10.1016/j.jpubeco.2016.08.011</span></a>.</span></li>
+</ul>
+<!--
+* [@smith_social_2014]
+-->
+<!-- 
+* [@domingue_social_2018] 
+-->
+</section>
+<section id="sec:small-worlds" class="level3">
+<h3 class="anchored" data-anchor-id="sec:small-worlds">Wed, Sep 24 - Network models, connectivity, and small worlds</h3>
+<p>Readings to discuss:</p>
+<ul>
+<li><span class="citation" data-cites="milgram_small_1967"><a href="#ref-milgram_small_1967" role="doc-biblioref">Stanley Milgram, <span>“The <span>Small World Problem</span>,”</span> <em>Psychology Today</em> 1 (1967): 62–67</a>.</span></li>
+<li><span class="citation" data-cites="travers_experimental_1969"><a href="#ref-travers_experimental_1969" role="doc-biblioref">J. Travers and S. Milgram, <span>“An Experimental Study of the Small World Problem,”</span> <em>Sociometry</em> (1969): 425–443, <span role="doc-biblioref">https://www.jstor.org/stable/10.2307/2786545</span></a>.</span></li>
+<li><span class="citation" data-cites="watts_collective_1998"><a href="#ref-watts_collective_1998" role="doc-biblioref">D. J. Watts and S. H. Strogatz, <span>“Collective Dynamics of ‘Small-World’networks,”</span> <em>Nature</em> 393, no. 6684 (1998): 440–442</a>.</span></li>
+<li><span class="citation" data-cites="kleinberg_navigation_2000"><a href="#ref-kleinberg_navigation_2000" role="doc-biblioref">Jon M. Kleinberg, <span>“Navigation in a Small World,”</span> <em>Nature</em> 406, no. 6798 (2000): 845–845</a>.</span></li>
+<li><span class="citation" data-cites="watts_identity_2002"><a href="#ref-watts_identity_2002" role="doc-biblioref">Duncan J. Watts, Peter Sheridan Dodds, and Mark EJ Newman, <span>“Identity and Search in Social Networks,”</span> <em>Science</em> 296, no. 5571 (2002): 1302–1305</a>.</span></li>
+<li><span class="citation" data-cites="dodds_experimental_2003"><a href="#ref-dodds_experimental_2003" role="doc-biblioref">P. S. Dodds, R. Muhamad, and D. J. Watts, <span>“An Experimental Study of Search in Global Social Networks,”</span> <em>Science</em> 301, no. 5634 (2003): 827Äì–829</a>.</span></li>
+</ul>
+<p>Some fairly recent online discussion of the small world hypothesis:</p>
+<ul>
+<li>a relevant <a href="https://research.facebook.com/blog/three-and-a-half-degrees-of-separation/">Facebook research note</a></li>
+<li>and a <a href="https://medium.com/@duncanjwatts/how-small-is-the-world-really-736fa21808ba#.vlogrknh1">relevant comment by Duncan Watts</a></li>
+</ul>
+<p>Background and related:</p>
+<ul>
+<li><span class="citation" data-cites="watts_six_2003"><a href="#ref-watts_six_2003" role="doc-biblioref">D. J. Watts, <em>Six Degrees: <span>The</span> Science of a Connected Age</em> (WW Norton &amp; Company, 2003)</a>, ch.&nbsp;1-3.</span></li>
+<li><span class="citation" data-cites="marvel_small-world_2013"><a href="#ref-marvel_small-world_2013" role="doc-biblioref">Seth A. Marvel et al., <span>“The Small-World Effect Is a Modern Phenomenon,”</span> <em>arXiv Preprint arXiv:1310.2636</em> (2013), <span role="doc-biblioref">https://arxiv.org/abs/1310.2636</span></a>.</span></li>
+<li><span class="citation" data-cites="uzzi_collaboration_2005"><a href="#ref-uzzi_collaboration_2005" role="doc-biblioref">Brian Uzzi and Jarrett Spiro, <span>“Collaboration and Creativity: <span>The</span> Small World <span>Problem</span>,”</span> <em>American Journal of Sociology</em> 111, no. 2 (2005): 447–504, <span role="doc-biblioref">https://www.jstor.org/stable/10.1086/432782</span></a>.</span></li>
+<li><span class="citation" data-cites="liben-nowell_geographic_2005"><a href="#ref-liben-nowell_geographic_2005" role="doc-biblioref">David Liben-Nowell et al., <span>“Geographic Routing in Social Networks,”</span> <em>Proceedings of the National Academy of Sciences of the United States of America</em> 102, no. 33 (2005): 11623–11628</a>.</span></li>
+<li><span class="citation" data-cites="granovetter_ignorance_2003"><a href="#ref-granovetter_ignorance_2003" role="doc-biblioref">Mark Granovetter, <span>“Ignorance, Knowledge, and Outcomes in a Small World,”</span> <em>Science</em> 301, no. 5634 (2003): 773–774</a>.</span></li>
+</ul>
+</section>
+<section id="sec:communities" class="level3">
+<h3 class="anchored" data-anchor-id="sec:communities">Wed, Oct 1 - Structure and segregation</h3>
+<ul>
+<li><span class="citation" data-cites="blau_macrosociological_1977"><a href="#ref-blau_macrosociological_1977" role="doc-biblioref">Peter M. Blau, <span>“A Macrosociological Theory of Social Structure,”</span> <em>American Journal of Sociology</em> 83, no. 1 (1977): 26–54</a>.</span></li>
+<li><span class="citation" data-cites="leskovec_signed_2010"><a href="#ref-leskovec_signed_2010" role="doc-biblioref">Jure Leskovec, Daniel Huttenlocher, and Jon Kleinberg, <span>“Signed Networks in Social Media,”</span> in <em>Proceedings of the <span>SIGCHI</span> Conference on Human Factors in Computing Systems</em> (ACM, 2010), 1361–1370</a>.</span></li>
+<li><span class="citation" data-cites="diprete_segregation_2011"><a href="#ref-diprete_segregation_2011" role="doc-biblioref">Thomas A. DiPrete et al., <span>“Segregation in <span>Social Networks Based</span> on <span>Acquaintanceship</span> and <span>Trust</span>,”</span> <em>American Journal of Sociology</em> 116, no. 4 (2011): 1234–83, <span role="doc-biblioref">https://www.jstor.org/stable/10.1086/659100</span></a>.</span></li>
+<li><span class="citation" data-cites="newman_finding_2004"><a href="#ref-newman_finding_2004" role="doc-biblioref">Mark EJ Newman and Michelle Girvan, <span>“Finding and Evaluating Community Structure in Networks,”</span> <em>Physical Review E</em> 69, no. 2 (2004): 026113</a>.</span></li>
+</ul>
+<p>Also interesting (but we won’t have time to discuss in class):</p>
+<!-- NB: I think next time we should read girvan communty 2002 instead of newman_finding_2004 -->
+<ul>
+<li><span class="citation" data-cites="girvan_community_2002"><a href="#ref-girvan_community_2002" role="doc-biblioref">M. Girvan and M. E. J. Newman, <span>“Community Structure in Social and Biological Networks,”</span> <em>Proceedings of the National Academy of Sciences</em> 99, no. 12 (2002): 7821</a>.</span></li>
+<li><span class="citation" data-cites="goldberg_mapping_2011"><a href="#ref-goldberg_mapping_2011" role="doc-biblioref">Amir Goldberg, <span>“Mapping Shared Understandings Using Relational Class Analysis: The Case of the Cultural Omnivore Reexamined,”</span> <em>American Journal of Sociology</em> 116, no. 5 (2011): 1397–1436, <span role="doc-biblioref">https://www.jstor.org/stable/10.1086/657976</span></a>.</span></li>
+<li><span class="citation" data-cites="karrer_stochastic_2011"><a href="#ref-karrer_stochastic_2011" role="doc-biblioref">Brian Karrer and Mark EJ Newman, <span>“Stochastic Blockmodels and Community Structure in Networks,”</span> <em>Physical Review E</em> 83, no. 1 (2011): 016107</a>.</span></li>
+<li><span class="citation" data-cites="breiger_duality_1974"><a href="#ref-breiger_duality_1974" role="doc-biblioref">R. L. Breiger, <span>“The Duality of Persons and Groups,”</span> <em>Social Forces</em> 53, no. 2 (1974): 181—190</a>.</span></li>
+<li><span class="citation" data-cites="gee_social_2016"><a href="#ref-gee_social_2016" role="doc-biblioref">Laura Katherine Gee, Jason J. Jones, and Moira Burke, <span>“Social <span>Networks</span> and <span>Labor Markets</span>: <span>How Strong Ties Relate</span> to <span>Job Finding On Facebook</span>’s <span>Social Network</span>”</span> (2016)</a>.</span></li>
+<li><span class="citation" data-cites="bickel_nonparametric_2009"><a href="#ref-bickel_nonparametric_2009" role="doc-biblioref">Peter J. Bickel and Aiyou Chen, <span>“A Nonparametric View of Network Models and <span>Newman</span>–<span>Girvan</span> and Other Modularities,”</span> <em>Proceedings of the National Academy of Sciences</em> 106, no. 50 (2009): 21068–21073</a>.</span></li>
+<li><span class="citation" data-cites="granovetter_economic_1985"><a href="#ref-granovetter_economic_1985" role="doc-biblioref">M. Granovetter, <span>“Economic Action and Social Structure: The Problem of Embeddedness,”</span> <em>Readings in Economic Sociology</em> (1985): 63–68</a>.</span></li>
+<li><span class="citation" data-cites="isakov_structure_2019"><a href="#ref-isakov_structure_2019" role="doc-biblioref">Alexander Isakov et al., <span>“The <span>Structure</span> of <span>Negative Social Ties</span> in <span>Rural Village Networks</span>,”</span> <em>Sociological Science</em> 6 (March 2019): 197–218, doi:<span role="doc-biblioref">10.15195/v6.a8</span></a>.</span></li>
+</ul>
+</section>
+<section id="sec:sowt-contemporary" class="level3">
+<h3 class="anchored" data-anchor-id="sec:sowt-contemporary">Wed, Oct 8 - Social capital and SOWT: Contemporary</h3>
+<p>Readings we will discuss:</p>
+<ul>
+<li><span class="citation" data-cites="aral_diversity-bandwidth_2011"><a href="#ref-aral_diversity-bandwidth_2011" role="doc-biblioref">Sinan Aral and Marshall Van Alstyne, <span>“The <span class="nocase">Diversity-Bandwidth Trade-off</span>,”</span> <em>American Journal of Sociology</em> 117, no. 1 (July 2011): 90–171, doi:<span role="doc-biblioref">10.1086/661238</span></a>.</span></li>
+<li><span class="citation" data-cites="chetty_social_2022"><a href="#ref-chetty_social_2022" role="doc-biblioref">Raj Chetty et al., <span>“Social Capital <span>I</span>: Measurement and Associations with Economic Mobility,”</span> <em>Nature</em> 608, no. 7921 (August 2022): 108–121, doi:<span role="doc-biblioref">10.1038/s41586-022-04996-4</span></a>.</span></li>
+<li><span class="citation" data-cites="chetty_social_2022-1"><a href="#ref-chetty_social_2022-1" role="doc-biblioref">Raj Chetty et al., <span>“Social Capital <span>II</span>: Determinants of Economic Connectedness,”</span> <em>Nature</em> 608, no. 7921 (August 2022): 122–134, doi:<span role="doc-biblioref">10.1038/s41586-022-04997-3</span></a>.</span></li>
+</ul>
+<p>Also, check out <a href="https://www.socialcapital.org/">the social capital atlas</a>.</p>
+<p>Also interesting (but we won’t have time to discuss in class):</p>
+<ul>
+<li><span class="citation" data-cites="onnela_structure_2007"><a href="#ref-onnela_structure_2007" role="doc-biblioref">J. P. Onnela et al., <span>“Structure and <span>Tie Strengths</span> in <span>Mobile Communication Networks</span>,”</span> <em>Proceedings of the National Academy of Science, USA</em> 104, no. 18 (2007): 7332–7336</a>.</span></li>
+<li><span class="citation" data-cites="eagle_network_2010"><a href="#ref-eagle_network_2010" role="doc-biblioref">Eagle, Macy, and Claxton, <span>“Network Diversity and Economic Development”</span></a>.</span></li>
+<li>Comments on <span class="citation" data-cites="aral_diversity-bandwidth_2011"><a href="#ref-aral_diversity-bandwidth_2011" role="doc-biblioref">Aral and Van Alstyne, <span>“The <span class="nocase">Diversity-Bandwidth Trade-off</span>”</span></a>.</span>
+<ul>
+<li><span class="citation" data-cites="bruggeman_strength_2016"><a href="#ref-bruggeman_strength_2016" role="doc-biblioref">Jeroen Bruggeman, <span>“The <span>Strength</span> of <span>Varying Tie Strength</span>: <span>Comment</span> on <span>Aral</span> and <span>Van Alstyne</span>,”</span> <em>American Journal of Sociology</em> 121, no. 6 (May 2016): 1919–1930, doi:<span role="doc-biblioref">10.1086/686267</span></a>.</span></li>
+<li><span class="citation" data-cites="aral_future_2016"><a href="#ref-aral_future_2016" role="doc-biblioref">Sinan Aral, <span>“The <span>Future</span> of <span>Weak Ties</span>,”</span> <em>American Journal of Sociology</em> 121, no. 6 (May 2016): 1931–1939, doi:<span role="doc-biblioref">10.1086/686293</span></a>.</span></li>
+</ul></li>
+<li><span class="citation" data-cites="bailey_economic_2018"><a href="#ref-bailey_economic_2018" role="doc-biblioref">Michael Bailey et al., <span>“The Economic Effects of Social Networks: <span>Evidence</span> from the Housing Market,”</span> <em>Journal of Political Economy</em> 126, no. 6 (2018): 2224–2276</a>.</span></li>
+<li><span class="citation" data-cites="park_strength_2018"><a href="#ref-park_strength_2018" role="doc-biblioref">Patrick S. Park, Joshua E. Blumenstock, and Michael W. Macy, <span>“The Strength of Long-Range Ties in Population-Scale Social Networks,”</span> <em>Science</em> 362, no. 6421 (December 2018): 1410–1413, doi:<span role="doc-biblioref">10.1126/science.aau9735</span></a>.</span></li>
+<li><span class="citation" data-cites="kauppi_characteristics_2018"><a href="#ref-kauppi_characteristics_2018" role="doc-biblioref">Kauppi et al., <span>“Characteristics of <span>Social Networks</span> and <span>Mortality Risk</span>”</span></a>.</span></li>
+<li><span class="citation" data-cites="eng_social_2002"><a href="#ref-eng_social_2002" role="doc-biblioref">Eng et al., <span>“Social <span>Ties</span> and <span>Change</span> in <span>Social Ties</span> in <span>Relation</span> to <span>Subsequent Total</span> and <span class="nocase">Cause-specific Mortality</span> and <span>Coronary Heart Disease Incidence</span> in <span>Men</span>”</span></a>.</span></li>
+<li><span class="citation" data-cites="rajkumar_causal_2022"><a href="#ref-rajkumar_causal_2022" role="doc-biblioref">Karthik Rajkumar et al., <span>“A Causal Test of the Strength of Weak Ties,”</span> <em>Science</em> 377, no. 6612 (September 2022): 1304–1310, doi:<span role="doc-biblioref">10.1126/science.abl4476</span></a>.</span></li>
+</ul>
+<p>Demography-specific:</p>
+<ul>
+<li><span class="citation" data-cites="fussell_limits_2004"><a href="#ref-fussell_limits_2004" role="doc-biblioref">Elizabeth Fussell and Douglas S. Massey, <span>“The Limits to Cumulative Causation: <span>International</span> Migration from <span>Mexican</span> Urban Areas,”</span> <em>Demography</em> 41, no. 1 (2004): 151–171</a>.</span></li>
+</ul>
+</section>
+<section id="sec:netform-time" class="level3">
+<h3 class="anchored" data-anchor-id="sec:netform-time">Wed, Oct 15 - Network formation over time and scale-free networks</h3>
+<ul>
+<li><span class="citation" data-cites="barabasi_emergence_1999"><a href="#ref-barabasi_emergence_1999" role="doc-biblioref">A. L. Barabási and R. Albert, <span>“Emergence of Scaling in Random Networks,”</span> <em>Science</em> 286, no. 5439 (1999): 509—512</a>.</span></li>
+<li><span class="citation" data-cites="broido_scale-free_2018"><a href="#ref-broido_scale-free_2018" role="doc-biblioref">Anna D. Broido and Aaron Clauset, <span>“Scale-Free Networks Are Rare,”</span> <em>arXiv:1801.03400 [Physics, q-Bio, Stat]</em> (January 2018), <span role="doc-biblioref">https://arxiv.org/abs/1801.03400</span></a>.</span></li>
+<li><span class="citation" data-cites="bearman_chains_2004"><a href="#ref-bearman_chains_2004" role="doc-biblioref">Peter S. Bearman, James Moody, and Katherine Stovel, <span>“Chains of Affection: <span>The</span> Structure of Adolescent Romantic and Sexual Networks1,”</span> <em>American Journal of Sociology</em> 110, no. 1 (2004): 44–91, <span role="doc-biblioref">https://www.jstor.org/stable/10.1086/386272</span></a>.</span></li>
+<li><strong>NB: for some reason, the journal link for this reading is wrong. Please read the article by Morris et al here</strong>: <a href="https://journals.lww.com/aidsonline/_layouts/15/oaks.journals/downloadpdf.aspx?an=00002030-199704000-00012">https://journals.lww.com/aidsonline/_layouts/15/oaks.journals/downloadpdf.aspx?an=00002030-199704000-00012</a> <span class="citation" data-cites="morris_concurrent_1997"><a href="#ref-morris_concurrent_1997" role="doc-biblioref">M. Morris and M. Kretzschmar, <span>“Concurrent Partnerships and the Spread of <span>HIV</span>,”</span> <em>AIDS</em> 11, no. 5 (1997): 641</a>.</span></li>
+</ul>
+<p>Some recent online discussions of the power law debate (not required reading):</p>
+<ul>
+<li><a href="https://www.quantamagazine.org/scant-evidence-of-power-laws-found-in-real-world-networks-20180215/">Scant evidence of power laws found in real-world networks</a></li>
+<li><a href="https://petterhol.me/2018/01/12/me-and-power-laws/">Power laws and me</a></li>
+<li><a href="https://www.barzellab.com/ideas">Spherical cows are rare</a></li>
+<li><a href="https://uploads-ssl.webflow.com/58bcae2c9d6c401e73a26fed/5aa01d3e24eebb000199a0a2_loveisallyouneed.pdf">Love is all you need</a></li>
+</ul>
+<p>Also interesting (but we won’t have time to discuss in class):</p>
+<ul>
+<li>The online textbook <a href="http://barabasi.com/networksciencebook/">Network Science</a> by Barabasi</li>
+<li><span class="citation" data-cites="clauset_power-law_2007"><a href="#ref-clauset_power-law_2007" role="doc-biblioref">A. Clauset, C. R. Shalizi, and M. E. J. Newman, <span>“Power-Law Distributions in Empirical Data,”</span> <em>arXiv:0706.1062</em> (2007), <span role="doc-biblioref">https://arxiv.org/abs/0706.1062</span></a>.</span></li>
+<li><span class="citation" data-cites="phan_natural_2015"><a href="#ref-phan_natural_2015" role="doc-biblioref">Tuan Q. Phan and Edoardo M. Airoldi, <span>“A Natural Experiment of Social Network Formation and Dynamics,”</span> <em>Proceedings of the National Academy of Sciences</em> 112, no. 21 (2015): 6595–6600</a>.</span></li>
+<li><span class="citation" data-cites="liljeros_web_2001"><a href="#ref-liljeros_web_2001" role="doc-biblioref">Fredrik Liljeros et al., <span>“The Web of Human Sexual Contacts,”</span> <em>Nature</em> 411, no. 6840 (2001): 907–908</a>.</span>
+<ul>
+<li><span class="citation" data-cites="jones_social_2003"><a href="#ref-jones_social_2003" role="doc-biblioref">James Holland Jones and Mark S. Handcock, <span>“Social Networks (Communication Arising): <span>Sexual</span> Contacts and Epidemic Thresholds,”</span> <em>Nature</em> 423, no. 6940 (2003): 605–606</a>.</span></li>
+<li><span class="citation" data-cites="liljeros_social_2003"><a href="#ref-liljeros_social_2003" role="doc-biblioref">Fredrik Liljeros et al., <span>“Social Networks (Communication Arising): <span>Sexual</span> Contacts and Epidemic Thresholds,”</span> <em>Nature</em> 423, no. 6940 (2003): 606–606</a>.</span></li>
+</ul></li>
+<li><span class="citation" data-cites="jacobs_assembling_2015"><a href="#ref-jacobs_assembling_2015" role="doc-biblioref">Abigail Z. Jacobs et al., <span>“Assembling Thefacebook: <span>Using</span> Heterogeneity to Understand Online Social Network Assembly,”</span> in <em>Proceedings of the <span>ACM Web Science Conference</span></em> (ACM, 2015), 18</a>.</span></li>
+<li><span class="citation" data-cites="newman_coauthorship_2004"><a href="#ref-newman_coauthorship_2004" role="doc-biblioref">Mark EJ Newman, <span>“Coauthorship Networks and Patterns of Scientific Collaboration,”</span> <em>Proceedings of the National Academy of Sciences</em> 101, no. suppl 1 (2004): 5200–5205</a>.</span></li>
+<li><span class="citation" data-cites="kretzschmar_concurrency_2010"><a href="#ref-kretzschmar_concurrency_2010" role="doc-biblioref">Mirjam Kretzschmar, Richard G. White, and Michel Caraël, <span>“Concurrency Is More Complex Than It Seems,”</span> <em>AIDS (London, England)</em> 24, no. 2 (2010): 313</a>.</span></li>
+</ul>
+</section>
+<section id="sec:simple-contagion" class="level3">
+<h3 class="anchored" data-anchor-id="sec:simple-contagion">Wed, Oct 22 - Simple contagion</h3>
+<p><strong>The reading is not too long this week. Please take the opportunity to start to think about your project, and to catch up on your extra paper presentations!</strong></p>
+<ul>
+<li><span class="citation" data-cites="christakis_social_2010"><a href="#ref-christakis_social_2010" role="doc-biblioref">Nicholas A. Christakis and James H. Fowler, <span>“Social Network Sensors for Early Detection of Contagious Outbreaks,”</span> <em>PloS One</em> 5, no. 9 (2010): e12948</a>.</span></li>
+<li><span class="citation" data-cites="helleringer_sexual_2007"><a href="#ref-helleringer_sexual_2007" role="doc-biblioref">Stéphane Helleringer and Hans-Peter Kohler, <span>“Sexual Network Structure and the Spread of <span>HIV</span> in <span>Africa</span>: Evidence from <span>Likoma Island</span>, <span>Malawi</span>:”</span> <em>AIDS</em> 21, no. 17 (November 2007): 2323–2332, doi:<span role="doc-biblioref">10.1097/QAD.0b013e328285df98</span></a>.</span></li>
+<li><span class="citation" data-cites="feehan_quantifying_2021"><a href="#ref-feehan_quantifying_2021" role="doc-biblioref">Dennis M. Feehan and Ayesha S. Mahmud, <span>“Quantifying Population Contact Patterns in the <span>United States</span> During the <span>COVID-19</span> Pandemic,”</span> <em>Nature Communications</em> 12, no. 1 (2021): 1–9</a>.</span></li>
+</ul>
+<p>Also interesting, but we will not have time to discuss:</p>
+<ul>
+<li><span class="citation" data-cites="mossong_social_2008"><a href="#ref-mossong_social_2008" role="doc-biblioref">Joël Mossong et al., <span>“Social Contacts and Mixing Patterns Relevant to the Spread of Infectious Diseases,”</span> <em>PLoS Medicine</em> 5, no. 3 (2008): e74</a>.</span></li>
+<li><span class="citation" data-cites="bansal_when_2007"><a href="#ref-bansal_when_2007" role="doc-biblioref">Shweta Bansal, Bryan T. Grenfell, and Lauren Ancel Meyers, <span>“When Individual Behaviour Matters: Homogeneous and Network Models in Epidemiology,”</span> <em>Journal of the Royal Society Interface</em> 4, no. 16 (2007): 879–891</a>.</span></li>
+<li><span class="citation" data-cites="nishi_network_2020"><a href="#ref-nishi_network_2020" role="doc-biblioref">Akihiro Nishi et al., <span>“Network Interventions for Managing the <span>COVID-19</span> Pandemic and Sustaining Economy,”</span> <em>Proceedings of the National Academy of Sciences</em> 117, no. 48 (December 2020): 30285–30294, doi:<span role="doc-biblioref">10.1073/pnas.2014297117</span></a>.</span></li>
+<li><span class="citation" data-cites="keeling_individual_2010"><a href="#ref-keeling_individual_2010" role="doc-biblioref">Matt J. Keeling et al., <span>“Individual Identity and Movement Networks for Disease Metapopulations,”</span> <em>Proceedings of the National Academy of Sciences</em> 107, no. 19 (2010): 8866–8870</a>.</span></li>
+<li><span class="citation" data-cites="banerjee_using_2017"><a href="#ref-banerjee_using_2017" role="doc-biblioref">ABHIJIT BANERJEE et al., <span>“Using Gossips to Spread Information: Theory and Evidence from a Randomized Controlled Trial”</span> (2017)</a>.</span></li>
+<li><span class="citation" data-cites="rohani_contact_2010"><a href="#ref-rohani_contact_2010" role="doc-biblioref">Pejman Rohani, Xue Zhong, and Aaron A. King, <span>“Contact Network Structure Explains the Changing Epidemiology of Pertussis,”</span> <em>Science</em> 330, no. 6006 (2010): 982–985</a>.</span></li>
+<li><span class="citation" data-cites="salathe_dynamics_2010"><a href="#ref-salathe_dynamics_2010" role="doc-biblioref">Marcel Salathé and James H. Jones, <span>“Dynamics and Control of Diseases in Networks with Community Structure,”</span> <em>PLoS Comput Biol</em> 6, no. 4 (2010): e1000736</a>.</span></li>
+</ul>
+</section>
+<section id="sec:complex-contagion" class="level3">
+<h3 class="anchored" data-anchor-id="sec:complex-contagion">Wed, Oct 29 - Complex contagion and social influence</h3>
+<ul>
+<li><span class="citation" data-cites="granovetter_threshold_1978"><a href="#ref-granovetter_threshold_1978" role="doc-biblioref">Mark Granovetter, <span>“Threshold <span>Models</span> of <span>Collective Behavior</span>,”</span> <em>American Journal of Sociology</em> 83, no. 6 (1978): 1420–1443, doi:<span role="doc-biblioref">10.2307/2778111</span></a>.</span></li>
+<li><span class="citation" data-cites="centola_social_2015"><a href="#ref-centola_social_2015" role="doc-biblioref">Damon Centola, <span>“The <span>Social Origins</span> of <span>Networks</span> and <span>Diffusion</span>,”</span> <em>American Journal of Sociology</em> 120, no. 5 (2015): 1295–1338, <span role="doc-biblioref">https://www.jstor.org/stable/10.1086/681275</span></a>.</span></li>
+<li><span class="citation" data-cites="ugander_structural_2012"><a href="#ref-ugander_structural_2012" role="doc-biblioref">Johan Ugander et al., <span>“Structural Diversity in Social Contagion,”</span> <em>Proceedings of the National Academy of Sciences</em> 109, no. 16 (2012): 5962–5966</a>.</span></li>
+</ul>
+<p>Also interesting, but we will not have time to discuss</p>
+<ul>
+<li><span class="citation" data-cites="dimaggio_how_2011"><a href="#ref-dimaggio_how_2011" role="doc-biblioref">Paul DiMaggio and Filiz Garip, <span>“How <span>Network Externalities Can Exacerbate Intergroup Inequality</span>,”</span> <em>American Journal of Sociology</em> 116, no. 6 (May 2011): 1887–1933, doi:<span role="doc-biblioref">10.1086/659653</span></a>.</span></li>
+<li><span class="citation" data-cites="watts_simple_2002"><a href="#ref-watts_simple_2002" role="doc-biblioref">Duncan J Watts, <span>“A Simple Model of Global Cascades on Random Networks,”</span> <em>Proceedings of the National Academy of Sciences of the United States of America</em> 99, no. 9 (April 2002): 5766–5771, doi:<span role="doc-biblioref">10.1073/pnas.082090499</span></a>.</span></li>
+<li><span class="citation" data-cites="watts_influentials_2007"><a href="#ref-watts_influentials_2007" role="doc-biblioref">D. J. Watts and P. S. Dodds, <span>“Influentials, Networks, and Public Opinion Formation,”</span> <em>Journal of Consumer Research</em> 34, no. 4 (2007): 441—458, <span role="doc-biblioref">https://www.jstor.org/stable/10.1086/518527</span></a>.</span></li>
+<li><span class="citation" data-cites="centola_complex_2007"><a href="#ref-centola_complex_2007" role="doc-biblioref">Damon Centola and Michael Macy, <span>“Complex <span>Contagions</span> and the <span>Weakness</span> of <span>Long Ties</span>,”</span> <em>American Journal of Sociology</em> 113, no. 3 (November 2007): 702–734, <span role="doc-biblioref">https://www.jstor.org/stable/10.1086/521848</span></a>.</span></li>
+<li><span class="citation" data-cites="centola_how_2018"><a href="#ref-centola_how_2018" role="doc-biblioref">Damon Centola, <em>How <span>Behavior Spreads</span>: <span>The Science</span> of <span>Complex Contagions</span></em> (Princeton University Press, 2018)</a>.</span></li>
+<li><span class="citation" data-cites="macy_threshold_2020"><a href="#ref-macy_threshold_2020" role="doc-biblioref">Michael W. Macy and Anna Evtushenko, <span>“Threshold <span>Models</span> of <span>Collective Behavior II</span>: <span>The Predictability Paradox</span> and <span>Spontaneous Instigation</span>,”</span> <em>Sociological Science</em> 7 (December 2020): 628–648, doi:<span role="doc-biblioref">10.15195/v7.a26</span></a>.</span></li>
+<li><span class="citation" data-cites="juul_comparing_2021"><a href="#ref-juul_comparing_2021" role="doc-biblioref">Jonas L. Juul and Johan Ugander, <span>“Comparing Information Diffusion Mechanisms by Matching on Cascade Size,”</span> <em>Proceedings of the National Academy of Sciences</em> 118, no. 46 (November 2021): e2100786118, doi:<span role="doc-biblioref">10.1073/pnas.2100786118</span></a>.</span></li>
+</ul>
+<p>Especially relevant for demography:</p>
+<ul>
+<li><span class="citation" data-cites="balbo_does_2014"><a href="#ref-balbo_does_2014" role="doc-biblioref">Nicoletta Balbo and Nicola Barban, <span>“Does Fertility Behavior Spread Among Friends?”</span> <em>American Sociological Review</em> 79, no. 3 (2014): 412–431</a>.</span></li>
+</ul>
+</section>
+<section id="sec:projectpitch" class="level3">
+<h3 class="anchored" data-anchor-id="sec:projectpitch">Wed, Nov 5 - Project pitches</h3>
+<p>We will not meet in person, but I will organize a way for each of us to spend a few minutes explaining what we plan to work on for the final project. There will be an opportunity for some peer feedback.</p>
+</section>
+<section id="sec:peer-effects" class="level3">
+<h3 class="anchored" data-anchor-id="sec:peer-effects">Wed, Nov 12 - Peer effects</h3>
+<ul>
+<li><span class="citation" data-cites="nickerson_is_2008"><a href="#ref-nickerson_is_2008" role="doc-biblioref">David W. Nickerson, <span>“Is Voting Contagious? <span>Evidence</span> from Two Field Experiments,”</span> <em>American Political Science Review</em> 102, no. 1 (2008): 49–57</a>.</span></li>
+<li><span class="citation" data-cites="bond_61-million-person_2012"><a href="#ref-bond_61-million-person_2012" role="doc-biblioref">Robert M. Bond et al., <span>“A 61-Million-Person Experiment in Social Influence and Political Mobilization,”</span> <em>Nature</em> 489, no. 7415 (2012): 295–298</a>.</span></li>
+<li><span class="citation" data-cites="banerjee_diffusion_2013"><a href="#ref-banerjee_diffusion_2013" role="doc-biblioref">Abhijit Banerjee et al., <span>“The Diffusion of Microfinance,”</span> <em>Science</em> 341, no. 6144 (2013): 1236498</a>.</span></li>
+</ul>
+<p>Also interesting, but we won’t have time to discuss:</p>
+<ul>
+<li><span class="citation" data-cites="paluck_changing_2016"><a href="#ref-paluck_changing_2016" role="doc-biblioref">Elizabeth Levy Paluck, Hana Shepherd, and Peter M. Aronow, <span>“Changing Climates of Conflict: <span>A</span> Social Network Experiment in 56 Schools,”</span> <em>Proceedings of the National Academy of Sciences</em> 113, no. 3 (2016): 566–571</a>.</span></li>
+<li><span class="citation" data-cites="sacerdote_peer_2000"><a href="#ref-sacerdote_peer_2000" role="doc-biblioref">Bruce Sacerdote, <em>Peer Effects with Random Assignment: <span>Results</span> for <span>Dartmouth</span> Roommates</em> (National bureau of economic research, 2000)</a>.</span></li>
+<li><span class="citation" data-cites="kohler_social_2007"><a href="#ref-kohler_social_2007" role="doc-biblioref">Hans-Peter Kohler, Jere R. Behrman, and Susan C. Watkins, <span>“Social Networks and <span>HIV</span>/<span>AIDS</span> Risk Perceptions,”</span> <em>Demography</em> 44, no. 1 (2007): 1–33</a>.</span></li>
+<li><span class="citation" data-cites="centola_spread_2010"><a href="#ref-centola_spread_2010" role="doc-biblioref">D. Centola, <span>“The Spread of Behavior in an Online Social Network Experiment,”</span> <em>Science</em> 329, no. 5996 (2010): 1194—1197</a>.</span></li>
+<li><span class="citation" data-cites="bakshy_role_2012"><a href="#ref-bakshy_role_2012" role="doc-biblioref">Eytan Bakshy et al., <span>“The Role of Social Networks in Information Diffusion,”</span> in <em>Proceedings of the 21st International Conference on <span>World Wide Web</span></em>, 2012, 519–528, <span role="doc-biblioref">https://arxiv.org/abs/1201.4145</span></a>.</span></li>
+<li><span class="citation" data-cites="bakshy_designing_2014"><a href="#ref-bakshy_designing_2014" role="doc-biblioref">Eytan Bakshy, Dean Eckles, and Michael S. Bernstein, <span>“Designing and Deploying Online Field Experiments,”</span> in <em>Proceedings of the 23rd International Conference on <span>World</span> Wide Web</em> (ACM, 2014), 283–292</a>.</span></li>
+<li><span class="citation" data-cites="eckles_design_2014"><a href="#ref-eckles_design_2014" role="doc-biblioref">Dean Eckles, Brian Karrer, and Johan Ugander, <span>“Design and Analysis of Experiments in Networks: <span>Reducing</span> Bias from Interference,”</span> <em>arXiv Preprint arXiv:1404.7530</em> (2014), <span role="doc-biblioref">https://arxiv.org/abs/1404.7530</span></a>.</span></li>
+<li><span class="citation" data-cites="bakshy_social_2012"><a href="#ref-bakshy_social_2012" role="doc-biblioref">Eytan Bakshy et al., <span>“Social Influence in Social Advertising: Evidence from Field Experiments,”</span> in <em>Proceedings of the 13th <span>ACM Conference</span> on <span>Electronic Commerce</span></em> (ACM, 2012), 146–161</a>.</span></li>
+</ul>
+</section>
+<section id="sec:spread" class="level3">
+<h3 class="anchored" data-anchor-id="sec:spread">Wed, Nov 19 - Challenges in understanding spread on a network</h3>
+<ul>
+<li><span class="citation" data-cites="christakis_spread_2007"><a href="#ref-christakis_spread_2007" role="doc-biblioref">N. A. Christakis and J. H. Fowler, <span>“The Spread of Obesity in a Large Social Network over 32 Years,”</span> <em>New England Journal of Medicine</em> 357, no. 4 (2007): 370—379</a>.</span></li>
+<li><span class="citation" data-cites="shalizi_homophily_2011"><a href="#ref-shalizi_homophily_2011" role="doc-biblioref">Cosma Rohilla Shalizi and Andrew C. Thomas, <span>“Homophily and Contagion Are Generically Confounded in Observational Social Network Studies,”</span> <em>Sociological Methods &amp; Research</em> 40, no. 2 (2011): 211–239</a>.</span></li>
+<li><span class="citation" data-cites="kim_social_2015"><a href="#ref-kim_social_2015" role="doc-biblioref">David A Kim et al., <span>“Social Network Targeting to Maximise Population Behaviour Change: A Cluster Randomised Controlled Trial,”</span> <em>The Lancet</em> 386, no. 9989 (July 2015): 145–153, doi:<span role="doc-biblioref">10.1016/S0140-6736(15)60095-2</span></a>.</span></li>
+</ul>
+<p>Also interesting, but we will not have time to discuss:</p>
+<ul>
+<li><a href="http://andrewgelman.com/2011/06/10/controversy_ove_2/">Controversy over the C-F findings on the contagion of obesity</a> (blog post by Andrew Gelman)</li>
+<li><span class="citation" data-cites="lyons_spread_2011"><a href="#ref-lyons_spread_2011" role="doc-biblioref">Russell Lyons, <span>“The Spread of Evidence-Poor Medicine via Flawed Social-Network Analysis,”</span> <em>Statistics, Politics, and Policy</em> 2, no. 1 (2011)</a>.</span></li>
+<li><a href="http://jhfowler.ucsd.edu/examining_dynamic_social_networks.pdf">Social Contagion Theory: Examining Dynamic Social Networks and Human Behavior</a> (a response to some criticisms of Christakis and Fowler)</li>
+<li><span class="citation" data-cites="manski_identification_1993"><a href="#ref-manski_identification_1993" role="doc-biblioref">Charles F. Manski, <span>“Identification of Endogenous Social Effects: <span>The</span> Reflection Problem,”</span> <em>The Review of Economic Studies</em> 60, no. 3 (1993): 531–542</a>.</span></li>
+<li><span class="citation" data-cites="airoldi_induction_2024"><a href="#ref-airoldi_induction_2024" role="doc-biblioref">Edoardo M. Airoldi and Nicholas A. Christakis, <span>“Induction of Social Contagion for Diverse Outcomes in Structured Experiments in Isolated Villages,”</span> <em>Science</em> 384, no. 6695 (May 2024): eadi5147, doi:<span role="doc-biblioref">10.1126/science.adi5147</span></a>.</span></li>
+</ul>
+</section>
+<section id="sec:mini-conf" class="level3">
+<h3 class="anchored" data-anchor-id="sec:mini-conf">Wed, Nov 26 - Mini-conference</h3>
+<p>For the mini-conference, we will each give a brief presentation of our paper. There’s no specific reading for this week.</p>
+</section>
+<section id="sec:wrap-up" class="level3">
+<h3 class="anchored" data-anchor-id="sec:wrap-up">Wrap-up</h3>
+<p>Optional wrap-up:</p>
+<ul>
+<li><span class="citation" data-cites="watts_new_2004"><a href="#ref-watts_new_2004" role="doc-biblioref">Duncan J. Watts, <span>“The ’New’ Science of Networks,”</span> <em>Annual Review of Sociology</em> (2004): 243–270, <span role="doc-biblioref">https://www.jstor.org/stable/29737693</span></a>.</span></li>
+<li><span class="citation" data-cites="newman_why_2003"><a href="#ref-newman_why_2003" role="doc-biblioref">Mark EJ Newman and Juyong Park, <span>“Why Social Networks Are Different from Other Types of Networks,”</span> <em>Physical Review E</em> 68, no. 3 (2003): 036122</a>.</span></li>
+<li><span class="citation" data-cites="jackson_economic_2016"><a href="#ref-jackson_economic_2016" role="doc-biblioref">Matthew O. Jackson, Brian W. Rogers, and Yves Zenou, <span>“The Economic Consequences of Social Network Structure”</span> (2016)</a>.</span></li>
+</ul>
+</section>
+</section>
+<section id="additional-topics" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="additional-topics">Additional topics</h2>
+<section id="sec:politics" class="level3">
+<h3 class="anchored" data-anchor-id="sec:politics">Political networks</h3>
+<ul>
+<li><span class="citation" data-cites="mutz_cross-cutting_2002"><a href="#ref-mutz_cross-cutting_2002" role="doc-biblioref">Diana C. Mutz, <span>“Cross-Cutting Social Networks: <span>Testing</span> Democratic Theory in Practice,”</span> <em>American Political Science Review</em> 96, no. 1 (2002): 111–126</a>.</span></li>
+<li><span class="citation" data-cites="barbera_birds_2015"><a href="#ref-barbera_birds_2015" role="doc-biblioref">Pablo Barberá, <span>“Birds of the <span>Same Feather Tweet Together</span>: <span>Bayesian Ideal Point Estimation Using Twitter Data</span>,”</span> <em>Political Analysis</em> 23, no. 1 (2015/ed): 76–91, doi:<span role="doc-biblioref">10.1093/pan/mpu011</span></a>.</span></li>
+<li><span class="citation" data-cites="gonzalez-bailon_networked_2016"><a href="#ref-gonzalez-bailon_networked_2016" role="doc-biblioref">Sandra González-Bailón and Ning Wang, <span>“Networked Discontent: <span>The</span> Anatomy of Protest Campaigns in Social Media,”</span> <em>Social Networks</em> 44 (January 2016): 95–104, doi:<span role="doc-biblioref">10.1016/j.socnet.2015.07.003</span></a>.</span></li>
+<li><span class="citation" data-cites="guess_less_2019"><a href="#ref-guess_less_2019" role="doc-biblioref">Andrew Guess, Jonathan Nagler, and Joshua Tucker, <span>“Less Than You Think: <span>Prevalence</span> and Predictors of Fake News Dissemination on <span>Facebook</span>,”</span> <em>Science Advances</em> 5, no. 1 (January 2019): eaau4586, doi:<span role="doc-biblioref">10.1126/sciadv.aau4586</span></a>.</span></li>
+<li><span class="citation" data-cites="mutz_consequences_2002"><a href="#ref-mutz_consequences_2002" role="doc-biblioref">Diana C. Mutz, <span>“The Consequences of Cross-Cutting Networks for Political Participation,”</span> <em>American Journal of Political Science</em> (2002): 838–855</a>.</span></li>
+<li><span class="citation" data-cites="larson_ethnic_2017"><a href="#ref-larson_ethnic_2017" role="doc-biblioref">Jennifer M. Larson and Janet I. Lewis, <span>“Ethnic <span>Networks</span>,”</span> <em>American Journal of Political Science</em> 61, no. 2 (2017): 350–364, doi:<span role="doc-biblioref">10.1111/ajps.12282</span></a>.</span></li>
+<li><span class="citation" data-cites="beck_social_2002"><a href="#ref-beck_social_2002" role="doc-biblioref">Paul Allen Beck et al., <span>“The <span>Social Calculus</span> of <span>Voting</span>: <span>Interpersonal</span>, <span>Media</span>, and <span>Organizational Influences</span> on <span>Presidential Choices</span>,”</span> <em>The American Political Science Review</em> 96, no. 1 (2002): 57–73, <span role="doc-biblioref">https://www.jstor.org/stable/3117810</span></a>.</span></li>
+<li><span class="citation" data-cites="gentzkow_ideological_2011"><a href="#ref-gentzkow_ideological_2011" role="doc-biblioref">Matthew Gentzkow and Jesse M. Shapiro, <span>“Ideological <span>Segregation Online</span> and <span>Offline</span>,”</span> <em>The Quarterly Journal of Economics</em> 126, no. 4 (November 2011): 1799–1839, doi:<span role="doc-biblioref">10.1093/qje/qjr044</span></a>.</span></li>
+<li><span class="citation" data-cites="fowler_legislative_2006"><a href="#ref-fowler_legislative_2006" role="doc-biblioref">James H. Fowler, <span>“Legislative Cosponsorship Networks in the <span>US House</span> and <span>Senate</span>,”</span> <em>Social Networks</em> 28, no. 4 (October 2006): 454–465, doi:<span role="doc-biblioref">10.1016/j.socnet.2005.11.003</span></a>.</span></li>
+<li><span class="citation" data-cites="battaglini_effectiveness_2020"><a href="#ref-battaglini_effectiveness_2020" role="doc-biblioref">Marco Battaglini, Valerio Leone Sciabolazza, and Eleonora Patacchini, <span>“Effectiveness of <span>Connected Legislators</span>,”</span> <em>American Journal of Political Science</em> n/a, no. n/a (2020), doi:<span role="doc-biblioref">10.1111/ajps.12518</span></a>.</span></li>
+<li><span class="citation" data-cites="noelle-neumann_turbulences_1977"><a href="#ref-noelle-neumann_turbulences_1977" role="doc-biblioref">Elisabeth Noelle-Neumann, <span>“Turbulences in the <span>Climate</span> of <span>Opinion</span>: <span>Methodological Applications</span> of the <span>Spiral</span> of <span>Silence Theory</span>,”</span> <em>Public Opinion Quarterly</em> 41, no. 2 (January 1977): 143–158, doi:<span role="doc-biblioref">10.1086/268371</span></a>.</span></li>
+<li><span class="citation" data-cites="scheufle_twenty-five_2000"><a href="#ref-scheufle_twenty-five_2000" role="doc-biblioref">Dietram A. Scheufle and Patricia Moy, <span>“Twenty-Five Years of the Spiral of Silence: <span>A</span> Conceptual Review and Empirical Outlook,”</span> <em>International Journal of Public Opinion Research</em> 12, no. 1 (March 2000): 3–28, doi:<span role="doc-biblioref">10.1093/ijpor/12.1.3</span></a>.</span></li>
+<li><span class="citation" data-cites="barbera_who_2019"><a href="#ref-barbera_who_2019" role="doc-biblioref">Pablo Barberá et al., <span>“Who <span>Leads</span>? <span>Who Follows</span>? <span>Measuring Issue Attention</span> and <span>Agenda Setting</span> by <span>Legislators</span> and the <span>Mass Public Using Social Media Data</span>,”</span> <em>American Political Science Review</em> 113, no. 4 (November 2019): 883–901, doi:<span role="doc-biblioref">10.1017/S0003055419000352</span></a>.</span></li>
+<li><span class="citation" data-cites="vicario_spreading_2016"><a href="#ref-vicario_spreading_2016" role="doc-biblioref">Michela Del Vicario et al., <span>“The Spreading of Misinformation Online,”</span> <em>Proceedings of the National Academy of Sciences</em> 113, no. 3 (January 2016): 554–559, doi:<span role="doc-biblioref">10.1073/pnas.1517441113</span></a>.</span></li>
+<li><span class="citation" data-cites="baldassarri_dynamics_2007"><a href="#ref-baldassarri_dynamics_2007" role="doc-biblioref">Delia Baldassarri and Peter Bearman, <span>“Dynamics of <span>Political Polarization</span>,”</span> <em>American Sociological Review</em> 72, no. 5 (October 2007): 784–811, doi:<span role="doc-biblioref">10.1177/000312240707200507</span></a>.</span></li>
+</ul>
+</section>
+<section id="sec:cooperation" class="level3">
+<h3 class="anchored" data-anchor-id="sec:cooperation">Collaboration and cooperation</h3>
+<!--* we'll have an in-class demo of [breadboard](http://breadboard.yale.edu/). Bring your laptop!-->
+<ul>
+<li><span class="citation" data-cites="apicella_social_2012"><a href="#ref-apicella_social_2012" role="doc-biblioref">Coren L. Apicella et al., <span>“Social Networks and Cooperation in Hunter-Gatherers,”</span> <em>Nature</em> 481, no. 7382 (2012): 497–501</a>.</span></li>
+<li><span class="citation" data-cites="wang_cooperation_2012"><a href="#ref-wang_cooperation_2012" role="doc-biblioref">Jing Wang, Siddharth Suri, and Duncan J. Watts, <span>“Cooperation and Assortativity with Dynamic Partner Updating,”</span> <em>Proceedings of the National Academy of Sciences</em> 109, no. 36 (2012): 14363–14368</a>.</span></li>
+<li><span class="citation" data-cites="rand_static_2014"><a href="#ref-rand_static_2014" role="doc-biblioref">David G. Rand et al., <span>“Static Network Structure Can Stabilize Human Cooperation,”</span> <em>Proceedings of the National Academy of Sciences</em> 111, no. 48 (2014): 17093–17098</a>.</span></li>
+<li><span class="citation" data-cites="nishi_inequality_2015"><a href="#ref-nishi_inequality_2015" role="doc-biblioref">Akihiro Nishi et al., <span>“Inequality and Visibility of Wealth in Experimental Social Networks,”</span> <em>Nature</em> 526, no. 7573 (2015): 426–429</a>.</span></li>
+<li><span class="citation" data-cites="guimera_team_2005"><a href="#ref-guimera_team_2005" role="doc-biblioref">Roger Guimera et al., <span>“Team Assembly Mechanisms Determine Collaboration Network Structure and Team Performance,”</span> <em>Science</em> 308, no. 5722 (2005): 697–702</a>.</span></li>
+<li><span class="citation" data-cites="mason_collaborative_2012"><a href="#ref-mason_collaborative_2012" role="doc-biblioref">Winter Mason and Duncan J. Watts, <span>“Collaborative Learning in Networks,”</span> <em>Proceedings of the National Academy of Sciences</em> 109, no. 3 (2012): 764–769</a>.</span></li>
+<li><span class="citation" data-cites="mason_long-run_2014"><a href="#ref-mason_long-run_2014" role="doc-biblioref">Winter Mason, Siddharth Suri, and Duncan J. Watts, <span>“Long-Run Learning in Games of Cooperation,”</span> in <em>Proceedings of the Fifteenth <span>ACM</span> Conference on <span>Economics</span> and Computation</em> (ACM, 2014), 821–838</a>.</span></li>
+<li><span class="citation" data-cites="jackson_social_2012"><a href="#ref-jackson_social_2012" role="doc-biblioref">Matthew O. Jackson, Tomas Rodriguez-Barraquer, and Xu Tan, <span>“Social Capital and Social Quilts: <span>Network</span> Patterns of Favor Exchange,”</span> <em>The American Economic Review</em> 102, no. 5 (2012): 1857–1897</a>.</span></li>
+</ul>
+<hr>
+<p><strong>Religious Accommodations</strong></p>
+<p>Requests to accommodate a student’s religious creed by scheduling tests or examinations at alternative times should be submitted directly to the instructor. Reasonable common sense, judgment and the pursuit of mutual goodwill should result in the positive resolution of scheduling conflicts. The regular campus appeals process applies if a mutually satisfactory arrangement cannot be achieved.</p>
+<p><strong>Statement on Academic Freedom</strong></p>
+<p>Both students and instructors have rights to academic freedom. Please respect the rights of others to express their points of view in the classroom.</p>
+<p><strong>DSP Accommodations</strong></p>
+<p>Please see the instructor to discuss accommodations for physical disabilities, medical disabilities and learning disabilities.</p>
+<p><strong>Student Resources</strong></p>
+<p>The Student Learning Center provides a wide range of resources to promote learning and academic success for students. For information regarding these services, please consult the Student Learning Center Website: https://slc.berkeley.edu/</p>
+<p><strong>Academic Integrity</strong></p>
+<p>The high academic standard at the University of California, Berkeley, is reflected in each degree that is awarded. As a result, every student is expected to maintain this high standard by ensuring that all academic work reflects unique ideas or properly attributes the ideas to the original sources.</p>
+<p>These are some basic expectations of students with regards to academic integrity:</p>
+<ul>
+<li>Any work submitted should be your own individual thoughts, and should not have been submitted for credit in another course unless you have prior written permission to re-use it in this course from this instructor.</li>
+<li>All assignments must use “proper attribution,” meaning that you have identified the original source and extent or words or ideas that you reproduce or use in your assignment. This includes drafts and homework assignments!</li>
+<li>If you are unclear about expectations, ask your instructor or GSI.</li>
+<li>Do not collaborate or work with other students on assignments or projects unless you have been given permission or instruction to do so.</li>
+</ul>
+
+
+
+</section>
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-airoldi_induction_2024" class="csl-entry" role="listitem">
+Airoldi, Edoardo M., and Nicholas A. Christakis. <span>“Induction of Social Contagion for Diverse Outcomes in Structured Experiments in Isolated Villages.”</span> <em>Science</em> 384, no. 6695 (May 2024): eadi5147. doi:<a href="https://doi.org/10.1126/science.adi5147">10.1126/science.adi5147</a>.
+</div>
+<div id="ref-apicella_social_2012" class="csl-entry" role="listitem">
+Apicella, Coren L., Frank W. Marlowe, James H. Fowler, and Nicholas A. Christakis. <span>“Social Networks and Cooperation in Hunter-Gatherers.”</span> <em>Nature</em> 481, no. 7382 (2012): 497–501.
+</div>
+<div id="ref-aral_future_2016" class="csl-entry" role="listitem">
+Aral, Sinan. <span>“The <span>Future</span> of <span>Weak Ties</span>.”</span> <em>American Journal of Sociology</em> 121, no. 6 (May 2016): 1931–1939. doi:<a href="https://doi.org/10.1086/686293">10.1086/686293</a>.
+</div>
+<div id="ref-aral_diversity-bandwidth_2011" class="csl-entry" role="listitem">
+Aral, Sinan, and Marshall Van Alstyne. <span>“The <span class="nocase">Diversity-Bandwidth Trade-off</span>.”</span> <em>American Journal of Sociology</em> 117, no. 1 (July 2011): 90–171. doi:<a href="https://doi.org/10.1086/661238">10.1086/661238</a>.
+</div>
+<div id="ref-bachrach_culture_2014" class="csl-entry" role="listitem">
+Bachrach, Christine A. <span>“Culture and Demography: <span>From</span> Reluctant Bedfellows to Committed Partners.”</span> <em>Demography</em> 51, no. 1 (2014): 3–25.
+</div>
+<div id="ref-bailey_economic_2018" class="csl-entry" role="listitem">
+Bailey, Michael, Ruiqing Cao, Theresa Kuchler, and Johannes Stroebel. <span>“The Economic Effects of Social Networks: <span>Evidence</span> from the Housing Market.”</span> <em>Journal of Political Economy</em> 126, no. 6 (2018): 2224–2276.
+</div>
+<div id="ref-bakshy_designing_2014" class="csl-entry" role="listitem">
+Bakshy, Eytan, Dean Eckles, and Michael S. Bernstein. <span>“Designing and Deploying Online Field Experiments.”</span> In <em>Proceedings of the 23rd International Conference on <span>World</span> Wide Web</em>, 283–292. ACM, 2014.
+</div>
+<div id="ref-bakshy_social_2012" class="csl-entry" role="listitem">
+Bakshy, Eytan, Dean Eckles, Rong Yan, and Itamar Rosenn. <span>“Social Influence in Social Advertising: Evidence from Field Experiments.”</span> In <em>Proceedings of the 13th <span>ACM Conference</span> on <span>Electronic Commerce</span></em>, 146–161. ACM, 2012.
+</div>
+<div id="ref-bakshy_role_2012" class="csl-entry" role="listitem">
+Bakshy, Eytan, Itamar Rosenn, Cameron Marlow, and Lada Adamic. <span>“The Role of Social Networks in Information Diffusion.”</span> In <em>Proceedings of the 21st International Conference on <span>World Wide Web</span></em>, 519–528, 2012. <a href="https://arxiv.org/abs/1201.4145">https://arxiv.org/abs/1201.4145</a>.
+</div>
+<div id="ref-balbo_does_2014" class="csl-entry" role="listitem">
+Balbo, Nicoletta, and Nicola Barban. <span>“Does Fertility Behavior Spread Among Friends?”</span> <em>American Sociological Review</em> 79, no. 3 (2014): 412–431.
+</div>
+<div id="ref-baldassarri_dynamics_2007" class="csl-entry" role="listitem">
+Baldassarri, Delia, and Peter Bearman. <span>“Dynamics of <span>Political Polarization</span>.”</span> <em>American Sociological Review</em> 72, no. 5 (October 2007): 784–811. doi:<a href="https://doi.org/10.1177/000312240707200507">10.1177/000312240707200507</a>.
+</div>
+<div id="ref-banerjee_diffusion_2013" class="csl-entry" role="listitem">
+Banerjee, Abhijit, Arun G. Chandrasekhar, Esther Duflo, and Matthew O. Jackson. <span>“The Diffusion of Microfinance.”</span> <em>Science</em> 341, no. 6144 (2013): 1236498.
+</div>
+<div id="ref-banerjee_using_2017" class="csl-entry" role="listitem">
+BANERJEE, ABHIJIT, ARUN G. CHANDRASEKHAR, ESTHER DUFLO, and MATTHEW O. JACKSON. <span>“Using Gossips to Spread Information: Theory and Evidence from a Randomized Controlled Trial”</span> (2017).
+</div>
+<div id="ref-bansal_when_2007" class="csl-entry" role="listitem">
+Bansal, Shweta, Bryan T. Grenfell, and Lauren Ancel Meyers. <span>“When Individual Behaviour Matters: Homogeneous and Network Models in Epidemiology.”</span> <em>Journal of the Royal Society Interface</em> 4, no. 16 (2007): 879–891.
+</div>
+<div id="ref-barabasi_emergence_1999" class="csl-entry" role="listitem">
+Barabási, A. L., and R. Albert. <span>“Emergence of Scaling in Random Networks.”</span> <em>Science</em> 286, no. 5439 (1999): 509—512.
+</div>
+<div id="ref-barbera_birds_2015" class="csl-entry" role="listitem">
+Barberá, Pablo. <span>“Birds of the <span>Same Feather Tweet Together</span>: <span>Bayesian Ideal Point Estimation Using Twitter Data</span>.”</span> <em>Political Analysis</em> 23, no. 1 (2015/ed): 76–91. doi:<a href="https://doi.org/10.1093/pan/mpu011">10.1093/pan/mpu011</a>.
+</div>
+<div id="ref-barbera_who_2019" class="csl-entry" role="listitem">
+Barberá, Pablo, Andreu Casas, Jonathan Nagler, Patrick J. Egan, Richard Bonneau, John T. Jost, and Joshua A. Tucker. <span>“Who <span>Leads</span>? <span>Who Follows</span>? <span>Measuring Issue Attention</span> and <span>Agenda Setting</span> by <span>Legislators</span> and the <span>Mass Public Using Social Media Data</span>.”</span> <em>American Political Science Review</em> 113, no. 4 (November 2019): 883–901. doi:<a href="https://doi.org/10.1017/S0003055419000352">10.1017/S0003055419000352</a>.
+</div>
+<div id="ref-battaglini_effectiveness_2020" class="csl-entry" role="listitem">
+Battaglini, Marco, Valerio Leone Sciabolazza, and Eleonora Patacchini. <span>“Effectiveness of <span>Connected Legislators</span>.”</span> <em>American Journal of Political Science</em> n/a, no. n/a (2020). doi:<a href="https://doi.org/10.1111/ajps.12518">10.1111/ajps.12518</a>.
+</div>
+<div id="ref-bearman_chains_2004" class="csl-entry" role="listitem">
+Bearman, Peter S., James Moody, and Katherine Stovel. <span>“Chains of Affection: <span>The</span> Structure of Adolescent Romantic and Sexual Networks1.”</span> <em>American Journal of Sociology</em> 110, no. 1 (2004): 44–91. <a href="https://www.jstor.org/stable/10.1086/386272">https://www.jstor.org/stable/10.1086/386272</a>.
+</div>
+<div id="ref-bearman_cloning_2004" class="csl-entry" role="listitem">
+Bearman, Peter, and Paolo Parigi. <span>“Cloning <span>Headless Frogs</span> and <span>Other Important Matters</span>: <span>Conversation Topics</span> and <span>Network Structure</span>.”</span> <em>Social Forces</em> 83, no. 2 (December 2004): 535–557. doi:<a href="https://doi.org/10.1353/sof.2005.0001">10.1353/sof.2005.0001</a>.
+</div>
+<div id="ref-beck_social_2002" class="csl-entry" role="listitem">
+Beck, Paul Allen, Russell J. Dalton, Steven Greene, and Robert Huckfeldt. <span>“The <span>Social Calculus</span> of <span>Voting</span>: <span>Interpersonal</span>, <span>Media</span>, and <span>Organizational Influences</span> on <span>Presidential Choices</span>.”</span> <em>The American Political Science Review</em> 96, no. 1 (2002): 57–73. <a href="https://www.jstor.org/stable/3117810">https://www.jstor.org/stable/3117810</a>.
+</div>
+<div id="ref-bickel_nonparametric_2009" class="csl-entry" role="listitem">
+Bickel, Peter J., and Aiyou Chen. <span>“A Nonparametric View of Network Models and <span>Newman</span>–<span>Girvan</span> and Other Modularities.”</span> <em>Proceedings of the National Academy of Sciences</em> 106, no. 50 (2009): 21068–21073.
+</div>
+<div id="ref-blau_macrosociological_1977" class="csl-entry" role="listitem">
+Blau, Peter M. <span>“A Macrosociological Theory of Social Structure.”</span> <em>American Journal of Sociology</em> 83, no. 1 (1977): 26–54.
+</div>
+<div id="ref-bond_61-million-person_2012" class="csl-entry" role="listitem">
+Bond, Robert M., Christopher J. Fariss, Jason J. Jones, Adam DI Kramer, Cameron Marlow, Jaime E. Settle, and James H. Fowler. <span>“A 61-Million-Person Experiment in Social Influence and Political Mobilization.”</span> <em>Nature</em> 489, no. 7415 (2012): 295–298.
+</div>
+<div id="ref-borgatti_network_2009" class="csl-entry" role="listitem">
+Borgatti, Stephen P., Ajay Mehra, Daniel J. Brass, and Giuseppe Labianca. <span>“Network Analysis in the Social Sciences.”</span> <em>Science</em> 323, no. 5916 (2009): 892–895.
+</div>
+<div id="ref-brashears_small_2011" class="csl-entry" role="listitem">
+Brashears, Matthew E. <span>“Small Networks and High Isolation? <span>A</span> Reexamination of <span>American</span> Discussion Networks.”</span> <em>Social Networks</em> 33, no. 4 (October 2011): 331–341. doi:<a href="https://doi.org/10.1016/j.socnet.2011.10.003">10.1016/j.socnet.2011.10.003</a>.
+</div>
+<div id="ref-brashears_trivial_2014" class="csl-entry" role="listitem">
+———. <span>“’<span>Trivial</span>’ Topics and Rich Ties: <span>The</span> Relationship Between Discussion Topic, Alter Role, and Resource Availability Using the <span>‘<span>Important Matters</span>’</span> Name Generator.”</span> <em>Sociological Science</em> 1 (November 2014): 493–511. doi:<a href="https://doi.org/10.15195/v1.a27">10.15195/v1.a27</a>.
+</div>
+<div id="ref-breiger_duality_1974" class="csl-entry" role="listitem">
+Breiger, R. L. <span>“The Duality of Persons and Groups.”</span> <em>Social Forces</em> 53, no. 2 (1974): 181—190.
+</div>
+<div id="ref-broido_scale-free_2018" class="csl-entry" role="listitem">
+Broido, Anna D., and Aaron Clauset. <span>“Scale-Free Networks Are Rare.”</span> <em>arXiv:1801.03400 [Physics, q-Bio, Stat]</em> (January 2018). <a href="https://arxiv.org/abs/1801.03400">https://arxiv.org/abs/1801.03400</a>.
+</div>
+<div id="ref-bruch_aspirational_2018" class="csl-entry" role="listitem">
+Bruch, Elizabeth E., and M. E. J. Newman. <span>“Aspirational Pursuit of Mates in Online Dating Markets.”</span> <em>Science Advances</em> 4, no. 8 (August 2018): eaap9815. doi:<a href="https://doi.org/10.1126/sciadv.aap9815">10.1126/sciadv.aap9815</a>.
+</div>
+<div id="ref-bruggeman_strength_2016" class="csl-entry" role="listitem">
+Bruggeman, Jeroen. <span>“The <span>Strength</span> of <span>Varying Tie Strength</span>: <span>Comment</span> on <span>Aral</span> and <span>Van Alstyne</span>.”</span> <em>American Journal of Sociology</em> 121, no. 6 (May 2016): 1919–1930. doi:<a href="https://doi.org/10.1086/686267">10.1086/686267</a>.
+</div>
+<div id="ref-burt_structural_2004" class="csl-entry" role="listitem">
+Burt, R. S. <span>“Structural Holes and Good Ideas.”</span> <em>American Journal of Sociology</em> 110, no. 2 (2004): 349—399. <a href="https://www.jstor.org/stable/10.1086/421787">https://www.jstor.org/stable/10.1086/421787</a>.
+</div>
+<div id="ref-butts_revisiting_2009" class="csl-entry" role="listitem">
+Butts, C. T. <span>“Revisiting the Foundations of Network Analysis.”</span> <em>Science</em> 325, no. 5939 (2009): 414—416.
+</div>
+<div id="ref-centola_spread_2010" class="csl-entry" role="listitem">
+Centola, D. <span>“The Spread of Behavior in an Online Social Network Experiment.”</span> <em>Science</em> 329, no. 5996 (2010): 1194—1197.
+</div>
+<div id="ref-centola_how_2018" class="csl-entry" role="listitem">
+Centola, Damon. <em>How <span>Behavior Spreads</span>: <span>The Science</span> of <span>Complex Contagions</span></em>. Princeton University Press, 2018.
+</div>
+<div id="ref-centola_social_2015" class="csl-entry" role="listitem">
+———. <span>“The <span>Social Origins</span> of <span>Networks</span> and <span>Diffusion</span>.”</span> <em>American Journal of Sociology</em> 120, no. 5 (2015): 1295–1338. <a href="https://www.jstor.org/stable/10.1086/681275">https://www.jstor.org/stable/10.1086/681275</a>.
+</div>
+<div id="ref-centola_complex_2007" class="csl-entry" role="listitem">
+Centola, Damon, and Michael Macy. <span>“Complex <span>Contagions</span> and the <span>Weakness</span> of <span>Long Ties</span>.”</span> <em>American Journal of Sociology</em> 113, no. 3 (November 2007): 702–734. <a href="https://www.jstor.org/stable/10.1086/521848">https://www.jstor.org/stable/10.1086/521848</a>.
+</div>
+<div id="ref-chetty_social_2022" class="csl-entry" role="listitem">
+Chetty, Raj, Matthew O. Jackson, Theresa Kuchler, Johannes Stroebel, Nathaniel Hendren, Robert B. Fluegge, Sara Gong, et al. <span>“Social Capital <span>I</span>: Measurement and Associations with Economic Mobility.”</span> <em>Nature</em> 608, no. 7921 (August 2022): 108–121. doi:<a href="https://doi.org/10.1038/s41586-022-04996-4">10.1038/s41586-022-04996-4</a>.
+</div>
+<div id="ref-chetty_social_2022-1" class="csl-entry" role="listitem">
+———, et al. <span>“Social Capital <span>II</span>: Determinants of Economic Connectedness.”</span> <em>Nature</em> 608, no. 7921 (August 2022): 122–134. doi:<a href="https://doi.org/10.1038/s41586-022-04997-3">10.1038/s41586-022-04997-3</a>.
+</div>
+<div id="ref-christakis_spread_2007" class="csl-entry" role="listitem">
+Christakis, N. A., and J. H. Fowler. <span>“The Spread of Obesity in a Large Social Network over 32 Years.”</span> <em>New England Journal of Medicine</em> 357, no. 4 (2007): 370—379.
+</div>
+<div id="ref-christakis_social_2010" class="csl-entry" role="listitem">
+Christakis, Nicholas A., and James H. Fowler. <span>“Social Network Sensors for Early Detection of Contagious Outbreaks.”</span> <em>PloS One</em> 5, no. 9 (2010): e12948.
+</div>
+<div id="ref-clauset_power-law_2007" class="csl-entry" role="listitem">
+Clauset, A., C. R. Shalizi, and M. E. J. Newman. <span>“Power-Law Distributions in Empirical Data.”</span> <em>arXiv:0706.1062</em> (2007). <a href="https://arxiv.org/abs/0706.1062">https://arxiv.org/abs/0706.1062</a>.
+</div>
+<div id="ref-coleman_social_1988" class="csl-entry" role="listitem">
+Coleman, J. S. <span>“Social Capital in the Creation of Human Capital.”</span> <em>American Journal of Sociology</em> (1988): 95—120. <a href="https://www.jstor.org/stable/10.2307/2780243">https://www.jstor.org/stable/10.2307/2780243</a>.
+</div>
+<div id="ref-cowan_it_2017" class="csl-entry" role="listitem">
+Cowan, Sarah K., and Delia Baldassarri. <span>“<span>‘<span>It</span> Could Turn Ugly’</span>: <span>Selective</span> Disclosure of Attitudes in Political Discussion Networks.”</span> <em>Social Networks</em> (2017).
+</div>
+<div id="ref-crawford_hidden_2018" class="csl-entry" role="listitem">
+Crawford, Forrest W., Jiacheng Wu, and Robert Heimer. <span>“Hidden Population Size Estimation from Respondent-Driven Sampling: A Network Approach.”</span> <em>Journal of the American Statistical Association</em> (2018): 1–12.
+</div>
+<div id="ref-currarini_identifying_2010" class="csl-entry" role="listitem">
+Currarini, Sergio, Matthew O. Jackson, and Paolo Pin. <span>“Identifying the Roles of Race-Based Choice and Chance in High School Friendship Network Formation.”</span> <em>Proceedings of the National Academy of Sciences</em> 107, no. 11 (2010): 4857–4861.
+</div>
+<div id="ref-dimaggio_how_2011" class="csl-entry" role="listitem">
+DiMaggio, Paul, and Filiz Garip. <span>“How <span>Network Externalities Can Exacerbate Intergroup Inequality</span>.”</span> <em>American Journal of Sociology</em> 116, no. 6 (May 2011): 1887–1933. doi:<a href="https://doi.org/10.1086/659653">10.1086/659653</a>.
+</div>
+<div id="ref-diprete_segregation_2011" class="csl-entry" role="listitem">
+DiPrete, Thomas A., Andrew Gelman, Tyler McCormick, Julien Teitler, and Tian Zheng. <span>“Segregation in <span>Social Networks Based</span> on <span>Acquaintanceship</span> and <span>Trust</span>.”</span> <em>American Journal of Sociology</em> 116, no. 4 (2011): 1234–83. <a href="https://www.jstor.org/stable/10.1086/659100">https://www.jstor.org/stable/10.1086/659100</a>.
+</div>
+<div id="ref-dodds_experimental_2003" class="csl-entry" role="listitem">
+Dodds, P. S., R. Muhamad, and D. J. Watts. <span>“An Experimental Study of Search in Global Social Networks.”</span> <em>Science</em> 301, no. 5634 (2003): 827Äì–829.
+</div>
+<div id="ref-dunbar_evolution_2007" class="csl-entry" role="listitem">
+Dunbar, Robin IM, and Susanne Shultz. <span>“<a href="https://www.ncbi.nlm.nih.gov/pubmed/17823343">Evolution in the Social Brain</a>.”</span> <em>Science</em> 317, no. 5843 (2007): 1344–1347.
+</div>
+<div id="ref-eagle_network_2010" class="csl-entry" role="listitem">
+Eagle, Nathan, Michael Macy, and Rob Claxton. <span>“Network Diversity and Economic Development.”</span> <em>Science</em> 328, no. 5981 (2010): 1029–1031.
+</div>
+<div id="ref-eagle_eigenbehaviors:_2009" class="csl-entry" role="listitem">
+Eagle, Nathan, and Alex Sandy Pentland. <span>“Eigenbehaviors: <span>Identifying</span> Structure in Routine.”</span> <em>Behavioral Ecology and Sociobiology</em> 63, no. 7 (2009): 1057–1066.
+</div>
+<div id="ref-eagle_inferring_2009" class="csl-entry" role="listitem">
+Eagle, N., A. S. Pentland, and D. Lazer. <span>“Inferring Friendship Network Structure by Using Mobile Phone Data.”</span> <em>Proceedings of the National Academy of Sciences</em> 106, no. 36 (2009): 15274—15278.
+</div>
+<div id="ref-eckles_design_2014" class="csl-entry" role="listitem">
+Eckles, Dean, Brian Karrer, and Johan Ugander. <span>“Design and Analysis of Experiments in Networks: <span>Reducing</span> Bias from Interference.”</span> <em>arXiv Preprint arXiv:1404.7530</em> (2014). <a href="https://arxiv.org/abs/1404.7530">https://arxiv.org/abs/1404.7530</a>.
+</div>
+<div id="ref-emirbayer_manifesto_1997" class="csl-entry" role="listitem">
+Emirbayer, Mustafa. <span>“Manifesto for a Relational Sociology.”</span> <em>American Journal of Sociology</em> 103, no. 2 (1997): 281–317. <a href="https://www.jstor.org/stable/10.1086/231209">https://www.jstor.org/stable/10.1086/231209</a>.
+</div>
+<div id="ref-eng_social_2002" class="csl-entry" role="listitem">
+Eng, Patricia M., Eric B. Rimm, Garrett Fitzmaurice, and Ichiro Kawachi. <span>“Social <span>Ties</span> and <span>Change</span> in <span>Social Ties</span> in <span>Relation</span> to <span>Subsequent Total</span> and <span class="nocase">Cause-specific Mortality</span> and <span>Coronary Heart Disease Incidence</span> in <span>Men</span>.”</span> <em>American Journal of Epidemiology</em> 155, no. 8 (April 2002): 700–709. doi:<a href="https://doi.org/10.1093/aje/155.8.700">10.1093/aje/155.8.700</a>.
+</div>
+<div id="ref-feehan_quantifying_2021" class="csl-entry" role="listitem">
+Feehan, Dennis M., and Ayesha S. Mahmud. <span>“Quantifying Population Contact Patterns in the <span>United States</span> During the <span>COVID-19</span> Pandemic.”</span> <em>Nature Communications</em> 12, no. 1 (2021): 1–9.
+</div>
+<div id="ref-feehan_network_2017" class="csl-entry" role="listitem">
+Feehan, Dennis M., Mary Mahy, and Matthew J. Salganik. <span>“The Network Survival Method for Estimating Adult Mortality: <span>Evidence</span> from a Survey Experiment in <span>Rwanda</span>.”</span> <em>Demography</em> 54, no. 4 (2017): 1503–1528.
+</div>
+<div id="ref-feld_focused_1981" class="csl-entry" role="listitem">
+Feld, S. L. <span>“The Focused Organization of Social Ties.”</span> <em>American Journal of Sociology</em> (1981): 1015—1035. <a href="https://www.jstor.org/stable/10.2307/2778746">https://www.jstor.org/stable/10.2307/2778746</a>.
+</div>
+<div id="ref-feld_why_1991" class="csl-entry" role="listitem">
+Feld, Scott L. <span>“Why <span>Your Friends Have More Friends Than You Do</span>.”</span> <em>American Journal of Sociology</em> 96, no. 6 (May 1991): 1464–1477. <a href="https://www.jstor.org/stable/2781907">https://www.jstor.org/stable/2781907</a>.
+</div>
+<div id="ref-fischer_2004_2009" class="csl-entry" role="listitem">
+Fischer, Claude S. <span>“The 2004 <span>GSS Finding</span> of <span>Shrunken Social Networks</span>: <span>An Artifact</span>?”</span> <em>American Sociological Review</em> 74, no. 4 (August 2009): 657–669. doi:<a href="https://doi.org/10.1177/000312240907400408">10.1177/000312240907400408</a>.
+</div>
+<div id="ref-fowler_legislative_2006" class="csl-entry" role="listitem">
+Fowler, James H. <span>“Legislative Cosponsorship Networks in the <span>US House</span> and <span>Senate</span>.”</span> <em>Social Networks</em> 28, no. 4 (October 2006): 454–465. doi:<a href="https://doi.org/10.1016/j.socnet.2005.11.003">10.1016/j.socnet.2005.11.003</a>.
+</div>
+<div id="ref-fussell_limits_2004" class="csl-entry" role="listitem">
+Fussell, Elizabeth, and Douglas S. Massey. <span>“The Limits to Cumulative Causation: <span>International</span> Migration from <span>Mexican</span> Urban Areas.”</span> <em>Demography</em> 41, no. 1 (2004): 151–171.
+</div>
+<div id="ref-gee_social_2016" class="csl-entry" role="listitem">
+Gee, Laura Katherine, Jason J. Jones, and Moira Burke. <span>“Social <span>Networks</span> and <span>Labor Markets</span>: <span>How Strong Ties Relate</span> to <span>Job Finding On Facebook</span>’s <span>Social Network</span>”</span> (2016).
+</div>
+<div id="ref-gentzkow_ideological_2011" class="csl-entry" role="listitem">
+Gentzkow, Matthew, and Jesse M. Shapiro. <span>“Ideological <span>Segregation Online</span> and <span>Offline</span>.”</span> <em>The Quarterly Journal of Economics</em> 126, no. 4 (November 2011): 1799–1839. doi:<a href="https://doi.org/10.1093/qje/qjr044">10.1093/qje/qjr044</a>.
+</div>
+<div id="ref-girvan_community_2002" class="csl-entry" role="listitem">
+Girvan, M., and M. E. J. Newman. <span>“Community Structure in Social and Biological Networks.”</span> <em>Proceedings of the National Academy of Sciences</em> 99, no. 12 (2002): 7821.
+</div>
+<div id="ref-goel_assessing_2010" class="csl-entry" role="listitem">
+Goel, Sharad, and Matthew J. Salganik. <span>“Assessing Respondent-Driven Sampling.”</span> <em>Proceedings of the National Academy of Sciences</em> 107, no. 15 (2010): 6743–6747.
+</div>
+<div id="ref-goel_real_2010" class="csl-entry" role="listitem">
+Goel, S., W. Mason, and D. J Watts. <span>“Real and Perceived Attitude Agreement in Social Networks.”</span> <em>Journal of Personality and Social Psychology</em> 99, no. 4 (2010): 611.
+</div>
+<div id="ref-goldberg_mapping_2011" class="csl-entry" role="listitem">
+Goldberg, Amir. <span>“Mapping Shared Understandings Using Relational Class Analysis: The Case of the Cultural Omnivore Reexamined.”</span> <em>American Journal of Sociology</em> 116, no. 5 (2011): 1397–1436. <a href="https://www.jstor.org/stable/10.1086/657976">https://www.jstor.org/stable/10.1086/657976</a>.
+</div>
+<div id="ref-gonzalez-bailon_networked_2016" class="csl-entry" role="listitem">
+González-Bailón, Sandra, and Ning Wang. <span>“Networked Discontent: <span>The</span> Anatomy of Protest Campaigns in Social Media.”</span> <em>Social Networks</em> 44 (January 2016): 95–104. doi:<a href="https://doi.org/10.1016/j.socnet.2015.07.003">10.1016/j.socnet.2015.07.003</a>.
+</div>
+<div id="ref-granovetter_economic_1985" class="csl-entry" role="listitem">
+Granovetter, M. <span>“Economic Action and Social Structure: The Problem of Embeddedness.”</span> <em>Readings in Economic Sociology</em> (1985): 63–68.
+</div>
+<div id="ref-granovetter_ignorance_2003" class="csl-entry" role="listitem">
+Granovetter, Mark. <span>“Ignorance, Knowledge, and Outcomes in a Small World.”</span> <em>Science</em> 301, no. 5634 (2003): 773–774.
+</div>
+<div id="ref-granovetter_strength_1981" class="csl-entry" role="listitem">
+———. <em>The Strength of Weak Ties: <span>A</span> Network Theory Revisited</em>. JSTOR, 1981. <a href="https://www.jstor.org/stable/pdf/202051.pdf">https://www.jstor.org/stable/pdf/202051.pdf</a>.
+</div>
+<div id="ref-granovetter_threshold_1978" class="csl-entry" role="listitem">
+———. <span>“Threshold <span>Models</span> of <span>Collective Behavior</span>.”</span> <em>American Journal of Sociology</em> 83, no. 6 (1978): 1420–1443. doi:<a href="https://doi.org/10.2307/2778111">10.2307/2778111</a>.
+</div>
+<div id="ref-granovetter_strength_1973" class="csl-entry" role="listitem">
+Granovetter, Mark S. <span>“The Strength of Weak Ties.”</span> <em>American Journal of Sociology</em> (1973): 1360–1380. <a href="https://www.jstor.org/stable/10.2307/2776392">https://www.jstor.org/stable/10.2307/2776392</a>.
+</div>
+<div id="ref-grinberg_fake_2019" class="csl-entry" role="listitem">
+Grinberg, Nir, Kenneth Joseph, Lisa Friedland, Briony Swire-Thompson, and David Lazer. <span>“Fake News on <span>Twitter</span> During the 2016 <span>U</span>.<span>S</span>. Presidential Election.”</span> <em>Science</em> 363, no. 6425 (January 2019): 374–378. doi:<a href="https://doi.org/10.1126/science.aau2706">10.1126/science.aau2706</a>.
+</div>
+<div id="ref-guess_less_2019" class="csl-entry" role="listitem">
+Guess, Andrew, Jonathan Nagler, and Joshua Tucker. <span>“Less Than You Think: <span>Prevalence</span> and Predictors of Fake News Dissemination on <span>Facebook</span>.”</span> <em>Science Advances</em> 5, no. 1 (January 2019): eaau4586. doi:<a href="https://doi.org/10.1126/sciadv.aau4586">10.1126/sciadv.aau4586</a>.
+</div>
+<div id="ref-guimera_team_2005" class="csl-entry" role="listitem">
+Guimera, Roger, Brian Uzzi, Jarrett Spiro, and Luis A. Nunes Amaral. <span>“Team Assembly Mechanisms Determine Collaboration Network Structure and Team Performance.”</span> <em>Science</em> 308, no. 5722 (2005): 697–702.
+</div>
+<div id="ref-halberstam_homophily_2016" class="csl-entry" role="listitem">
+Halberstam, Yosh, and Brian Knight. <span>“Homophily, Group Size, and the Diffusion of Political Information in Social Networks: <span>Evidence</span> from <span>Twitter</span>.”</span> <em>Journal of Public Economics</em> 143 (November 2016): 73–88. doi:<a href="https://doi.org/10.1016/j.jpubeco.2016.08.011">10.1016/j.jpubeco.2016.08.011</a>.
+</div>
+<div id="ref-handcock_modeling_2010" class="csl-entry" role="listitem">
+Handcock, M. S., and K. J. Gile. <span>“Modeling Social Networks from Sampled Data.”</span> <em>The Annals of Applied Statistics</em> 4, no. 1 (2010): 5—25.
+</div>
+<div id="ref-helleringer_sexual_2007" class="csl-entry" role="listitem">
+Helleringer, Stéphane, and Hans-Peter Kohler. <span>“Sexual Network Structure and the Spread of <span>HIV</span> in <span>Africa</span>: Evidence from <span>Likoma Island</span>, <span>Malawi</span>:”</span> <em>AIDS</em> 21, no. 17 (November 2007): 2323–2332. doi:<a href="https://doi.org/10.1097/QAD.0b013e328285df98">10.1097/QAD.0b013e328285df98</a>.
+</div>
+<div id="ref-hoff_bilinear_2005" class="csl-entry" role="listitem">
+Hoff, P. D. <span>“Bilinear Mixed-Effects Models for Dyadic Data.”</span> <em>Journal of the American Statistical Association</em> 100, no. 469 (2005): 286–295.
+</div>
+<div id="ref-hoff_latent_2002" class="csl-entry" role="listitem">
+Hoff, Peter D., Adrian E. Raftery, and Mark S. Handcock. <span>“Latent Space Approaches to Social Network Analysis.”</span> <em>Journal of the American Statistical Association</em> 97, no. 460 (2002): 1090–1098.
+</div>
+<div id="ref-isakov_structure_2019" class="csl-entry" role="listitem">
+Isakov, Alexander, James H. Fowler, Edoardo M. Airoldi, and Nicholas A. Christakis. <span>“The <span>Structure</span> of <span>Negative Social Ties</span> in <span>Rural Village Networks</span>.”</span> <em>Sociological Science</em> 6 (March 2019): 197–218. doi:<a href="https://doi.org/10.15195/v6.a8">10.15195/v6.a8</a>.
+</div>
+<div id="ref-jackson_friendship_2018" class="csl-entry" role="listitem">
+Jackson, Matthew O. <span>“The <span>Friendship Paradox</span> and <span>Systematic Biases</span> in <span>Perceptions</span> and <span>Social Norms</span>.”</span> <em>Journal of Political Economy</em> 127, no. 2 (October 2018): 777–818. doi:<a href="https://doi.org/10.1086/701031">10.1086/701031</a>.
+</div>
+<div id="ref-jackson_social_2012" class="csl-entry" role="listitem">
+Jackson, Matthew O., Tomas Rodriguez-Barraquer, and Xu Tan. <span>“Social Capital and Social Quilts: <span>Network</span> Patterns of Favor Exchange.”</span> <em>The American Economic Review</em> 102, no. 5 (2012): 1857–1897.
+</div>
+<div id="ref-jackson_meeting_2007" class="csl-entry" role="listitem">
+Jackson, Matthew O., and Brian W. Rogers. <span>“Meeting Strangers and Friends of Friends: <span>How</span> Random Are Social Networks?”</span> <em>The American Economic Review</em> 97, no. 3 (2007): 890–915.
+</div>
+<div id="ref-jackson_economic_2016" class="csl-entry" role="listitem">
+Jackson, Matthew O., Brian W. Rogers, and Yves Zenou. <span>“The Economic Consequences of Social Network Structure”</span> (2016).
+</div>
+<div id="ref-jacobs_assembling_2015" class="csl-entry" role="listitem">
+Jacobs, Abigail Z., Samuel F. Way, Johan Ugander, and Aaron Clauset. <span>“Assembling Thefacebook: <span>Using</span> Heterogeneity to Understand Online Social Network Assembly.”</span> In <em>Proceedings of the <span>ACM Web Science Conference</span></em>, 18. ACM, 2015.
+</div>
+<div id="ref-jones_social_2003" class="csl-entry" role="listitem">
+Jones, James Holland, and Mark S. Handcock. <span>“Social Networks (Communication Arising): <span>Sexual</span> Contacts and Epidemic Thresholds.”</span> <em>Nature</em> 423, no. 6940 (2003): 605–606.
+</div>
+<div id="ref-juul_comparing_2021" class="csl-entry" role="listitem">
+Juul, Jonas L., and Johan Ugander. <span>“Comparing Information Diffusion Mechanisms by Matching on Cascade Size.”</span> <em>Proceedings of the National Academy of Sciences</em> 118, no. 46 (November 2021): e2100786118. doi:<a href="https://doi.org/10.1073/pnas.2100786118">10.1073/pnas.2100786118</a>.
+</div>
+<div id="ref-karrer_stochastic_2011" class="csl-entry" role="listitem">
+Karrer, Brian, and Mark EJ Newman. <span>“Stochastic Blockmodels and Community Structure in Networks.”</span> <em>Physical Review E</em> 83, no. 1 (2011): 016107.
+</div>
+<div id="ref-kauppi_characteristics_2018" class="csl-entry" role="listitem">
+Kauppi, Maarit, Ichiro Kawachi, George David Batty, Tuula Oksanen, Marko Elovainio, Jaana Pentti, Ville Aalto, et al. <span>“Characteristics of <span>Social Networks</span> and <span>Mortality Risk</span>: <span>Evidence From</span> 2 <span>Prospective Cohort Studies</span>.”</span> <em>American Journal of Epidemiology</em> 187, no. 4 (April 2018): 746–753. doi:<a href="https://doi.org/10.1093/aje/kwx301">10.1093/aje/kwx301</a>.
+</div>
+<div id="ref-keeling_individual_2010" class="csl-entry" role="listitem">
+Keeling, Matt J., Leon Danon, Matthew C. Vernon, and Thomas A. House. <span>“Individual Identity and Movement Networks for Disease Metapopulations.”</span> <em>Proceedings of the National Academy of Sciences</em> 107, no. 19 (2010): 8866–8870.
+</div>
+<div id="ref-kim_social_2015" class="csl-entry" role="listitem">
+Kim, David A, Alison R Hwong, Derek Stafford, D Alex Hughes, A James O’Malley, James H Fowler, and Nicholas A Christakis. <span>“Social Network Targeting to Maximise Population Behaviour Change: A Cluster Randomised Controlled Trial.”</span> <em>The Lancet</em> 386, no. 9989 (July 2015): 145–153. doi:<a href="https://doi.org/10.1016/S0140-6736(15)60095-2">10.1016/S0140-6736(15)60095-2</a>.
+</div>
+<div id="ref-kleinberg_navigation_2000" class="csl-entry" role="listitem">
+Kleinberg, Jon M. <span>“Navigation in a Small World.”</span> <em>Nature</em> 406, no. 6798 (2000): 845–845.
+</div>
+<div id="ref-kohler_social_2007" class="csl-entry" role="listitem">
+Kohler, Hans-Peter, Jere R. Behrman, and Susan C. Watkins. <span>“Social Networks and <span>HIV</span>/<span>AIDS</span> Risk Perceptions.”</span> <em>Demography</em> 44, no. 1 (2007): 1–33.
+</div>
+<div id="ref-kohler_social_2013" class="csl-entry" role="listitem">
+Kohler, Hans-Peter, Stephane Helleringer, Jere R. Behrman, and Susan C. Watkins. <span>“The <span>Social</span> and the <span>Sexual</span>: <span>Networks</span> in <span>Contemporary Demographic Research</span>”</span> (2013).
+</div>
+<div id="ref-kossinets_empirical_2006" class="csl-entry" role="listitem">
+Kossinets, Gueorgi, and Duncan J. Watts. <span>“Empirical <span>Analysis</span> of an <span>Evolving Social Network</span>.”</span> <em>Science</em> 311, no. 5757 (January 2006): 88–90. doi:<a href="https://doi.org/10.1126/science.1116869">10.1126/science.1116869</a>.
+</div>
+<div id="ref-kossinets_origins_2009" class="csl-entry" role="listitem">
+Kossinets, G., and D. J. Watts. <span>“Origins of <span>Homophily</span> in an <span>Evolving Social Network</span>.”</span> <em>American Journal of Sociology</em> 115, no. 2 (2009): 405—450. <a href="https://www.jstor.org/stable/10.1086/599247">https://www.jstor.org/stable/10.1086/599247</a>.
+</div>
+<div id="ref-kretzschmar_concurrency_2010" class="csl-entry" role="listitem">
+Kretzschmar, Mirjam, Richard G. White, and Michel Caraël. <span>“Concurrency Is More Complex Than It Seems.”</span> <em>AIDS (London, England)</em> 24, no. 2 (2010): 313.
+</div>
+<div id="ref-larson_ethnic_2017" class="csl-entry" role="listitem">
+Larson, Jennifer M., and Janet I. Lewis. <span>“Ethnic <span>Networks</span>.”</span> <em>American Journal of Political Science</em> 61, no. 2 (2017): 350–364. doi:<a href="https://doi.org/10.1111/ajps.12282">10.1111/ajps.12282</a>.
+</div>
+<div id="ref-lazer_networks_2011" class="csl-entry" role="listitem">
+Lazer, David. <span>“Networks in <span>Political Science</span>: <span>Back</span> to the <span>Future</span>.”</span> <em>PS: Political Science and Politics</em> 44, no. 1 (2011): 61–68. <a href="https://www.jstor.org/stable/40984485">https://www.jstor.org/stable/40984485</a>.
+</div>
+<div id="ref-lazer_computational_2009" class="csl-entry" role="listitem">
+Lazer, David, Alex Pentland, Lada Adamic, Sinan Aral, Albert-László Barabási, Devon Brewer, Nicholas Christakis, et al. <span>“Computational <span>Social Science</span>.”</span> <em>Science</em> 323, no. 5915 (February 2009): 721–723. doi:<a href="https://doi.org/10.1126/science.1167742">10.1126/science.1167742</a>.
+</div>
+<div id="ref-lee_important_2017" class="csl-entry" role="listitem">
+Lee, Byungkyu, and Peter Bearman. <span>“Important Matters in Political Context.”</span> <em>Sociological Science</em> 4 (2017): 1–30.
+</div>
+<div id="ref-leskovec_signed_2010" class="csl-entry" role="listitem">
+Leskovec, Jure, Daniel Huttenlocher, and Jon Kleinberg. <span>“Signed Networks in Social Media.”</span> In <em>Proceedings of the <span>SIGCHI</span> Conference on Human Factors in Computing Systems</em>, 1361–1370. ACM, 2010.
+</div>
+<div id="ref-liben-nowell_geographic_2005" class="csl-entry" role="listitem">
+Liben-Nowell, David, Jasmine Novak, Ravi Kumar, Prabhakar Raghavan, and Andrew Tomkins. <span>“Geographic Routing in Social Networks.”</span> <em>Proceedings of the National Academy of Sciences of the United States of America</em> 102, no. 33 (2005): 11623–11628.
+</div>
+<div id="ref-liljeros_web_2001" class="csl-entry" role="listitem">
+Liljeros, Fredrik, Christofer R. Edling, Luis A. Nunes Amaral, H. Eugene Stanley, and Yvonne \AAberg. <span>“The Web of Human Sexual Contacts.”</span> <em>Nature</em> 411, no. 6840 (2001): 907–908.
+</div>
+<div id="ref-liljeros_social_2003" class="csl-entry" role="listitem">
+Liljeros, Fredrik, Christofer R. Edling, H. Eugene Stanley, Y. \AAberg, and Luis AN Amaral. <span>“Social Networks (Communication Arising): <span>Sexual</span> Contacts and Epidemic Thresholds.”</span> <em>Nature</em> 423, no. 6940 (2003): 606–606.
+</div>
+<div id="ref-lyons_spread_2011" class="csl-entry" role="listitem">
+Lyons, Russell. <span>“The Spread of Evidence-Poor Medicine via Flawed Social-Network Analysis.”</span> <em>Statistics, Politics, and Policy</em> 2, no. 1 (2011).
+</div>
+<div id="ref-macy_threshold_2020" class="csl-entry" role="listitem">
+Macy, Michael W., and Anna Evtushenko. <span>“Threshold <span>Models</span> of <span>Collective Behavior II</span>: <span>The Predictability Paradox</span> and <span>Spontaneous Instigation</span>.”</span> <em>Sociological Science</em> 7 (December 2020): 628–648. doi:<a href="https://doi.org/10.15195/v7.a26">10.15195/v7.a26</a>.
+</div>
+<div id="ref-manski_identification_1993" class="csl-entry" role="listitem">
+Manski, Charles F. <span>“Identification of Endogenous Social Effects: <span>The</span> Reflection Problem.”</span> <em>The Review of Economic Studies</em> 60, no. 3 (1993): 531–542.
+</div>
+<div id="ref-marsden_network_1990" class="csl-entry" role="listitem">
+Marsden, P. V. <span>“Network Data and Measurement.”</span> <em>Annual Review of Sociology</em> (1990): 435—463. <a href="https://www.jstor.org/stable/10.2307/2083277">https://www.jstor.org/stable/10.2307/2083277</a>.
+</div>
+<div id="ref-marsden_recent_2005" class="csl-entry" role="listitem">
+Marsden, Peter V. <span>“Recent Developments in Network Measurement.”</span> In <em>Models and <span>Methods</span> in <span>Social Network Analysis</span></em>, edited by Peter J. Carrington, John Scott, and Stanley Wasserman, 8–30. Cambridge University Press, 2005.
+</div>
+<div id="ref-marvel_small-world_2013" class="csl-entry" role="listitem">
+Marvel, Seth A., Travis Martin, Charles R. Doering, David Lusseau, and M. E. J. Newman. <span>“The Small-World Effect Is a Modern Phenomenon.”</span> <em>arXiv Preprint arXiv:1310.2636</em> (2013). <a href="https://arxiv.org/abs/1310.2636">https://arxiv.org/abs/1310.2636</a>.
+</div>
+<div id="ref-mason_long-run_2014" class="csl-entry" role="listitem">
+Mason, Winter, Siddharth Suri, and Duncan J. Watts. <span>“Long-Run Learning in Games of Cooperation.”</span> In <em>Proceedings of the Fifteenth <span>ACM</span> Conference on <span>Economics</span> and Computation</em>, 821–838. ACM, 2014.
+</div>
+<div id="ref-mason_collaborative_2012" class="csl-entry" role="listitem">
+Mason, Winter, and Duncan J. Watts. <span>“Collaborative Learning in Networks.”</span> <em>Proceedings of the National Academy of Sciences</em> 109, no. 3 (2012): 764–769.
+</div>
+<div id="ref-massey_social_1990" class="csl-entry" role="listitem">
+Massey, Douglas S. <span>“Social Structure, Household Strategies, and the Cumulative Causation of Migration.”</span> <em>Population Index</em> (1990): 3–26. <a href="https://www.jstor.org/stable/3644186">https://www.jstor.org/stable/3644186</a>.
+</div>
+<div id="ref-mccormick_how_2010" class="csl-entry" role="listitem">
+McCormick, Tyler H., Matthew J. Salganik, and Tian Zheng. <span>“How <span>Many People Do You Know</span>?: <span>Efficiently Estimating Personal Network Size</span>.”</span> <em>Journal of the American Statistical Association</em> 105, no. 489 (2010): 59–70. doi:<a href="https://doi.org/10.1198/jasa.2009.ap08518">10.1198/jasa.2009.ap08518</a>.
+</div>
+<div id="ref-mccormick_latent_2012" class="csl-entry" role="listitem">
+McCormick, Tyler H., and Tian Zheng. <span>“Latent Demographic Profile Estimation in Hard-to-Reach Groups.”</span> <em>The Annals of Applied Statistics</em> 6, no. 4 (December 2012): 1795–1813. doi:<a href="https://doi.org/10.1214/12-AOAS569">10.1214/12-AOAS569</a>.
+</div>
+<div id="ref-mcgrath_effect_1997" class="csl-entry" role="listitem">
+McGrath, Cathleen, Jim Blythe, and David Krackhardt. <span>“The Effect of Spatial Arrangement on Judgments and Errors in Interpreting Graphs.”</span> <em>Social Networks</em> 19, no. 3 (1997): 223–242.
+</div>
+<div id="ref-mcpherson_social_2006" class="csl-entry" role="listitem">
+McPherson, Miller, Lynn Smith-Lovin, and Matthew E. Brashears. <span>“Social Isolation in <span>America</span>: <span>Changes</span> in Core Discussion Networks over Two Decades.”</span> <em>American Sociological Review</em> 71, no. 3 (2006): 353–375.
+</div>
+<div id="ref-mcpherson_models_2009" class="csl-entry" role="listitem">
+McPherson, M., L. Smith-Lovin, and M. E Brashears. <span>“Models and Marginals: Using Survey Evidence to Study Social Networks.”</span> <em>American Sociological Review</em> 74, no. 4 (2009): 670—681.
+</div>
+<div id="ref-milgram_small_1967" class="csl-entry" role="listitem">
+Milgram, Stanley. <span>“The <span>Small World Problem</span>.”</span> <em>Psychology Today</em> 1 (1967): 62–67.
+</div>
+<div id="ref-morris_concurrent_1997" class="csl-entry" role="listitem">
+Morris, M., and M. Kretzschmar. <span>“Concurrent Partnerships and the Spread of <span>HIV</span>.”</span> <em>AIDS</em> 11, no. 5 (1997): 641.
+</div>
+<div id="ref-mossong_social_2008" class="csl-entry" role="listitem">
+Mossong, Joël, Niel Hens, Mark Jit, Philippe Beutels, Kari Auranen, Rafael Mikolajczyk, Marco Massari, et al. <span>“Social Contacts and Mixing Patterns Relevant to the Spread of Infectious Diseases.”</span> <em>PLoS Medicine</em> 5, no. 3 (2008): e74.
+</div>
+<div id="ref-mutz_cross-cutting_2002" class="csl-entry" role="listitem">
+Mutz, Diana C. <span>“Cross-Cutting Social Networks: <span>Testing</span> Democratic Theory in Practice.”</span> <em>American Political Science Review</em> 96, no. 1 (2002): 111–126.
+</div>
+<div id="ref-mutz_consequences_2002" class="csl-entry" role="listitem">
+———. <span>“The Consequences of Cross-Cutting Networks for Political Participation.”</span> <em>American Journal of Political Science</em> (2002): 838–855.
+</div>
+<div id="ref-newman_networks:_2018" class="csl-entry" role="listitem">
+Newman, Mark. <em>Networks: An Introduction</em>. 2nd ed. Oxford university press, 2018.
+</div>
+<div id="ref-newman_coauthorship_2004" class="csl-entry" role="listitem">
+Newman, Mark EJ. <span>“Coauthorship Networks and Patterns of Scientific Collaboration.”</span> <em>Proceedings of the National Academy of Sciences</em> 101, no. suppl 1 (2004): 5200–5205.
+</div>
+<div id="ref-newman_finding_2004" class="csl-entry" role="listitem">
+Newman, Mark EJ, and Michelle Girvan. <span>“Finding and Evaluating Community Structure in Networks.”</span> <em>Physical Review E</em> 69, no. 2 (2004): 026113.
+</div>
+<div id="ref-newman_why_2003" class="csl-entry" role="listitem">
+Newman, Mark EJ, and Juyong Park. <span>“Why Social Networks Are Different from Other Types of Networks.”</span> <em>Physical Review E</em> 68, no. 3 (2003): 036122.
+</div>
+<div id="ref-nickerson_is_2008" class="csl-entry" role="listitem">
+Nickerson, David W. <span>“Is Voting Contagious? <span>Evidence</span> from Two Field Experiments.”</span> <em>American Political Science Review</em> 102, no. 1 (2008): 49–57.
+</div>
+<div id="ref-nishi_network_2020" class="csl-entry" role="listitem">
+Nishi, Akihiro, George Dewey, Akira Endo, Sophia Neman, Sage K. Iwamoto, Michael Y. Ni, Yusuke Tsugawa, Georgios Iosifidis, Justin D. Smith, and Sean D. Young. <span>“Network Interventions for Managing the <span>COVID-19</span> Pandemic and Sustaining Economy.”</span> <em>Proceedings of the National Academy of Sciences</em> 117, no. 48 (December 2020): 30285–30294. doi:<a href="https://doi.org/10.1073/pnas.2014297117">10.1073/pnas.2014297117</a>.
+</div>
+<div id="ref-nishi_inequality_2015" class="csl-entry" role="listitem">
+Nishi, Akihiro, Hirokazu Shirado, David G. Rand, and Nicholas A. Christakis. <span>“Inequality and Visibility of Wealth in Experimental Social Networks.”</span> <em>Nature</em> 526, no. 7573 (2015): 426–429.
+</div>
+<div id="ref-noelle-neumann_turbulences_1977" class="csl-entry" role="listitem">
+Noelle-Neumann, Elisabeth. <span>“Turbulences in the <span>Climate</span> of <span>Opinion</span>: <span>Methodological Applications</span> of the <span>Spiral</span> of <span>Silence Theory</span>.”</span> <em>Public Opinion Quarterly</em> 41, no. 2 (January 1977): 143–158. doi:<a href="https://doi.org/10.1086/268371">10.1086/268371</a>.
+</div>
+<div id="ref-onnela_structure_2007" class="csl-entry" role="listitem">
+Onnela, J. P., J. Saramäki, J. Hyvönen, G. Szabó, D. Lazer, K. Kaski, J. Kertész, and A. L. Barabási. <span>“Structure and <span>Tie Strengths</span> in <span>Mobile Communication Networks</span>.”</span> <em>Proceedings of the National Academy of Science, USA</em> 104, no. 18 (2007): 7332–7336.
+</div>
+<div id="ref-onnela_geographic_2011" class="csl-entry" role="listitem">
+Onnela, Jukka-Pekka, Samuel Arbesman, Marta C. González, Albert-László Barabási, and Nicholas A. Christakis. <span>“Geographic Constraints on Social Network Groups.”</span> <em>PLoS One</em> 6, no. 4 (2011): e16939.
+</div>
+<div id="ref-paik_social_2013" class="csl-entry" role="listitem">
+Paik, Anthony, and Kenneth Sanchagrin. <span>“Social <span>Isolation</span> in <span>America An Artifact</span>.”</span> <em>American Sociological Review</em> (2013): 0003122413482919.
+</div>
+<div id="ref-paluck_changing_2016" class="csl-entry" role="listitem">
+Paluck, Elizabeth Levy, Hana Shepherd, and Peter M. Aronow. <span>“Changing Climates of Conflict: <span>A</span> Social Network Experiment in 56 Schools.”</span> <em>Proceedings of the National Academy of Sciences</em> 113, no. 3 (2016): 566–571.
+</div>
+<div id="ref-park_strength_2018" class="csl-entry" role="listitem">
+Park, Patrick S., Joshua E. Blumenstock, and Michael W. Macy. <span>“The Strength of Long-Range Ties in Population-Scale Social Networks.”</span> <em>Science</em> 362, no. 6421 (December 2018): 1410–1413. doi:<a href="https://doi.org/10.1126/science.aau9735">10.1126/science.aau9735</a>.
+</div>
+<div id="ref-phan_natural_2015" class="csl-entry" role="listitem">
+Phan, Tuan Q., and Edoardo M. Airoldi. <span>“A Natural Experiment of Social Network Formation and Dynamics.”</span> <em>Proceedings of the National Academy of Sciences</em> 112, no. 21 (2015): 6595–6600.
+</div>
+<div id="ref-portes_social_2000" class="csl-entry" role="listitem">
+Portes, A. <span>“Social Capital: <span>Its</span> Origins and Applications in Modern Sociology.”</span> In <em>Knowledge and Social Capital: Foundations and Applications</em>, 43—67, 2000.
+</div>
+<div id="ref-portes_embeddedness_1993" class="csl-entry" role="listitem">
+Portes, A., and J. Sensenbrenner. <span>“Embeddedness and Immigration: <span>Notes</span> on the Social Determinants of Economic Action.”</span> <em>American Journal of Sociology</em> (1993): 1320—1350. <a href="https://www.jstor.org/stable/10.2307/2781823">https://www.jstor.org/stable/10.2307/2781823</a>.
+</div>
+<div id="ref-rajkumar_causal_2022" class="csl-entry" role="listitem">
+Rajkumar, Karthik, Guillaume Saint-Jacques, Iavor Bojinov, Erik Brynjolfsson, and Sinan Aral. <span>“A Causal Test of the Strength of Weak Ties.”</span> <em>Science</em> 377, no. 6612 (September 2022): 1304–1310. doi:<a href="https://doi.org/10.1126/science.abl4476">10.1126/science.abl4476</a>.
+</div>
+<div id="ref-rand_static_2014" class="csl-entry" role="listitem">
+Rand, David G., Martin A. Nowak, James H. Fowler, and Nicholas A. Christakis. <span>“Static Network Structure Can Stabilize Human Cooperation.”</span> <em>Proceedings of the National Academy of Sciences</em> 111, no. 48 (2014): 17093–17098.
+</div>
+<div id="ref-rohani_contact_2010" class="csl-entry" role="listitem">
+Rohani, Pejman, Xue Zhong, and Aaron A. King. <span>“<a href="https://www.ncbi.nlm.nih.gov/pubmed/21071671">Contact Network Structure Explains the Changing Epidemiology of Pertussis</a>.”</span> <em>Science</em> 330, no. 6006 (2010): 982–985.
+</div>
+<div id="ref-sacerdote_peer_2000" class="csl-entry" role="listitem">
+Sacerdote, Bruce. <em>Peer Effects with Random Assignment: <span>Results</span> for <span>Dartmouth</span> Roommates</em>. National bureau of economic research, 2000.
+</div>
+<div id="ref-salathe_dynamics_2010" class="csl-entry" role="listitem">
+Salathé, Marcel, and James H. Jones. <span>“Dynamics and Control of Diseases in Networks with Community Structure.”</span> <em>PLoS Comput Biol</em> 6, no. 4 (2010): e1000736.
+</div>
+<div id="ref-scheufle_twenty-five_2000" class="csl-entry" role="listitem">
+Scheufle, Dietram A., and Patricia Moy. <span>“Twenty-Five Years of the Spiral of Silence: <span>A</span> Conceptual Review and Empirical Outlook.”</span> <em>International Journal of Public Opinion Research</em> 12, no. 1 (March 2000): 3–28. doi:<a href="https://doi.org/10.1093/ijpor/12.1.3">10.1093/ijpor/12.1.3</a>.
+</div>
+<div id="ref-shalizi_homophily_2011" class="csl-entry" role="listitem">
+Shalizi, Cosma Rohilla, and Andrew C. Thomas. <span>“Homophily and Contagion Are Generically Confounded in Observational Social Network Studies.”</span> <em>Sociological Methods &amp; Research</em> 40, no. 2 (2011): 211–239.
+</div>
+<div id="ref-small_someone_2017" class="csl-entry" role="listitem">
+Small, Mario Luis. <em>Someone <span>To Talk To</span></em>. Oxford University Press, 2017.
+</div>
+<div id="ref-sutcliffe_relationships_2012" class="csl-entry" role="listitem">
+Sutcliffe, Alistair, Robin Dunbar, Jens Binder, and Holly Arrow. <span>“Relationships and the Social Brain: <span>Integrating</span> Psychological and Evolutionary Perspectives.”</span> <em>British Journal of Psychology</em> 103, no. 2 (2012): 149–168.
+</div>
+<div id="ref-travers_experimental_1969" class="csl-entry" role="listitem">
+Travers, J., and S. Milgram. <span>“An Experimental Study of the Small World Problem.”</span> <em>Sociometry</em> (1969): 425–443. <a href="https://www.jstor.org/stable/10.2307/2786545">https://www.jstor.org/stable/10.2307/2786545</a>.
+</div>
+<div id="ref-ugander_structural_2012" class="csl-entry" role="listitem">
+Ugander, Johan, Lars Backstrom, Cameron Marlow, and Jon Kleinberg. <span>“Structural Diversity in Social Contagion.”</span> <em>Proceedings of the National Academy of Sciences</em> 109, no. 16 (2012): 5962–5966.
+</div>
+<div id="ref-uzzi_collaboration_2005" class="csl-entry" role="listitem">
+Uzzi, Brian, and Jarrett Spiro. <span>“Collaboration and Creativity: <span>The</span> Small World <span>Problem</span>.”</span> <em>American Journal of Sociology</em> 111, no. 2 (2005): 447–504. <a href="https://www.jstor.org/stable/10.1086/432782">https://www.jstor.org/stable/10.1086/432782</a>.
+</div>
+<div id="ref-vicario_spreading_2016" class="csl-entry" role="listitem">
+Vicario, Michela Del, Alessandro Bessi, Fabiana Zollo, Fabio Petroni, Antonio Scala, Guido Caldarelli, H. Eugene Stanley, and Walter Quattrociocchi. <span>“The Spreading of Misinformation Online.”</span> <em>Proceedings of the National Academy of Sciences</em> 113, no. 3 (January 2016): 554–559. doi:<a href="https://doi.org/10.1073/pnas.1517441113">10.1073/pnas.1517441113</a>.
+</div>
+<div id="ref-wallinga_using_2006" class="csl-entry" role="listitem">
+Wallinga, Jacco, Peter Teunis, and Mirjam Kretzschmar. <span>“Using <span>Data</span> on <span>Social Contacts</span> to <span class="nocase">Estimate Age-specific Transmission Parameters</span> for <span class="nocase">Respiratory-spread Infectious Agents</span>.”</span> <em>American Journal of Epidemiology</em> 164, no. 10 (November 2006): 936–944. doi:<a href="https://doi.org/10.1093/aje/kwj317">10.1093/aje/kwj317</a>.
+</div>
+<div id="ref-wang_cooperation_2012" class="csl-entry" role="listitem">
+Wang, Jing, Siddharth Suri, and Duncan J. Watts. <span>“Cooperation and Assortativity with Dynamic Partner Updating.”</span> <em>Proceedings of the National Academy of Sciences</em> 109, no. 36 (2012): 14363–14368.
+</div>
+<div id="ref-watts_six_2003" class="csl-entry" role="listitem">
+Watts, D. J. <em>Six Degrees: <span>The</span> Science of a Connected Age</em>. WW Norton &amp; Company, 2003.
+</div>
+<div id="ref-watts_influentials_2007" class="csl-entry" role="listitem">
+Watts, D. J., and P. S. Dodds. <span>“Influentials, Networks, and Public Opinion Formation.”</span> <em>Journal of Consumer Research</em> 34, no. 4 (2007): 441—458. <a href="https://www.jstor.org/stable/10.1086/518527">https://www.jstor.org/stable/10.1086/518527</a>.
+</div>
+<div id="ref-watts_collective_1998" class="csl-entry" role="listitem">
+Watts, D. J., and S. H. Strogatz. <span>“Collective Dynamics of ‘Small-World’networks.”</span> <em>Nature</em> 393, no. 6684 (1998): 440–442.
+</div>
+<div id="ref-watts_simple_2002" class="csl-entry" role="listitem">
+Watts, Duncan J. <span>“A Simple Model of Global Cascades on Random Networks.”</span> <em>Proceedings of the National Academy of Sciences of the United States of America</em> 99, no. 9 (April 2002): 5766–5771. doi:<a href="https://doi.org/10.1073/pnas.082090499">10.1073/pnas.082090499</a>.
+</div>
+<div id="ref-watts_new_2004" class="csl-entry" role="listitem">
+Watts, Duncan J. <span>“The ’New’ Science of Networks.”</span> <em>Annual Review of Sociology</em> (2004): 243–270. <a href="https://www.jstor.org/stable/29737693">https://www.jstor.org/stable/29737693</a>.
+</div>
+<div id="ref-watts_identity_2002" class="csl-entry" role="listitem">
+Watts, Duncan J., Peter Sheridan Dodds, and Mark EJ Newman. <span>“Identity and Search in Social Networks.”</span> <em>Science</em> 296, no. 5571 (2002): 1302–1305.
+</div>
+<div id="ref-white_social_1976" class="csl-entry" role="listitem">
+White, H. C., S. A. Boorman, and R. L. Breiger. <span>“Social Structure from Multiple Networks. <span>I</span>. <span>Blockmodels</span> of Roles and Positions.”</span> <em>American Journal of Sociology</em> (1976): 730—780. <a href="https://www.jstor.org/stable/10.2307/2777596">https://www.jstor.org/stable/10.2307/2777596</a>.
+</div>
+<div id="ref-wimmer_beyond_2010" class="csl-entry" role="listitem">
+Wimmer, A., and K. Lewis. <span>“Beyond and <span>Below Racial Homophily</span>: <span>ERG Models</span> of a <span>Friendship Network Documented</span> on <span>Facebook1</span>.”</span> <em>American Journal of Sociology</em> 116, no. 2 (2010): 583–642. <a href="https://www.jstor.org/stable/10.1086/653658">https://www.jstor.org/stable/10.1086/653658</a>.
+</div>
+<div id="ref-zhang_changes_2020" class="csl-entry" role="listitem">
+Zhang, Juanjuan, Maria Litvinova, Yuxia Liang, Yan Wang, Wei Wang, Shanlu Zhao, Qianhui Wu, et al. <span>“Changes in Contact Patterns Shape the Dynamics of the <span>COVID-19</span> Outbreak in <span>China</span>.”</span> <em>Science</em> 368, no. 6498 (June 2020): 1481–1486. doi:<a href="https://doi.org/10.1126/science.abb8001">10.1126/science.abb8001</a>.
+</div>
+<div id="ref-zheng_how_2006" class="csl-entry" role="listitem">
+Zheng, Tian, Matthew J. Salganik, and Andrew Gelman. <span>“How <span>Many People Do You Know</span> in <span>Prison</span>?: <span>Using Overdispersion</span> in <span>Count Data</span> to <span>Estimate Social Structure</span> in <span>Networks</span>.”</span> <em>Journal of the American Statistical Association</em> 101, no. 474 (June 2006): 409–423. doi:<a href="https://doi.org/10.2307/27590705">10.2307/27590705</a>.
+</div>
+</div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

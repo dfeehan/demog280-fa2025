@@ -1,10 +1,10 @@
 ---
-title: "Social Networks  \nDemog 280/Soc 273N (Fall 2023)"
-author: "Dennis M. Feehan"
-pagetitle: "Social Networks (Demog C280/Soc C273N)"
-bibliography: class_networks_2023.bib
+title: "Social Networks (Demography 280/Sociology C273N)"
+editor: source
+pagetitle: "Social Networks (Demog 280/Soc C273N)"
+bibliography: class_networks.bib
 csl: chicago-syllabus.csl
-suppress-bibliography: True
+#suppress-bibliography: True
 output:
   html_document: 
     css: syllabus.css
@@ -26,14 +26,66 @@ WISHLIST:
 - be able to generate pdf version (right now, the table looks wonky - links don't render, NAs, etc)
 -->
 
-```{css, echo=FALSE}
-/*body {
- * color: red;
- */}
+
+```{r helper, echo=FALSE, warning=FALSE, error=FALSE, message=FALSE}
+# see
+# https://github.com/tidyverse/googlesheets4/issues/274
+range_read_cells_format <- function(
+    ss, sheet = NULL, range = NULL, skip = 0, n_max = Inf,
+    discard_empty = TRUE, group = c('background', 'text', 'other')) {
+
+  group = match.arg(group)
+  oot <- range_read_cells(ss, sheet, range, skip, n_max, 'full', discard_empty)
+
+  if (group == 'background') {
+    # for some colors, one or more components may be missing from the list
+    out <- list()
+    for (p in c('red', 'green', 'blue')) {
+      y <- map(
+        oot$cell, ~ .x$effectiveFormat$backgroundColorStyle$rgbColor[[p]])
+      out[[p]] <- map_dbl(y, ~ if (is.null(.x)) 0 else .x) # RStudio no like
+    }
+    out <- tibble::as_tibble(out)
+
+  } else if (group == 'text') {
+    cols <- c(
+      'fontFamily', 'fontSize', 'bold', 'italic', 'strikethrough', 'underline')
+    out1 <- map_dfr(oot$cell, ~ .x$effectiveFormat$textFormat[cols])
+
+    out2 <- list()
+    for (p in c('red', 'green', 'blue')) {
+      y <- map(
+        oot$cell,
+        ~ .x$effectiveFormat$textFormat$foregroundColorStyle$rgbColor[[p]])
+      out2[[p]] <- map_dbl(y, ~ if (is.null(.x)) 0 else .x) # RStudio no like
+    }
+    out2 <- tibble::as_tibble(out2)
+    out <- cbind(out1, out2)
+
+  } else {
+    out1 <- map_dfr(oot$cell, ~ .x$effectiveFormat$padding)
+    # colnames(out1) = paste0('padding_', colnames(out1))
+
+    cols = c('horizontalAlignment', 'verticalAlignment',
+             'wrapStrategy', 'hyperlinkDisplayType')
+    out2 <- map_dfr(oot$cell, ~ .x$effectiveFormat[cols])
+    out <- cbind(out1, out2)
+
+  }
+
+  out <- oot %>%
+    dplyr::select(!cell) %>%
+    cbind(out)
+  out
+}
+
+#d1 <- range_read_cells_format(ss, sheet, range, group = 'background')
+#d2 <- range_read_cells_format(ss, sheet, range, group = 'text')
+#d3 <- range_read_cells_format(ss, sheet, range, group = 'other')
 ```
 
-
 ```{r download-schedule, echo=FALSE, warning=FALSE, error=FALSE, message=FALSE}
+
 library(googlesheets4)
 library(googledrive)
 library(readxl)
@@ -47,6 +99,11 @@ library(syllabusr)
 library(lubridate)
 library(purrr)
 library(stringr)
+library(glue)
+
+#library(tidyxl)
+
+library(gt)
 
 googlesheets4::gs4_deauth()
 googledrive::drive_deauth()
@@ -88,10 +145,9 @@ next_week <- syllabusr::make_next_class_date(base_date, 'Th')
 class_date <- syllabusr::make_class_date(base_date, 'Th')
 ```
 
-
 (Syllabus last updated: `r format(Sys.Date(), "%Y-%B-%d")`)
   
-**Class meetings: Thursdays, 10:00am-1:00pm, 310 Social Sciences Building**  
+**Class meetings: Wednesdays, 2pm-4:30pm, 310 Social Sciences Building**  
 **Office hours**: see Ed post (or send me an email and we can find a time)   
 **Email**: feehan [at] berkeley.edu  
 **Web**: [https://www.dennisfeehan.org/teaching/2023fa_demog280.html](https://www.dennisfeehan.org/teaching/2023fa_demog280.html)  
@@ -115,20 +171,55 @@ will be updated as the semester progresses***
 
 
 ```{r show-schedule, echo=FALSE, warning=FALSE, error=FALSE, message=FALSE}
+#tabshow <- tab %>%
+#  mutate(Date = map_chr(row_number(), 
+#                        ~ class_date(.x)),
+#         # ugly, but working. the contortions are needed to convert 
+#         # the readable class date into
+#         # a Date object
+#         Week = map_dbl(Date, 
+#                        ~ syllabusr::week_num( mdy(paste(str_replace(.x, ".*,", ""), year(base_date))))))
+#
+#options(knitr.kable.NA = '')
+#
+#tabshow %>%
+#  kable() %>%
+#  kable_styling(bootstrap_options = c('striped'))
+
 tabshow <- tab %>%
-  mutate(Date = map_chr(row_number(), 
-                        ~ class_date(.x)),
-         # ugly, but working. the contortions are needed to convert 
-         # the readable class date into
+  mutate(Date = map_chr(row_number(), ~ class_date(.x)),
+         # ugly, but working. the contortions are needed to convert the readable class date into
          # a Date object
-         Week = map_dbl(Date, 
-                        ~ syllabusr::week_num( mdy(paste(str_replace(.x, ".*,", ""), year(base_date))))))
+         Week = map_dbl(Date, ~ syllabusr::week_num( mdy(paste(str_replace(.x, ".*,", ""), year(base_date))))))
 
 options(knitr.kable.NA = '')
 
+#tabshow %>%
+#  kable() %>%
+#  kable_styling(bootstrap_options = c('striped'))
+
+# Trying to get what are called 'reference-style links' to work
+# in markdown column
+# https://www.markdownguide.org/basic-syntax/
+
 tabshow %>%
-  kable() %>%
-  kable_styling(bootstrap_options = c('striped'))
+  gt() %>%
+  sub_missing(missing_text='') %>%
+  fmt_markdown(columns='Week') %>%
+  fmt_markdown(columns='Date') %>%
+  fmt_markdown(columns='Topic') %>%
+  cols_width( 
+              Week ~ pct(5),
+              Date ~ pct(15),
+              Topic ~ pct(80)
+              )
+  #cols_width( Theme ~ px(50),
+  #            Week ~ px(50),
+  #            Date ~ px(100),
+  #            Topic ~ px(500),
+  #            Lecture ~ px(200),
+  #            Lab ~ px(200),
+  #            Hwk ~ px(200))
 ```
 
 ## Requirements and assignments
