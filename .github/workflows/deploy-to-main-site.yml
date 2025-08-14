@@ -34,8 +34,8 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           personal_token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
-          external_repository: dfeehan/dfeehan.github.io  # UPDATE THIS
-          publish_dir: syllabus/_site  # Note: now includes syllabus/ prefix
-          destination_dir: docs/teaching  # UPDATE THIS
+          external_repository: dfeehan/dfeehan.github.io
+          publish_dir: syllabus/_site
+          destination_dir: docs/teaching  # Deploy to docs/ folder
+          publish_branch: master  # Deploy to master branch, not main
           commit_message: "Update course content"
-
