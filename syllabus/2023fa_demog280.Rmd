@@ -1,0 +1,605 @@
+---
+title: "Social Networks  \nDemog 280/Soc 273N (Fall 2023)"
+author: "Dennis M. Feehan"
+pagetitle: "Social Networks (Demog C280/Soc C273N)"
+bibliography: class_networks_2023.bib
+csl: chicago-syllabus.csl
+suppress-bibliography: True
+output:
+  html_document: 
+    css: syllabus.css
+    pandoc_args: [
+                  #"-F", "pandoc-include",
+                  #"--citeproc",
+                  #"-F", "pandoc-crossref", 
+                  #"-F", "pandoc-citeproc"
+                  ]
+  pdf_document: default
+---
+
+<!--
+NOTES:
+- the chicago-syllabus.csl is from Kieran Healy: https://github.com/kjhealy/pandoc-templates/blob/master/csl/chicago-syllabus.csl
+- if changing this in the future, you may have to tweak the 'range' values in the part that loads the excel sheet
+
+WISHLIST:
+- be able to generate pdf version (right now, the table looks wonky - links don't render, NAs, etc)
+-->
+
+```{css, echo=FALSE}
+/*body {
+ * color: red;
+ */}
+```
+
+
+```{r download-schedule, echo=FALSE, warning=FALSE, error=FALSE, message=FALSE}
+library(googlesheets4)
+library(googledrive)
+library(readxl)
+library(writexl)
+library(tibble)
+library(knitr)
+library(kableExtra)
+library(dplyr)
+# my helper package
+library(syllabusr)
+library(lubridate)
+library(purrr)
+library(stringr)
+
+googlesheets4::gs4_deauth()
+googledrive::drive_deauth()
+
+# this file is set so that anyone can read it (but not edit it).
+# this means we can avoid annoying authentication requirements
+#class_url <- "https://docs.google.com/spreadsheets/d/14gyQ5MvYqr0C_pEDRi3amefLGEcgO5009YUVBeutaL0/edit?usp=sharing"
+#class_url <- "https://docs.google.com/spreadsheets/d/1ZeT_x_eWWG6O52GM_vhezglD886q31x_kKJT7nD8maU/edit#gid=2042197488"
+#class_url <- "https://docs.google.com/spreadsheets/d/1yxRxLqmOQTHCKe7m02HC1vZvoubdZHvJyKiJAsR3WHI/edit#gid=2042197488"
+class_url <- "https://docs.google.com/spreadsheets/d/1OirUBwiDgEg1XJP-cqeUdfk2J_I3M4qP8t-ezDLTWTc/edit?gid=2042197488#gid=2042197488"
+class_fn <- "demog280 - 2025"
+
+sheet <- drive_get(class_url) %>%
+  read_sheet(sheet='overview', skip=1)
+
+write_xlsx(list(overview=sheet),
+           path=paste0(class_fn, '.xlsx'))
+
+# download latest version of sheet locally
+# (if offline, can comment this out to use local version)
+#gs_title(class_fn) %>%
+#gs4_find(class_fn) %>%
+##gs4_find(name=class_fn) %>%
+#  gs_download(to=paste0(class_fn, '.xlsx'), 
+#              overwrite=TRUE)
+
+tab <- read_excel(paste0(class_fn, '.xlsx'), 
+                  sheet='overview',
+                  #range= "B2:F16")
+                  #range= "B1:F15")
+                  range= "A1:C16")
+
+## THIS ASSUMES THAT
+##   - there is a column called 'Date'
+##   - the first entry in that column is the date to base the rest of the schedule off of
+base_date <- as.Date(tab$Date[1])
+
+next_week <- syllabusr::make_next_class_date(base_date, 'Th')
+class_date <- syllabusr::make_class_date(base_date, 'Th')
+```
+
+
+(Syllabus last updated: `r format(Sys.Date(), "%Y-%B-%d")`)
+  
+**Class meetings: Thursdays, 10:00am-1:00pm, 310 Social Sciences Building**  
+**Office hours**: see Ed post (or send me an email and we can find a time)   
+**Email**: feehan [at] berkeley.edu  
+**Web**: [https://www.dennisfeehan.org/teaching/2023fa_demog280.html](https://www.dennisfeehan.org/teaching/2023fa_demog280.html)  
+**Ed**: <https://edstem.org/us/courses/43232/discussion/>
+
+## Overview
+
+This course provides a broad introduction to the empirical and theoretical
+study of social networks. We will cover classic and contemporary studies,
+beginning with fundamental definitions and models, and then moving through
+a range of topics, including models of network formation and structure
+(homophily, foci, communities); dynamic processes on networks (contagion,
+influence, and disease models); collaborative networks; personal networks;
+online networks; and network sampling and data collection.
+The course material is intended to be of interest to students from a wide range
+of disciplinary backgrounds, including demography, sociology, statistics,
+computer science, and related fields.
+
+***This syllabus is not yet final - I'm posting it to give you a sense for what we will cover this semester. Please re-check the syllabus before you start each week's reading; it
+will be updated as the semester progresses***
+
+
+```{r show-schedule, echo=FALSE, warning=FALSE, error=FALSE, message=FALSE}
+tabshow <- tab %>%
+  mutate(Date = map_chr(row_number(), 
+                        ~ class_date(.x)),
+         # ugly, but working. the contortions are needed to convert 
+         # the readable class date into
+         # a Date object
+         Week = map_dbl(Date, 
+                        ~ syllabusr::week_num( mdy(paste(str_replace(.x, ".*,", ""), year(base_date))))))
+
+options(knitr.kable.NA = '')
+
+tabshow %>%
+  kable() %>%
+  kable_styling(bootstrap_options = c('striped'))
+```
+
+## Requirements and assignments
+
+The requirements of the class are designed to achieve two goals:
+the first goal is to become familiar with some classic and contemporary research 
+about social networks through reading papers and discussing them; and the second
+goal is to write a research paper.
+You should think of the research paper as the first draft of a project
+that you might be able to continue working on beyond this class.
+
+* Reading and class participation
+
+    Each week, you should read the assigned materials and show up to class
+    prepared to discuss them. **One of the weeks you will also be in charge of
+    organizing the discussion.**  (Depending on enrollment,  you may be in charge of part
+    of the readings in an additional week.) To lead the discussion,
+    I suggest that you make a short slide deck summarizing each of the readings
+    (similar to the papers to present, below), and you think of a few questions to
+    prompt discussions for each reading.
+    
+* Response memos
+
+    For 5 of the class meetings, please write a short response memo (1 to 2
+    pages) and post it on the Ed thread for that week. (There is an Ed tag for each week of the semester).
+    You can pick which of the weeks you write the memos, starting with week 3. These memos should not take an
+    enormous amount of time to write. The main goal of these memos is to help
+    you focus your thoughts about the reading prior to our group discussion; to
+    help us get an understanding of what parts of the reading our discussion
+    should focus on; and to serve as a reference for you in the future. The
+    format of the memos is open, but at a minimum I would like you to be sure to (1) quickly summarize how the readings relate to one another (if you think
+    they do); and (2) briefly describe at least one research idea that the
+    readings generated for you (this could be a single sentence, or the entire
+    memo; it's up to you).
+    ***The response memos are due by noon on the day before each class***.
+
+* Papers to present
+
+    Each week, there will be a list of readings that we will not have time to
+    discuss as a group. For 4 of the class meetings, please choose one of these
+    papers, read it, and briefly present it to the class. You should 'claim' the paper you want to present by posting to a Ed thread for the given week, to ensure that two people don't end up preparing a presentation for the same paper. (Also, if you have a paper that is on-topic, but not on the syllabus, you can ask me to present that one instead. I will typically say yes, as long as it is relevant to the discussion that week.) These presentations should be
+    around 5-8 minutes each. Please plan to make slides or find some other way
+    to help the class understand the paper's main findings. The goals of these
+    presentations are (1) to give you some practice taking a deep dive into a
+    networks research paper; (2) to give you some practice distilling technical
+    results for a broader audience; (3) to give you and the class some exposure to
+    cutting edge ideas in social networks; (4) to give you an opportunity to
+    spend time on papers that are particularly useful for your research.
+
+* Final paper
+
+    You will write a short (10-20 pages) research paper or proposal for a research project 
+    to conclude the class.
+    Leading up to the end of the class, you will submit a brief proposal
+    (1 paragraph to 1 page) that describes the paper you plan to work on. 
+    I will also ask you to briefly pitch your idea to get some fast feedback
+    early on.
+    The purpose of the proposal is to give you some feedback on the initial
+    idea / data source / etc before you invest a lot of time writing an actual
+    paper. 
+    Your final paper should identify an important
+    problem to be studied, briefly review the related literature, 
+    describe your proposed research design, and present some
+    (possibly preliminary) empirical findings.  
+    The purpose of this paper is to connect the topics of this class to your
+    actual research, so my hope is that this will be an opportunity to get some
+    feedback on an idea you care about, and that you might continue to
+    pursue beyond class.
+    We will have a mini-conference with short presentations for each project 
+    at the end of the semester.  
+    **The final paper is due at 5pm on Monday, December 11th.**
+
+***NB: Please read each week's articles in the order they are listed on the syllabus***
+
+
+## Detailed schedule
+
+### `r next_week()` - Fundamentals and background {#sec:intro}
+
+This is an unusual week, since it's our first class meeting. The first
+three readings are overviews of social networks from different perspectives;
+then, there are three studies that exemplify the diversity of social networks
+research.
+
+Background readings:
+
+* [@borgatti_network_2009]
+* [@butts_revisiting_2009]
+* [@lazer_networks_2011]
+
+Readings to discuss:
+
+* [@feld_why_1991]
+* [@mcpherson_social_2006]
+* [@grinberg_fake_2019]
+
+More background to read at some point in the first couple of weeks:
+
+* [@newman_networks:_2018, ch. 6 and 7] - some mathematical background
+
+We won't explicitly discuss the Newman book chapters in class, but they 
+also worth reading at some point; they describe several different network
+measures that are often mentioned in the literature.
+
+OPTIONAL: The [wrap-up papers at the end of the syllabus](#sec:wrap-up) give a good overview of the study of social networks.
+We won't explicitly discuss them in class, but they would be helpful to read at
+some point during the semester.
+
+Related, but we won't have time to discuss in class:
+
+* [@bachrach_culture_2014]
+* [@kohler_social_2013]
+* [@emirbayer_manifesto_1997]
+* [@lazer_computational_2009]
+* [@dunbar_evolution_2007]
+* [@sutcliffe_relationships_2012]
+* [@eagle_eigenbehaviors:_2009]
+* [@jackson_friendship_2018]
+
+### `r next_week()` - Sampling, data collection, statistics  {#sec:stats}
+
+Readings to discuss:
+
+* Related to McPherson et al (2006) [from last week] 
+    * [@fischer_2004_2009]
+    * [SKIM]  [@mcpherson_models_2009]
+    * [READ ABSTRACT] [@paik_social_2013]
+* [@eagle_inferring_2009]
+* [@goel_assessing_2010]
+* [@zheng_how_2006]
+* [READ ABSTRACT] [@mcgrath_effect_1997]
+* check out [hive plots](http://www.hiveplot.com/)
+
+I'll talk a little bit about random graph models; if you want extra background,
+the Newman chapter is a good reference:
+
+* [@newman_networks:_2018, ch. 11] - Poisson random graph models (NB: this is ch. 12 in the first edition)
+
+Background and related (we won't discuss):
+
+
+* [@goel_real_2010]
+* [@marsden_network_1990]
+* [@brashears_small_2011]
+* [@marsden_recent_2005]
+* [@brashears_trivial_2014]
+* [@bearman_cloning_2004]
+* [@lee_important_2017]
+* [@cowan_it_2017]
+* [@small_someone_2017]
+* [@feehan_network_2017] (appendix is optional)
+* [@mccormick_how_2010]
+* [@mccormick_latent_2012]
+* [@handcock_modeling_2010]
+* [@hoff_bilinear_2005]
+* [@crawford_hidden_2018]
+* [@zhang_changes_2020]
+* [@wallinga_using_2006]
+
+### `r next_week()` - Social capital and SOWT: Classics {#sec:sowt-classics}
+
+Readings we will discuss:
+
+* [@granovetter_strength_1973]
+* [@feld_focused_1981]
+* [@coleman_social_1988]
+
+Also interesting (but we won't have time to discuss in class):
+
+* [@white_social_1976]
+* [@portes_social_2000]
+* [@granovetter_strength_1981]
+* [@portes_embeddedness_1993]
+* [@burt_structural_2004]
+* [@eagle_network_2010]
+* [@kauppi_characteristics_2018]
+* [@eng_social_2002]
+
+Demography-specific:
+
+* [@massey_social_1990]
+
+
+### `r next_week()` - Homophily - network formation based on similarity {#sec:netform-homophily}
+
+<!--
+* ? [@shwed_temporal_2010]
+* ? [@newman_clustering_2001]
+* ? [@leskovec_graphs_2005]
+-->
+
+* [@kossinets_empirical_2006]
+* [@kossinets_origins_2009]
+* [@currarini_identifying_2010]
+* [@hoff_latent_2002]
+
+Also interesting, but we will not have time to discuss:
+
+* the theory/background section of this paper is an excellent review of homophily: [@wimmer_beyond_2010]
+* [@bruch_aspirational_2018]
+* [@jackson_meeting_2007]
+* [@onnela_geographic_2011]
+* [@halberstam_homophily_2016]
+
+<!--
+* [@smith_social_2014]
+-->
+
+<!-- 
+* [@domingue_social_2018] 
+-->
+
+### `r next_week()` - Network models, connectivity, and small worlds {#sec:small-worlds}
+
+Readings to discuss:
+
+* [@milgram_small_1967]
+* [@travers_experimental_1969]
+* [@watts_collective_1998]
+* [@kleinberg_navigation_2000]
+* [@watts_identity_2002]
+* [@dodds_experimental_2003]
+
+Some fairly recent online discussion of the small world hypothesis:
+
+* a relevant [Facebook research note](https://research.facebook.com/blog/three-and-a-half-degrees-of-separation/)
+* and a [relevant comment by Duncan Watts](https://medium.com/@duncanjwatts/how-small-is-the-world-really-736fa21808ba#.vlogrknh1)
+
+
+Background and related:
+
+* [@watts_six_2003, ch. 1-3]
+* [@marvel_small-world_2013]
+* [@uzzi_collaboration_2005]
+* [@liben-nowell_geographic_2005]
+* [@granovetter_ignorance_2003]
+
+
+
+### `r next_week()` - Structure and segregation {#sec:communities}
+
+* [@blau_macrosociological_1977]
+* [@leskovec_signed_2010]
+* [@diprete_segregation_2011]
+* [@newman_finding_2004]
+
+Also interesting (but we won't have time to discuss in class):
+
+<!-- NB: I think next time we should read girvan communty 2002 instead of newman_finding_2004 -->
+
+* [@girvan_community_2002]
+* [@goldberg_mapping_2011]
+* [@karrer_stochastic_2011]
+* [@breiger_duality_1974]
+* [@gee_social_2016]
+* [@bickel_nonparametric_2009]
+* [@granovetter_economic_1985]
+* [@isakov_structure_2019]
+
+
+
+### `r next_week()` - Social capital and SOWT: Contemporary {#sec:sowt-contemporary}
+
+Readings we will discuss:
+
+* [@aral_diversity-bandwidth_2011]
+* [@chetty_social_2022]
+* [@chetty_social_2022-1]
+
+Also, check out [the social capital atlas](https://www.socialcapital.org/).
+
+Also interesting (but we won't have time to discuss in class):
+
+* [@onnela_structure_2007]
+* [@eagle_network_2010]
+* Comments on [@aral_diversity-bandwidth_2011]
+  * [@bruggeman_strength_2016]
+  * [@aral_future_2016]
+* [@bailey_economic_2018]
+* [@park_strength_2018]
+* [@kauppi_characteristics_2018]
+* [@eng_social_2002]
+* [@rajkumar_causal_2022]
+
+Demography-specific:
+
+* [@fussell_limits_2004]
+
+
+### `r next_week()` - Network formation over time and scale-free networks {#sec:netform-time}
+
+* [@barabasi_emergence_1999]
+* [@broido_scale-free_2018]
+* [@bearman_chains_2004]
+* **NB: for some reason, the journal link for this reading is wrong. Please read the article by Morris et al here**: [https://journals.lww.com/aidsonline/_layouts/15/oaks.journals/downloadpdf.aspx?an=00002030-199704000-00012](https://journals.lww.com/aidsonline/_layouts/15/oaks.journals/downloadpdf.aspx?an=00002030-199704000-00012) [@morris_concurrent_1997]
+
+Some recent online discussions of the power law debate (not required reading):
+
+* [Scant evidence of power laws found in real-world networks](https://www.quantamagazine.org/scant-evidence-of-power-laws-found-in-real-world-networks-20180215/)
+* [Power laws and me](https://petterhol.me/2018/01/12/me-and-power-laws/)
+* [Spherical cows are rare](https://www.barzellab.com/ideas)
+* [Love is all you need](https://uploads-ssl.webflow.com/58bcae2c9d6c401e73a26fed/5aa01d3e24eebb000199a0a2_loveisallyouneed.pdf)
+
+Also interesting (but we won't have time to discuss in class):
+
+* The online textbook [Network Science](http://barabasi.com/networksciencebook/) by Barabasi 
+* [@clauset_power-law_2007]
+* [@phan_natural_2015]
+* [@liljeros_web_2001]
+    * [@jones_social_2003]
+    * [@liljeros_social_2003]
+* [@jacobs_assembling_2015]
+* [@newman_coauthorship_2004]
+* [@kretzschmar_concurrency_2010]
+
+### `r next_week()` - Simple contagion {#sec:simple-contagion}
+
+**The reading is not too long this week. Please take the opportunity to start to think about your project,
+and to catch up on your extra paper presentations!**
+
+* [@christakis_social_2010]
+* [@helleringer_sexual_2007]
+* [@feehan_quantifying_2021]
+
+Also interesting, but we will not have time to discuss:
+
+* [@mossong_social_2008]
+* [@bansal_when_2007]
+* [@nishi_network_2020]
+* [@keeling_individual_2010]
+* [@banerjee_using_2017]
+* [@rohani_contact_2010]
+* [@salathe_dynamics_2010]
+
+### `r next_week()` - Complex contagion and social influence {#sec:complex-contagion}
+
+* [@granovetter_threshold_1978]
+* [@centola_social_2015]
+* [@ugander_structural_2012]
+
+Also interesting, but we will not have time to discuss
+
+* [@dimaggio_how_2011]
+* [@watts_simple_2002]
+* [@watts_influentials_2007]
+* [@centola_complex_2007]
+* [@centola_how_2018]
+* [@macy_threshold_2020]
+* [@juul_comparing_2021]
+
+Especially relevant for demography:
+
+* [@balbo_does_2014]
+
+### `r next_week()` - Project pitches {#sec:projectpitch}
+
+We will not meet in person, but I will organize a way for each of us to spend a few 
+minutes explaining what we plan to work on for the final project. 
+There will be an opportunity for some peer feedback.
+
+
+### `r next_week()` - Peer effects {#sec:peer-effects}
+
+* [@nickerson_is_2008]
+* [@bond_61-million-person_2012]
+* [@banerjee_diffusion_2013]
+
+Also interesting, but we won't have time to discuss:
+
+* [@paluck_changing_2016]
+* [@sacerdote_peer_2000]
+* [@kohler_social_2007]
+* [@centola_spread_2010]
+* [@bakshy_role_2012]
+* [@bakshy_designing_2014]
+* [@eckles_design_2014]
+* [@bakshy_social_2012]
+
+### `r next_week()` - Challenges in understanding spread on a network {#sec:spread}
+
+* [@christakis_spread_2007]
+* [@shalizi_homophily_2011]
+* [@kim_social_2015]
+
+Also interesting, but we will not have time to discuss:
+
+* [Controversy over the C-F findings on the contagion of obesity](http://andrewgelman.com/2011/06/10/controversy_ove_2/) (blog post by Andrew Gelman)
+* [@lyons_spread_2011]
+* [Social Contagion Theory: Examining Dynamic Social Networks and Human Behavior](http://jhfowler.ucsd.edu/examining_dynamic_social_networks.pdf) (a response to some criticisms of  Christakis and Fowler)
+* [@manski_identification_1993]
+* [@airoldi_induction_2024]
+
+### `r next_week()` - Mini-conference {#sec:mini-conf}
+
+For the mini-conference, we will each give a brief presentation of our
+paper. There's no specific reading for this week.
+
+### Wrap-up {#sec:wrap-up}
+
+Optional wrap-up:
+
+* [@watts_new_2004]
+* [@newman_why_2003]
+* [@jackson_economic_2016]
+
+## Additional topics {-}
+
+### Political networks {#sec:politics}
+
+* [@mutz_cross-cutting_2002]
+* [@barbera_birds_2015]
+* [@gonzalez-bailon_networked_2016]
+* [@guess_less_2019]
+* [@mutz_consequences_2002]
+* [@larson_ethnic_2017]
+* [@beck_social_2002]
+* [@gentzkow_ideological_2011]
+* [@fowler_legislative_2006]
+* [@battaglini_effectiveness_2020]
+* [@noelle-neumann_turbulences_1977]
+* [@scheufle_twenty-five_2000]
+* [@barbera_who_2019]
+* [@vicario_spreading_2016]
+* [@baldassarri_dynamics_2007]
+
+### Collaboration and cooperation {#sec:cooperation}
+
+<!--* we'll have an in-class demo of [breadboard](http://breadboard.yale.edu/). Bring your laptop!-->
+* [@apicella_social_2012]
+* [@wang_cooperation_2012]
+* [@rand_static_2014]
+* [@nishi_inequality_2015]
+* [@guimera_team_2005]
+* [@mason_collaborative_2012]
+* [@mason_long-run_2014]
+* [@jackson_social_2012]
+
+
+---
+  
+  
+**Religious Accommodations**  
+  
+Requests to accommodate a student's religious creed by scheduling tests or
+examinations at alternative times should be submitted directly to the
+instructor. Reasonable common sense, judgment and the pursuit of mutual
+goodwill should result in the positive resolution of scheduling conflicts. The
+regular campus appeals process applies if a mutually satisfactory arrangement
+cannot be achieved.
+
+**Statement on Academic Freedom**  
+  
+Both students and instructors have rights to academic freedom. Please respect
+the rights of others to express their points of view in the classroom.
+  
+**DSP Accommodations**  
+  
+Please see the instructor to discuss accommodations for physical disabilities, medical disabilities and learning disabilities.
+  
+**Student Resources**  
+  
+The Student Learning Center provides a wide range of resources to promote learning and academic success for students. For information regarding these services, please consult the Student Learning Center Website:
+https://slc.berkeley.edu/
+  
+**Academic Integrity**  
+  
+The high academic standard at the University of California, Berkeley, is reflected in each degree that is awarded. As a result, every student is expected to maintain this high standard by ensuring that all academic work reflects unique ideas or properly attributes the ideas to the original sources.
+
+These are some basic expectations of students with regards to academic integrity:
+
+* Any work submitted should be your own individual thoughts, and should not have been submitted for credit in another course unless you have prior written permission to re-use it in this course from this instructor.
+* All assignments must use "proper attribution," meaning that you have identified the original source and extent or words or ideas that you reproduce or use in your assignment. This includes drafts and homework assignments!
+* If you are unclear about expectations, ask your instructor or GSI.
+* Do not collaborate or work with other students on assignments or projects unless you have been given permission or instruction to do so.
