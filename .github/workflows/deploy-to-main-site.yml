@@ -17,20 +17,23 @@ jobs:
         
       - name: Setup R (if needed)
         uses: r-lib/actions/setup-r@v2
-        if: hashFiles('*.qmd') != ''
+        if: hashFiles('syllabus/*.qmd') != ''
         
       - name: Install R packages (if you have renv)
         uses: r-lib/actions/setup-renv@v2
-        if: hashFiles('renv.lock') != ''
+        if: hashFiles('syllabus/renv.lock') != ''
         
       - name: Render Quarto site
-        run: quarto render
+        run: |
+          cd syllabus
+          quarto render
         
       - name: Deploy to main website
         uses: peaceiris/actions-gh-pages@v3
         with:
           personal_token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
           external_repository: dfeehan/dfeehan.github.io  # UPDATE THIS
-          publish_dir: ./_site
+          publish_dir: syllabus/_site  # Note: now includes syllabus/ prefix
           destination_dir: teaching  # UPDATE THIS
           commit_message: "Update course content"
+
