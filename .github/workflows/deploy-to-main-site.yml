@@ -36,6 +36,6 @@ jobs:
           personal_token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
           external_repository: dfeehan/dfeehan.github.io  # UPDATE THIS
           publish_dir: syllabus/_site  # Note: now includes syllabus/ prefix
-          destination_dir: teaching  # UPDATE THIS
+          destination_dir: docs/teaching  # UPDATE THIS
           commit_message: "Update course content"
 
