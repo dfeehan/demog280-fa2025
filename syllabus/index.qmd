@@ -150,8 +150,8 @@ class_date <- syllabusr::make_class_date(base_date, 'Th')
 **Class meetings: Wednesdays, 2pm-4:30pm, 310 Social Sciences Building**  
 **Office hours**: see Ed post (or send me an email and we can find a time)   
 **Email**: feehan [at] berkeley.edu  
-**Web**: [https://www.dennisfeehan.org/teaching/2023fa_demog280.html](https://www.dennisfeehan.org/teaching/2023fa_demog280.html)  
-**Ed**: <https://edstem.org/us/courses/43232/discussion/>
+**Web**: <https://www.dennisfeehan.org/teaching/2025fa_demog280/>
+**Ed**: <https://edstem.org/us/courses/81973/discussion>
 
 ## Overview
 
