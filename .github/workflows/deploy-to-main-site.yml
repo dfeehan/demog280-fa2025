@@ -38,4 +38,4 @@ jobs:
           publish_dir: syllabus/_site
           destination_dir: docs/teaching  # Deploy to docs/ folder
           publish_branch: master  # Deploy to master branch, not main
-          commit_message: "Update course content"
+          commit_message: "Update syllabus"
