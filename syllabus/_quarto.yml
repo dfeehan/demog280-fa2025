@@ -13,6 +13,6 @@ format:
     theme: cosmo
     css: syllabus.css
     toc: true
-    output-file: "2025fa_demog280.html"
+    output-file: "index.html"
 editor: source
 
