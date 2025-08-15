@@ -39,14 +39,9 @@ jobs:
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
           
-          # Check what files exist
-          echo "Contents of current directory:"
-          ls -la
-          echo "Contents of docs directory (where syllabus renders):"
-          ls -la docs/
-          
-          # Clone your website repo
-          git clone https://github.com/dfeehan/dfeehan.github.io.git website
+
+          # Clone your website repo with authentication
+          git clone https://x-access-token:${{ secrets.PERSONAL_ACCESS_TOKEN }}@github.com/dfeehan/dfeehan.github.io.git website
           cd website
           git checkout master
           
@@ -60,35 +55,3 @@ jobs:
           git add docs/teaching/
           git commit -m "Update syllabus from class repo" || exit 0
           git push
-
-      #- name: Deploy to main website
-      #  env:
-      #    GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
-      #  run: |
-      #    # Configure git
-      #    git config --global user.name "GitHub Actions"
-      #    git config --global user.email "actions@github.com"
-      #    
-      #    # Check what files exist
-      #    echo "Contents of current directory:"
-      #    ls -la
-      #    echo "Contents of syllabus directory:"
-      #    ls -la syllabus/
-      #    echo "Contents of syllabus/_site directory:"
-      #    ls -la syllabus/_site/
-      #    
-      #    # Clone your website repo
-      #    git clone https://github.com/dfeehan/dfeehan.github.io.git website
-      #    cd website
-      #    git checkout master
-      #    
-      #    # Create teaching directory if it doesn't exist
-      #    mkdir -p docs/teaching
-      #    
-      #    # Copy the rendered syllabus files (using absolute path from repo root)
-      #    cp -r ../syllabus/_site/* docs/teaching/
-      #    
-      #    # Commit and push changes
-      #    git add docs/teaching/
-      #    git commit -m "Update syllabus from class repo" || exit 0
-      #    git push
