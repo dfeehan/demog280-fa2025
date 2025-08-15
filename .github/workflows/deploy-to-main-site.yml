@@ -2,10 +2,8 @@ name: Deploy to Main Website
 on:
   push:
     branches: [main]
-
 env:
   COURSE_DIR: "2025fa_demog280"  # Change this to control the subdirectory name
-
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -17,22 +15,22 @@ jobs:
       
       - name: Setup Quarto
         uses: quarto-dev/quarto-actions/setup@v2
-        
+      
       - name: Setup R
         uses: r-lib/actions/setup-r@v2
         with:
           use-public-rspm: true
-        
+      
       - name: Setup renv
         uses: r-lib/actions/setup-renv@v2
         with:
           working-directory: syllabus
-        
+      
       - name: Render Quarto site
         run: |
           cd syllabus
           quarto render
-
+      
       - name: Deploy to main website
         env:
           GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
@@ -46,16 +44,22 @@ jobs:
           cd website
           git checkout master
           
-          # Create teaching subdirectory using environment variable
+          # Create teaching subdirectories using environment variable
           mkdir -p docs/teaching/${{ env.COURSE_DIR }}
+          mkdir -p teaching/${{ env.COURSE_DIR }}
           
-          # Copy the rendered syllabus files to the subdirectory
+          # Copy the rendered syllabus files to both locations
           cp ../docs/*.html docs/teaching/${{ env.COURSE_DIR }}/
           cp ../docs/*.css docs/teaching/${{ env.COURSE_DIR }}/ 2>/dev/null || true
           cp ../docs/*.json docs/teaching/${{ env.COURSE_DIR }}/ 2>/dev/null || true
           cp -r ../docs/site_libs docs/teaching/${{ env.COURSE_DIR }}/ 2>/dev/null || true
           
-          # Commit and push changes
-          git add docs/teaching/
+          cp ../docs/*.html teaching/${{ env.COURSE_DIR }}/
+          cp ../docs/*.css teaching/${{ env.COURSE_DIR }}/ 2>/dev/null || true
+          cp ../docs/*.json teaching/${{ env.COURSE_DIR }}/ 2>/dev/null || true
+          cp -r ../docs/site_libs teaching/${{ env.COURSE_DIR }}/ 2>/dev/null || true
+          
+          # Commit and push changes to both directories
+          git add docs/teaching/ teaching/
           git commit -m "Update syllabus for ${{ env.COURSE_DIR }}" || exit 0
           git push
