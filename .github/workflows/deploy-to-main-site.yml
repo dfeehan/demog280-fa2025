@@ -5,7 +5,6 @@ on:
 
 env:
   COURSE_DIR: "2025fa_demog280"  # Change this to control the subdirectory name
-j
 
 jobs:
   deploy:
