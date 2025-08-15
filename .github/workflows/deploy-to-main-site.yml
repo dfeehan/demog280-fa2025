@@ -3,6 +3,9 @@ on:
   push:
     branches: [main]
 
+env:
+  COURSE_DIR: "2025fa_demog280"  # Change this to control the subdirectory name
+j
 
 jobs:
   deploy:
@@ -39,27 +42,21 @@ jobs:
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
           
-          # Check what files exist
-          echo "Contents of current directory:"
-          ls -la
-          echo "Contents of docs directory (where syllabus renders):"
-          ls -la docs/
-          
           # Clone your website repo with authentication
           git clone https://x-access-token:${{ secrets.PERSONAL_ACCESS_TOKEN }}@github.com/dfeehan/dfeehan.github.io.git website
           cd website
           git checkout master
           
-          # Create teaching directory if it doesn't exist
-          mkdir -p docs/teaching
+          # Create teaching subdirectory using environment variable
+          mkdir -p docs/teaching/${{ env.COURSE_DIR }}
           
-          # Copy the rendered syllabus files without removing existing files
-          cp ../docs/*.html docs/teaching/
-          cp ../docs/*.css docs/teaching/ 2>/dev/null || true
-          cp ../docs/*.json docs/teaching/ 2>/dev/null || true
-          cp -r ../docs/site_libs docs/teaching/ 2>/dev/null || true
+          # Copy the rendered syllabus files to the subdirectory
+          cp ../docs/*.html docs/teaching/${{ env.COURSE_DIR }}/
+          cp ../docs/*.css docs/teaching/${{ env.COURSE_DIR }}/ 2>/dev/null || true
+          cp ../docs/*.json docs/teaching/${{ env.COURSE_DIR }}/ 2>/dev/null || true
+          cp -r ../docs/site_libs docs/teaching/${{ env.COURSE_DIR }}/ 2>/dev/null || true
           
           # Commit and push changes
           git add docs/teaching/
-          git commit -m "Update syllabus from class repo" || exit 0
+          git commit -m "Update syllabus for ${{ env.COURSE_DIR }}" || exit 0
           git push
