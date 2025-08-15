@@ -155,8 +155,6 @@ class_date <- syllabusr::make_class_date(base_date, 'Th')
 
 ## Overview
 
-TEST
-
 This course provides a broad introduction to the empirical and theoretical
 study of social networks. We will cover classic and contemporary studies,
 beginning with fundamental definitions and models, and then moving through
