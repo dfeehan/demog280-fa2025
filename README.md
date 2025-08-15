@@ -1,8 +1,15 @@
 # demog280-fa2025
 
 This repo has the syllabus for Demog 280.
-
-It uses Github Actions to update my personal website with a copy of the latest version of the syllabus every time an update is pushed to this repo.  It does this by running quarto to render the syllabus, and then copying all of the resulting files to `docs/teaching/2025fa_demog280/` in my personal website repo. It also copies the files to `/teaching/2025fa_demog280/`, which ensures that any rebuild of my personal website will still include the files from this syllabus.
+  
+* </docs> - has the rendered syllabus
+* </syllabus> - has the source files for the syllabus
+  
+To render the syllabus, switch into the </syllabus> directory and type `quarto render`.
+  
+To make changes live, render and then push.  
+  
+This repo is configured to use Github Actions to update my personal website with a copy of the latest version of the syllabus every time an update is pushed to this repo.  It does this by running quarto to render the syllabus, and then copying all of the resulting files to `docs/teaching/2025fa_demog280/` in my personal website repo. It also copies the files to `/teaching/2025fa_demog280/`, which ensures that any rebuild of my personal website will still include the files from this syllabus.
 
  You can see the configuration file for the github action in <.github/workflows/deploy-to-main-site.yml>. 
 
