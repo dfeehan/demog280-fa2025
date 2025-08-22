@@ -32,7 +32,7 @@ jobs:
       
       - name: Render Quarto site
         run: |
-          cd syllabus
+          cd demog280-syllabus
           quarto render
       
       - name: Deploy to main website
