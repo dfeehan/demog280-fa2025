@@ -28,7 +28,7 @@ jobs:
       - name: Setup renv
         uses: r-lib/actions/setup-renv@v2
         with:
-          working-directory: syllabus
+          working-directory: demog280-syllabus
       
       - name: Render Quarto site
         run: |
