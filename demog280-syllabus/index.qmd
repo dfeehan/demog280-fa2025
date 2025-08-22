@@ -9,7 +9,8 @@ format:
   html:
     link-external-newwindow: true
     css: syllabus.css
-  pdf: default
+  pdf: 
+    output-file: "demog280-social-networks-fall2025.pdf"
 #output:
 #  html_document: 
 #    # open links in a new tab
