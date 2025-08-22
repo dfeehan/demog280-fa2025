@@ -4,18 +4,31 @@ editor: source
 pagetitle: "Social Networks (Demog 280/Soc C273N)"
 bibliography: class_networks.bib
 csl: chicago-syllabus.csl
-#suppress-bibliography: True
-output:
-  html_document: 
+suppress-bibliography: True
+format:
+  html:
+    link-external-newwindow: true
     css: syllabus.css
-    pandoc_args: [
-                  #"-F", "pandoc-include",
-                  #"--citeproc",
-                  #"-F", "pandoc-crossref", 
-                  #"-F", "pandoc-citeproc"
-                  ]
-  pdf_document: default
+  pdf: default
+#output:
+#  html_document: 
+#    # open links in a new tab
+#    link-external-newwindow: true
+#    css: syllabus.css
+#    pandoc_args: [
+#                  #"-F", "pandoc-include",
+#                  #"--citeproc",
+#                  #"-F", "pandoc-crossref", 
+#                  #"-F", "pandoc-citeproc"
+#                  ]
+#  pdf_document: default
 ---
+
+<!--
+NOTE: to get links to the URLs where the papers can be downloaded, you might
+have to go into the Zotero settings -> Better BiBTex -> Oppen Better BibTeX preferences -> Export
+... and then in the 'Add URLs to BibTeX export' pulldown, select "in the 'url' field"
+-->
 
 <!--
 NOTES:
@@ -224,6 +237,7 @@ tabshow %>%
 
 ## Requirements and assignments
 
+
 The requirements of the class are designed to achieve two goals:
 the first goal is to become familiar with some classic and contemporary research 
 about social networks through reading papers and discussing them; and the second
@@ -235,12 +249,25 @@ that you might be able to continue working on beyond this class.
 
     Each week, you should read the assigned materials and show up to class
     prepared to discuss them. **One of the weeks you will also be in charge of
-    organizing the discussion.**  (Depending on enrollment,  you may be in charge of part
+    organizing the discussion.**  (Depending on enrollment, you may be in charge of part
     of the readings in an additional week.) To lead the discussion,
     I suggest that you make a short slide deck summarizing each of the readings
     (similar to the papers to present, below), and you think of a few questions to
     prompt discussions for each reading.
     
+* Papers to present
+
+    Each week, there will be a list of readings that we will not have time to
+    discuss as a group. For 4 of the class meetings, please choose one of these
+    papers, read it, and briefly present it to the class. You should 'claim' the paper you want to present by posting to a Ed thread for the given week, to ensure that two people don't end up preparing a presentation for the same paper. (Also, if you have a paper that is on-topic, but not on the syllabus, you can ask me to present that one instead. I will typically say yes, as long as it is relevant to the discussion that week.) These presentations should be
+    around 5-8 minutes each. Please plan to make slides or find some other way
+    to help the class understand the paper's main findings. The goals of these
+    presentations are (1) to give you some practice taking a deep dive into a
+    networks research paper; (2) to give you some practice distilling technical
+    results for a broader audience; (3) to give you and the class some exposure to
+    cutting edge ideas in social networks; (4) to give you an opportunity to
+    spend time on papers that are particularly useful for your research.
+
 * Response memos
 
     For 5 of the class meetings, please write a short response memo (1 to 2
@@ -255,19 +282,6 @@ that you might be able to continue working on beyond this class.
     readings generated for you (this could be a single sentence, or the entire
     memo; it's up to you).
     ***The response memos are due by noon on the day before each class***.
-
-* Papers to present
-
-    Each week, there will be a list of readings that we will not have time to
-    discuss as a group. For 4 of the class meetings, please choose one of these
-    papers, read it, and briefly present it to the class. You should 'claim' the paper you want to present by posting to a Ed thread for the given week, to ensure that two people don't end up preparing a presentation for the same paper. (Also, if you have a paper that is on-topic, but not on the syllabus, you can ask me to present that one instead. I will typically say yes, as long as it is relevant to the discussion that week.) These presentations should be
-    around 5-8 minutes each. Please plan to make slides or find some other way
-    to help the class understand the paper's main findings. The goals of these
-    presentations are (1) to give you some practice taking a deep dive into a
-    networks research paper; (2) to give you some practice distilling technical
-    results for a broader audience; (3) to give you and the class some exposure to
-    cutting edge ideas in social networks; (4) to give you an opportunity to
-    spend time on papers that are particularly useful for your research.
 
 * Final paper
 
@@ -290,7 +304,7 @@ that you might be able to continue working on beyond this class.
     pursue beyond class.
     We will have a mini-conference with short presentations for each project 
     at the end of the semester.  
-    **The final paper is due at 5pm on Monday, December 11th.**
+    <!--**The final paper is due at 5pm on Monday, December 11th.**-->
 
 ***NB: Please read each week's articles in the order they are listed on the syllabus***
 
@@ -314,7 +328,13 @@ Readings to discuss:
 
 * [@feld_why_1991]
 * [@mcpherson_social_2006]
-* [@grinberg_fake_2019]
+* [@apicella_social_2012]
+<!--* [@grinberg_fake_2019]-->
+
+<!--
+Maybe apicella et al?
+or something other than the grinberg one?
+-->
 
 More background to read at some point in the first couple of weeks:
 
@@ -602,7 +622,7 @@ Also interesting, but we won't have time to discuss:
 
 * [@christakis_spread_2007]
 * [@shalizi_homophily_2011]
-* [@kim_social_2015]
+* [@airoldi_induction_2024]
 
 Also interesting, but we will not have time to discuss:
 
@@ -610,7 +630,7 @@ Also interesting, but we will not have time to discuss:
 * [@lyons_spread_2011]
 * [Social Contagion Theory: Examining Dynamic Social Networks and Human Behavior](http://jhfowler.ucsd.edu/examining_dynamic_social_networks.pdf) (a response to some criticisms of  Christakis and Fowler)
 * [@manski_identification_1993]
-* [@airoldi_induction_2024]
+* [@kim_social_2015]
 
 ### `r next_week()` - Mini-conference {#sec:mini-conf}
 
