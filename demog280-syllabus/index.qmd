@@ -236,6 +236,7 @@ tabshow %>%
   #            Hwk ~ px(200))
 ```
 
+::: {.callout-note appearance='simple' icon=false collapse='true'}
 ## Requirements and assignments
 
 
@@ -308,6 +309,7 @@ that you might be able to continue working on beyond this class.
     <!--**The final paper is due at 5pm on Monday, December 11th.**-->
 
 ***NB: Please read each week's articles in the order they are listed on the syllabus***
+:::
 
 
 ## Detailed schedule
@@ -345,11 +347,18 @@ We won't explicitly discuss the Newman book chapters in class, but they
 also worth reading at some point; they describe several different network
 measures that are often mentioned in the literature.
 
+For an overview of networks topics that is focused on Sociology, the Rawlings
+et al book is also a good reference:
+
+* [@rawlings_network_2023]
+
 OPTIONAL: The [wrap-up papers at the end of the syllabus](#sec:wrap-up) give a good overview of the study of social networks.
 We won't explicitly discuss them in class, but they would be helpful to read at
 some point during the semester.
 
-Related, but we won't have time to discuss in class:
+::: {.callout-note appearance='simple' icon=false collapse='true'}
+
+#### Related, but we won't have time to discuss in class:
 
 * [@bachrach_culture_2014]
 * [@kohler_social_2013]
@@ -359,6 +368,8 @@ Related, but we won't have time to discuss in class:
 * [@sutcliffe_relationships_2012]
 * [@eagle_eigenbehaviors:_2009]
 * [@jackson_friendship_2018]
+
+:::
 
 ### `r next_week()` - Sampling, data collection, statistics  {#sec:stats}
 
@@ -374,12 +385,14 @@ Readings to discuss:
 * [READ ABSTRACT] [@mcgrath_effect_1997]
 * check out [hive plots](http://www.hiveplot.com/)
 
-I'll talk a little bit about random graph models; if you want extra background,
-the Newman chapter is a good reference:
+I'll share a video that derives some properties of random graph models; if you want extra background,
+the Newman chapter (which the video is based on) is a good reference:
 
 * [@newman_networks:_2018, ch. 11] - Poisson random graph models (NB: this is ch. 12 in the first edition)
 
-Background and related (we won't discuss):
+
+::: {.callout-note appearance='simple' icon=false collapse='true'}
+#### Background and related (we won't discuss):
 
 
 * [@goel_real_2010]
@@ -400,6 +413,8 @@ Background and related (we won't discuss):
 * [@zhang_changes_2020]
 * [@wallinga_using_2006]
 
+:::
+
 ### `r next_week()` - Social capital and SOWT: Classics {#sec:sowt-classics}
 
 Readings we will discuss:
@@ -408,7 +423,9 @@ Readings we will discuss:
 * [@feld_focused_1981]
 * [@coleman_social_1988]
 
-Also interesting (but we won't have time to discuss in class):
+::: {.callout-note appearance='simple' icon=false collapse='true'}
+
+#### Also interesting (but we won't have time to discuss in class):
 
 * [@white_social_1976]
 * [@portes_social_2000]
@@ -422,6 +439,8 @@ Also interesting (but we won't have time to discuss in class):
 Demography-specific:
 
 * [@massey_social_1990]
+
+:::
 
 
 ### `r next_week()` - Homophily - network formation based on similarity {#sec:netform-homophily}
@@ -437,7 +456,9 @@ Demography-specific:
 * [@currarini_identifying_2010]
 * [@hoff_latent_2002]
 
-Also interesting, but we will not have time to discuss:
+::: {.callout-note appearance='simple' icon=false collapse='true'}
+
+#### Also interesting, but we will not have time to discuss:
 
 * the theory/background section of this paper is an excellent review of homophily: [@wimmer_beyond_2010]
 * [@bruch_aspirational_2018]
@@ -452,6 +473,8 @@ Also interesting, but we will not have time to discuss:
 <!-- 
 * [@domingue_social_2018] 
 -->
+
+:::
 
 ### `r next_week()` - Network models, connectivity, and small worlds {#sec:small-worlds}
 
@@ -469,8 +492,8 @@ Some fairly recent online discussion of the small world hypothesis:
 * a relevant [Facebook research note](https://research.facebook.com/blog/three-and-a-half-degrees-of-separation/)
 * and a [relevant comment by Duncan Watts](https://medium.com/@duncanjwatts/how-small-is-the-world-really-736fa21808ba#.vlogrknh1)
 
-
-Background and related:
+::: {.callout-note appearance='simple' icon=false collapse='true'}
+#### Background and related
 
 * [@watts_six_2003, ch. 1-3]
 * [@marvel_small-world_2013]
@@ -478,16 +501,57 @@ Background and related:
 * [@liben-nowell_geographic_2005]
 * [@granovetter_ignorance_2003]
 
+:::
 
 
-### `r next_week()` - Structure and segregation {#sec:communities}
+### `r next_week()` - Network formation over time and scale-free networks {#sec:netform-time}
+
+* [@barabasi_emergence_1999]
+* [@broido_scale-free_2018]
+* [@bearman_chains_2004]
+* [@morris_concurrent_1997]
+
+Some recent online discussions of the power law debate (not required reading):
+
+* [Scant evidence of power laws found in real-world networks](https://www.quantamagazine.org/scant-evidence-of-power-laws-found-in-real-world-networks-20180215/)
+* [Power laws and me](https://petterhol.me/2018/01/12/me-and-power-laws/)
+* [Spherical cows are rare](https://www.barzellab.com/ideas)
+* [Love is all you need](https://uploads-ssl.webflow.com/58bcae2c9d6c401e73a26fed/5aa01d3e24eebb000199a0a2_loveisallyouneed.pdf)
+
+::: {.callout-note appearance='simple' icon=false collapse='true'}
+
+#### Also interesting (but we won't have time to discuss in class):
+
+* The online textbook [Network Science](http://barabasi.com/networksciencebook/) by Barabasi 
+* [@clauset_power-law_2007]
+* [@phan_natural_2015]
+* [@liljeros_web_2001]
+    * [@jones_social_2003]
+    * [@liljeros_social_2003]
+* [@jacobs_assembling_2015]
+* [@newman_coauthorship_2004]
+* [@kretzschmar_concurrency_2010]
+
+:::
+
+
+### `r next_week()` - Project check-in {#sec:projectpitch}
+
+We will not meet in person, but I will organize a way for each of us to spend a few 
+minutes explaining what we plan to work on for the final project. 
+There will be an opportunity for some peer feedback.
+
+
+### `r next_week()` - Structure, segregation, and communities {#sec:communities}
 
 * [@blau_macrosociological_1977]
 * [@leskovec_signed_2010]
 * [@diprete_segregation_2011]
 * [@newman_finding_2004]
 
-Also interesting (but we won't have time to discuss in class):
+::: {.callout-note appearance='simple' icon=false collapse='true'}
+
+#### Background and related
 
 <!-- NB: I think next time we should read girvan communty 2002 instead of newman_finding_2004 -->
 
@@ -500,6 +564,7 @@ Also interesting (but we won't have time to discuss in class):
 * [@granovetter_economic_1985]
 * [@isakov_structure_2019]
 
+:::
 
 
 ### `r next_week()` - Social capital and SOWT: Contemporary {#sec:sowt-contemporary}
@@ -512,7 +577,8 @@ Readings we will discuss:
 
 Also, check out [the social capital atlas](https://www.socialcapital.org/).
 
-Also interesting (but we won't have time to discuss in class):
+::: {.callout-note appearance='simple' icon=false collapse='true'}
+#### Also interesting (but we won't have time to discuss in class):
 
 * [@onnela_structure_2007]
 * [@eagle_network_2010]
@@ -529,43 +595,21 @@ Demography-specific:
 
 * [@fussell_limits_2004]
 
+:::
 
-### `r next_week()` - Network formation over time and scale-free networks {#sec:netform-time}
-
-* [@barabasi_emergence_1999]
-* [@broido_scale-free_2018]
-* [@bearman_chains_2004]
-* **NB: for some reason, the journal link for this reading is wrong. Please read the article by Morris et al here**: [https://journals.lww.com/aidsonline/_layouts/15/oaks.journals/downloadpdf.aspx?an=00002030-199704000-00012](https://journals.lww.com/aidsonline/_layouts/15/oaks.journals/downloadpdf.aspx?an=00002030-199704000-00012) [@morris_concurrent_1997]
-
-Some recent online discussions of the power law debate (not required reading):
-
-* [Scant evidence of power laws found in real-world networks](https://www.quantamagazine.org/scant-evidence-of-power-laws-found-in-real-world-networks-20180215/)
-* [Power laws and me](https://petterhol.me/2018/01/12/me-and-power-laws/)
-* [Spherical cows are rare](https://www.barzellab.com/ideas)
-* [Love is all you need](https://uploads-ssl.webflow.com/58bcae2c9d6c401e73a26fed/5aa01d3e24eebb000199a0a2_loveisallyouneed.pdf)
-
-Also interesting (but we won't have time to discuss in class):
-
-* The online textbook [Network Science](http://barabasi.com/networksciencebook/) by Barabasi 
-* [@clauset_power-law_2007]
-* [@phan_natural_2015]
-* [@liljeros_web_2001]
-    * [@jones_social_2003]
-    * [@liljeros_social_2003]
-* [@jacobs_assembling_2015]
-* [@newman_coauthorship_2004]
-* [@kretzschmar_concurrency_2010]
 
 ### `r next_week()` - Simple contagion {#sec:simple-contagion}
 
-**The reading is not too long this week. Please take the opportunity to start to think about your project,
+**The reading is not too long this week. Please take the opportunity to work on your project,
 and to catch up on your extra paper presentations!**
 
 * [@christakis_social_2010]
 * [@helleringer_sexual_2007]
 * [@feehan_quantifying_2021]
 
-Also interesting, but we will not have time to discuss:
+::: {.callout-note appearance='simple' icon=false collapse='true'}
+
+#### Other related readings  
 
 * [@mossong_social_2008]
 * [@bansal_when_2007]
@@ -575,13 +619,19 @@ Also interesting, but we will not have time to discuss:
 * [@rohani_contact_2010]
 * [@salathe_dynamics_2010]
 
-### `r next_week()` - Complex contagion and social influence {#sec:complex-contagion}
+:::
+
+### `r next_week()` - Complex contagion and social influence part I {#sec:complex-contagion}
 
 * [@granovetter_threshold_1978]
 * [@centola_social_2015]
 * [@ugander_structural_2012]
+* [@christakis_spread_2007]
+* [@shalizi_homophily_2011]
 
-Also interesting, but we will not have time to discuss
+::: {.callout-note appearance='simple' icon=false collapse='true'}
+
+#### Also interesting, but we will not have time to discuss
 
 * [@dimaggio_how_2011]
 * [@watts_simple_2002]
@@ -590,26 +640,33 @@ Also interesting, but we will not have time to discuss
 * [@centola_how_2018]
 * [@macy_threshold_2020]
 * [@juul_comparing_2021]
+* [Controversy over the C-F findings on the contagion of obesity](http://andrewgelman.com/2011/06/10/controversy_ove_2/) (blog post by Andrew Gelman)
+* [@lyons_spread_2011]
+* [Social Contagion Theory: Examining Dynamic Social Networks and Human Behavior](http://jhfowler.ucsd.edu/examining_dynamic_social_networks.pdf) (a response to some criticisms of  Christakis and Fowler)
+* [@manski_identification_1993]
 
 Especially relevant for demography:
 
 * [@balbo_does_2014]
 
-### `r next_week()` - Project pitches {#sec:projectpitch}
-
-We will not meet in person, but I will organize a way for each of us to spend a few 
-minutes explaining what we plan to work on for the final project. 
-There will be an opportunity for some peer feedback.
+:::
 
 
-### `r next_week()` - Peer effects {#sec:peer-effects}
+### `r next_week()` - Social influence II {#sec:influence}
 
+*Note: we may only do a subset of these*  
+  
 * [@nickerson_is_2008]
 * [@bond_61-million-person_2012]
 * [@banerjee_diffusion_2013]
+* [@airoldi_induction_2024]
 
-Also interesting, but we won't have time to discuss:
+::: {.callout-note appearance='simple' icon=false collapse='true'}
 
+#### Also interesting, but we won't have time to discuss:
+
+
+* [@kim_social_2015]
 * [@paluck_changing_2016]
 * [@sacerdote_peer_2000]
 * [@kohler_social_2007]
@@ -619,19 +676,33 @@ Also interesting, but we won't have time to discuss:
 * [@eckles_design_2014]
 * [@bakshy_social_2012]
 
-### `r next_week()` - Challenges in understanding spread on a network {#sec:spread}
+:::
 
-* [@christakis_spread_2007]
-* [@shalizi_homophily_2011]
-* [@airoldi_induction_2024]
+### `r next_week()` Collaboration and cooperation {#sec:cooperation}
 
-Also interesting, but we will not have time to discuss:
+*Note: the readings for this week are especially likely to change; this is
+a placeholder for this topic...*
 
-* [Controversy over the C-F findings on the contagion of obesity](http://andrewgelman.com/2011/06/10/controversy_ove_2/) (blog post by Andrew Gelman)
-* [@lyons_spread_2011]
-* [Social Contagion Theory: Examining Dynamic Social Networks and Human Behavior](http://jhfowler.ucsd.edu/examining_dynamic_social_networks.pdf) (a response to some criticisms of  Christakis and Fowler)
-* [@manski_identification_1993]
-* [@kim_social_2015]
+<!--* we'll have an in-class demo of [breadboard](http://breadboard.yale.edu/). Bring your laptop!-->
+* [@wang_cooperation_2012]
+* [@rand_static_2014]
+* [@nishi_inequality_2015]
+* [@guimera_team_2005]
+* [@mason_collaborative_2012]
+* [@mason_long-run_2014]
+* [@jackson_social_2012]
+
+::: {.callout-note appearance='simple' icon=false collapse='true'}
+
+#### Also interesting, but we will not have time to discuss:
+
+* [@apicella_social_2012]
+
+:::
+
+### `r next_week()` - Thanksgiving (no class)
+
+Enjoy the break!
 
 ### `r next_week()` - Mini-conference {#sec:mini-conf}
 
@@ -646,6 +717,7 @@ Optional wrap-up:
 * [@newman_why_2003]
 * [@jackson_economic_2016]
 
+::: {.callout-note appearance='simple' icon=false collapse='true'}
 ## Additional topics {-}
 
 ### Political networks {#sec:politics}
@@ -666,21 +738,15 @@ Optional wrap-up:
 * [@vicario_spreading_2016]
 * [@baldassarri_dynamics_2007]
 
-### Collaboration and cooperation {#sec:cooperation}
 
-<!--* we'll have an in-class demo of [breadboard](http://breadboard.yale.edu/). Bring your laptop!-->
-* [@apicella_social_2012]
-* [@wang_cooperation_2012]
-* [@rand_static_2014]
-* [@nishi_inequality_2015]
-* [@guimera_team_2005]
-* [@mason_collaborative_2012]
-* [@mason_long-run_2014]
-* [@jackson_social_2012]
-
+:::
 
 ---
   
+  
+  
+::: {.callout-note appearance='simple' icon=false collapse='true'}
+### Course policies
   
 **Religious Accommodations**  
   
@@ -715,3 +781,5 @@ These are some basic expectations of students with regards to academic integrity
 * All assignments must use "proper attribution," meaning that you have identified the original source and extent or words or ideas that you reproduce or use in your assignment. This includes drafts and homework assignments!
 * If you are unclear about expectations, ask your instructor or GSI.
 * Do not collaborate or work with other students on assignments or projects unless you have been given permission or instruction to do so.
+
+:::

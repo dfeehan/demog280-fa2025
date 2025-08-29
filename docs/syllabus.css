@@ -90,6 +90,15 @@ hr {
    border-top-color: #999999;
 }
 
+.callout-note ul {
+  margin-left: 1.5em;
+  list-style-type: disc;
+}
+
+.callout-note li {
+  margin-bottom: 0.25em;
+}
+
 @media print {
    * {
       background: transparent !important;
