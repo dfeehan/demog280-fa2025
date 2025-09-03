@@ -3,7 +3,8 @@ title: "Social Networks (Demography 280/Sociology C273N)"
 editor: source
 pagetitle: "Social Networks (Demog 280/Soc C273N)"
 bibliography: class_networks.bib
-csl: chicago-syllabus.csl
+#csl: chicago-syllabus.csl
+csl: chicago-modified.csl
 suppress-bibliography: True
 format:
   html:
@@ -358,7 +359,7 @@ some point during the semester.
 
 ::: {.callout-note appearance='simple' icon=false collapse='true'}
 
-#### Related, but we won't have time to discuss in class:
+#### Related (we won't discuss)
 
 * [@bachrach_culture_2014]
 * [@kohler_social_2013]
@@ -392,26 +393,47 @@ the Newman chapter (which the video is based on) is a good reference:
 
 
 ::: {.callout-note appearance='simple' icon=false collapse='true'}
-#### Background and related (we won't discuss):
+#### Related (we won't discuss):
 
 
-* [@goel_real_2010]
+Overviews:  
+  
 * [@marsden_network_1990]
-* [@brashears_small_2011]
 * [@marsden_recent_2005]
+* [@carrington_models_2005]
+  
+Name generators and personal networks:  
+
+* [@small_personal_2021]
+* [@small_someone_2017]
 * [@brashears_trivial_2014]
 * [@bearman_cloning_2004]
 * [@lee_important_2017]
+
+Measurement error and awareness:  
+  
+* [@goel_real_2010]
+* [@brashears_small_2011]
+* [@feehan_generalizing_2016]
 * [@cowan_it_2017]
-* [@small_someone_2017]
-* [@feehan_network_2017] (appendix is optional)
+
+Aggregate relational data and latent space models:  
+    
+* Hoff et al paper, which we will read in a coming week
 * [@mccormick_how_2010]
 * [@mccormick_latent_2012]
 * [@handcock_modeling_2010]
 * [@hoff_bilinear_2005]
-* [@crawford_hidden_2018]
-* [@zhang_changes_2020]
-* [@wallinga_using_2006]
+* [@baum_covariate_2025]
+
+Hidden populations:  
+    
+* (Scale-up) [@feehan_network_2017] 
+* (Scale-up) [@laga_correlated_2021]
+* (Scale-up) [@laga_estimating_2025]
+* (RDS) [@crawford_hidden_2018]
+* (RDS) [@roch_generalized_2018]
+* (RDS) [@baraff_estimating_2016]
 
 :::
 
@@ -425,14 +447,25 @@ Readings we will discuss:
 
 ::: {.callout-note appearance='simple' icon=false collapse='true'}
 
-#### Also interesting (but we won't have time to discuss in class):
+#### Related (we won't discuss):
 
+Related classics:  
+
+* Good excerpts/comments on several classics can be found here: [@small_personal_2021]
 * [@white_social_1976]
 * [@portes_social_2000]
 * [@granovetter_strength_1981]
 * [@portes_embeddedness_1993]
-* [@burt_structural_2004]
+* [@burt_structural_2004]  
+
+Digital:  
+
 * [@eagle_network_2010]
+
+Health-related:  
+  
+* [@berkman_social_1979]
+* [@seeman_social_1987]
 * [@kauppi_characteristics_2018]
 * [@eng_social_2002]
 
@@ -458,7 +491,7 @@ Demography-specific:
 
 ::: {.callout-note appearance='simple' icon=false collapse='true'}
 
-#### Also interesting, but we will not have time to discuss:
+#### Related (we won't discuss)
 
 * the theory/background section of this paper is an excellent review of homophily: [@wimmer_beyond_2010]
 * [@bruch_aspirational_2018]
@@ -493,7 +526,8 @@ Some fairly recent online discussion of the small world hypothesis:
 * and a [relevant comment by Duncan Watts](https://medium.com/@duncanjwatts/how-small-is-the-world-really-736fa21808ba#.vlogrknh1)
 
 ::: {.callout-note appearance='simple' icon=false collapse='true'}
-#### Background and related
+
+#### Related (we won't discuss)
 
 * [@watts_six_2003, ch. 1-3]
 * [@marvel_small-world_2013]
@@ -502,7 +536,6 @@ Some fairly recent online discussion of the small world hypothesis:
 * [@granovetter_ignorance_2003]
 
 :::
-
 
 ### `r next_week()` - Network formation over time and scale-free networks {#sec:netform-time}
 
@@ -520,7 +553,7 @@ Some recent online discussions of the power law debate (not required reading):
 
 ::: {.callout-note appearance='simple' icon=false collapse='true'}
 
-#### Also interesting (but we won't have time to discuss in class):
+#### Related (we won't discuss)
 
 * The online textbook [Network Science](http://barabasi.com/networksciencebook/) by Barabasi 
 * [@clauset_power-law_2007]
@@ -551,8 +584,7 @@ There will be an opportunity for some peer feedback.
 
 ::: {.callout-note appearance='simple' icon=false collapse='true'}
 
-#### Background and related
-
+#### Related (we won't discuss)
 <!-- NB: I think next time we should read girvan communty 2002 instead of newman_finding_2004 -->
 
 * [@girvan_community_2002]
@@ -578,7 +610,7 @@ Readings we will discuss:
 Also, check out [the social capital atlas](https://www.socialcapital.org/).
 
 ::: {.callout-note appearance='simple' icon=false collapse='true'}
-#### Also interesting (but we won't have time to discuss in class):
+#### Related (we won't discuss)
 
 * [@onnela_structure_2007]
 * [@eagle_network_2010]
@@ -609,7 +641,7 @@ and to catch up on your extra paper presentations!**
 
 ::: {.callout-note appearance='simple' icon=false collapse='true'}
 
-#### Other related readings  
+#### Related (we won't discuss)
 
 * [@mossong_social_2008]
 * [@bansal_when_2007]
@@ -618,6 +650,8 @@ and to catch up on your extra paper presentations!**
 * [@banerjee_using_2017]
 * [@rohani_contact_2010]
 * [@salathe_dynamics_2010]
+* [@zhang_changes_2020]
+* [@wallinga_using_2006]
 
 :::
 
@@ -631,7 +665,7 @@ and to catch up on your extra paper presentations!**
 
 ::: {.callout-note appearance='simple' icon=false collapse='true'}
 
-#### Also interesting, but we will not have time to discuss
+#### Related (we won't discuss)
 
 * [@dimaggio_how_2011]
 * [@watts_simple_2002]
@@ -663,8 +697,7 @@ Especially relevant for demography:
 
 ::: {.callout-note appearance='simple' icon=false collapse='true'}
 
-#### Also interesting, but we won't have time to discuss:
-
+#### Related (we won't discuss)
 
 * [@kim_social_2015]
 * [@paluck_changing_2016]
@@ -677,6 +710,7 @@ Especially relevant for demography:
 * [@bakshy_social_2012]
 
 :::
+
 
 ### `r next_week()` Collaboration and cooperation {#sec:cooperation}
 
@@ -694,9 +728,10 @@ a placeholder for this topic...*
 
 ::: {.callout-note appearance='simple' icon=false collapse='true'}
 
-#### Also interesting, but we will not have time to discuss:
+#### Related (we won't discuss)
 
-* [@apicella_social_2012]
+<!--* [@apicella_social_2012]-->
+(TBA)
 
 :::
 
