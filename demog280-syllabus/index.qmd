@@ -6,7 +6,7 @@ bibliography: class_networks.bib
 #csl: chicago-syllabus.csl
 csl: chicago-modified.csl
 suppress-bibliography: True
-format:
+output:
   html:
     link-external-newwindow: true
     css: syllabus.css
@@ -25,6 +25,7 @@ format:
 #                  ]
 #  pdf_document: default
 ---
+
 
 <!--
 NOTE: to get links to the URLs where the papers can be downloaded, you might
@@ -183,7 +184,6 @@ computer science, and related fields.
 
 ***This syllabus is not yet final - I'm posting it to give you a sense for what we will cover this semester. Please re-check the syllabus before you start each week's reading; it
 will be updated as the semester progresses***
-
 
 ```{r show-schedule, echo=FALSE, warning=FALSE, error=FALSE, message=FALSE}
 #tabshow <- tab %>%
@@ -424,12 +424,12 @@ Aggregate relational data and latent space models:
 * [@mccormick_latent_2012]
 * [@handcock_modeling_2010]
 * [@hoff_bilinear_2005]
-* [@baum_covariate_2025]
+* [@baum_explaining_2025]
 
 Hidden populations:  
     
 * (Scale-up) [@feehan_network_2017] 
-* (Scale-up) [@laga_correlated_2021]
+* (Scale-up) [@laga_correlated_2023]
 * (Scale-up) [@laga_estimating_2025]
 * (RDS) [@crawford_hidden_2018]
 * (RDS) [@roch_generalized_2018]
@@ -522,7 +522,7 @@ Readings to discuss:
 
 Some fairly recent online discussion of the small world hypothesis:
 
-* a relevant [Facebook research note](https://research.facebook.com/blog/three-and-a-half-degrees-of-separation/)
+* a relevant [Facebook research note](https://research.facebook.com/blog/2016/2/three-and-a-half-degrees-of-separation/)
 * and a [relevant comment by Duncan Watts](https://medium.com/@duncanjwatts/how-small-is-the-world-really-736fa21808ba#.vlogrknh1)
 
 ::: {.callout-note appearance='simple' icon=false collapse='true'}
@@ -637,12 +637,13 @@ and to catch up on your extra paper presentations!**
 
 * [@christakis_social_2010]
 * [@helleringer_sexual_2007]
-* [@feehan_quantifying_2021]
+* [@zapperi_epidemiology_2025]
 
 ::: {.callout-note appearance='simple' icon=false collapse='true'}
 
 #### Related (we won't discuss)
 
+* [@feehan_quantifying_2021]
 * [@mossong_social_2008]
 * [@bansal_when_2007]
 * [@nishi_network_2020]
@@ -667,6 +668,7 @@ and to catch up on your extra paper presentations!**
 
 #### Related (we won't discuss)
 
+* [@wan_diffusion_2025]
 * [@dimaggio_how_2011]
 * [@watts_simple_2002]
 * [@watts_influentials_2007]
