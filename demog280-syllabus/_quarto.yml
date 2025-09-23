@@ -10,6 +10,7 @@ website:
 
 format:
   html:
+    link-external-newwindow: true
     theme: cosmo
     css: syllabus.css
     toc: true
