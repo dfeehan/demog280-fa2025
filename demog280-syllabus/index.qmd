@@ -540,7 +540,7 @@ Some fairly recent online discussion of the small world hypothesis:
 ### `r next_week()` - Network formation over time and scale-free networks {#sec:netform-time}
 
 * [@barabasi_emergence_1999]
-* [@broido_scale-free_2018]
+* [@broido_scale-free_2019]
 * [@bearman_chains_2004]
 * [@morris_concurrent_1997]
 
