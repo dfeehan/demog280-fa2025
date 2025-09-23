@@ -659,7 +659,7 @@ and to catch up on your extra paper presentations!**
 ### `r next_week()` - Complex contagion and social influence part I {#sec:complex-contagion}
 
 * [@granovetter_threshold_1978]
-* [@centola_social_2015]
+* [@centola_spread_2010]
 * [@ugander_structural_2012]
 * [@christakis_spread_2007]
 * [@shalizi_homophily_2011]
@@ -674,6 +674,7 @@ and to catch up on your extra paper presentations!**
 * [@watts_influentials_2007]
 * [@centola_complex_2007]
 * [@centola_how_2018]
+* [@centola_social_2015]
 * [@macy_threshold_2020]
 * [@juul_comparing_2021]
 * [Controversy over the C-F findings on the contagion of obesity](http://andrewgelman.com/2011/06/10/controversy_ove_2/) (blog post by Andrew Gelman)
@@ -705,7 +706,6 @@ Especially relevant for demography:
 * [@paluck_changing_2016]
 * [@sacerdote_peer_2000]
 * [@kohler_social_2007]
-* [@centola_spread_2010]
 * [@bakshy_role_2012]
 * [@bakshy_designing_2014]
 * [@eckles_design_2014]
