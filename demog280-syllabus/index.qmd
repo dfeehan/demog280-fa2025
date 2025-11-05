@@ -691,8 +691,6 @@ Especially relevant for demography:
 
 ### `r next_week()` - Social influence II {#sec:influence}
 
-*Note: we may only do a subset of these*  
-  
 * [@nickerson_is_2008]
 * [@bond_61-million-person_2012]
 * [@banerjee_diffusion_2013]
@@ -716,24 +714,23 @@ Especially relevant for demography:
 
 ### `r next_week()` Collaboration and cooperation {#sec:cooperation}
 
-*Note: the readings for this week are especially likely to change; this is
-a placeholder for this topic...*
-
 <!--* we'll have an in-class demo of [breadboard](http://breadboard.yale.edu/). Bring your laptop!-->
-* [@wang_cooperation_2012]
-* [@rand_static_2014]
-* [@nishi_inequality_2015]
-* [@guimera_team_2005]
-* [@mason_collaborative_2012]
+
+* [@nowak_five_2006]
 * [@mason_long-run_2014]
-* [@jackson_social_2012]
+* [@nishi_inequality_2015]
 
 ::: {.callout-note appearance='simple' icon=false collapse='true'}
 
 #### Related (we won't discuss)
 
+* [@uzzi_collaboration_2005]
 <!--* [@apicella_social_2012]-->
-(TBA)
+* [@wang_cooperation_2012]
+* [@mason_collaborative_2012]
+* [@rand_static_2014]
+* [@guimera_team_2005]
+* [@jackson_social_2012]
 
 :::
 
